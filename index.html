@@ -1,782 +1,685 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="he" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>אפרים קוסטנטינר | בעל עסק עם בלגן? הסדר פה</title>
-<meta name="description" content="יועץ הצלחה דיגיטלית עם עין מעצבת. מאפיין את העסק שלך ובונה לו מערכת אחת שמנהלת ומשפרת אותו — עוד תפוקה, בלי עוד עובדים.">
-<meta name="robots" content="noindex,nofollow">
-<link rel="canonical" href="https://efraim-k.co.il/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="he_IL">
-<meta property="og:title" content="אפרים קוסטנטינר | בעל עסק עם בלגן? הסדר פה">
-<meta property="og:description" content="מערכת אחת שמנהלת את כל העסק — במקום ראש שזוכר.">
-<meta property="og:image" content="https://p0534191131-glitch.github.io/efraim-preview/assets/img/office/door-closed.jpg">
-<meta property="og:url" content="https://p0534191131-glitch.github.io/efraim-preview/">
-<meta name="theme-color" content="#F6F2EA">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService",
- "name":"אפרים קוסטנטינר — יועץ הצלחה דיגיטלית",
- "description":"בניית מערכות ואוטומציות לניהול העסק: איפיון, עיצוב, פיתוח והטמעה.",
- "areaServed":"IL","availableLanguage":"he",
- "telephone":"+972-53-419-1131","email":"p0534191131@gmail.com",
- "founder":{"@type":"Person","name":"אפרים קוסטנטינר","jobTitle":"יועץ הצלחה דיגיטלית"}}
-</script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>אפרים קוסטנטינר · אתרים ומערכות AI לעסקים</title>
+<meta name="description" content="עסק שנראה מיליון דולר, ועובד גם כשאתה לא נמצא. אתר, מערכת ניהול ו-AI שעונה ללקוחות, כגוף אחד.">
+<meta name="theme-color" content="#0F1E6E">
+<link rel="icon" type="image/svg+xml" href="assets/img/star.svg">
+<link rel="preload" href="assets/fonts/google-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/google-sans-700.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{
-  --paper:#F6F2EA; --white:#fff; --navy:#0A1930; --navy2:#102A4C;
-  --gold:#C9A227; --gold-2:#E4C35C; --gold-deep:#8F7318;
-  --ink:#0A1930; --soft:#66718A; --line:#E6DFD2;
-  --ease:cubic-bezier(.22,.61,.36,1);
-  /* מלבן המסך בתוך תמונת השולחן הנקי (אחוזים מהתמונה) — נמדד מהתמונה */
-  --scr-l:10.72%; --scr-t:32.81%; --scr-w:35.68%; --scr-h:36.2%;
-  /* מסך הטלפון בתמונת הטלפון על המעמד (אחוזים), נמדד מחוץ למגרעת */
-  --ph-l:21.08%; --ph-t:23.18%; --ph-w:15.92%; --ph-h:62.83%;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Heebo',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;height:auto;display:block}
-button,input,textarea{font-family:inherit;font-size:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+@font-face{font-family:GS;src:url(assets/fonts/google-sans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:GS;src:url(assets/fonts/google-sans-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:GS;src:url(assets/fonts/google-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Hand;src:url(assets/fonts/hand-700.woff2) format('woff2');font-weight:700;font-display:swap}
 
-.prog{position:fixed;top:0;right:0;height:2px;width:0;z-index:80;background:var(--gold)}
-/* ---------- ההדר: קפסולה כחולה צפה עם מסגרת זהב, מאותם חומרים של הדלת והשלט. בצד: כפתור וואטסאפ עם התמונה של אפרים ---------- */
-header{position:fixed;top:16px;left:0;right:0;z-index:70;display:flex;justify-content:center;padding:0 16px;pointer-events:none;transition:top .4s var(--ease)}
-header.solid{top:10px}
-.hd-cap{pointer-events:auto;display:flex;align-items:center;gap:clamp(22px,3vw,46px);padding:7px;padding-inline-start:26px;border-radius:999px;color:#F4EDE4;
-  background:linear-gradient(180deg,rgba(22,48,86,.95),rgba(10,25,48,.97));border:1px solid rgba(201,162,39,.62);
-  box-shadow:inset 0 1px 0 rgba(228,195,92,.3),0 18px 44px rgba(10,25,48,.28);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:padding .4s var(--ease),box-shadow .4s}
-header.solid .hd-cap{padding:5px;padding-inline-start:22px;box-shadow:inset 0 1px 0 rgba(228,195,92,.3),0 14px 34px rgba(10,25,48,.34)}
-.hd-logo{display:block;flex:none}
-.hd-logo img{height:30px;width:auto;transition:height .4s var(--ease)}
-header.solid .hd-logo img{height:26px}
-.hd-nav{display:flex;gap:clamp(18px,2.2vw,32px);font-size:14.5px;font-weight:500}
-.hd-nav a{position:relative;padding:6px 0;color:rgba(244,237,228,.8);transition:color .25s}
-.hd-nav a::after{content:"";position:absolute;left:50%;bottom:-3px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--gold-2);opacity:0;transform:translateY(3px);transition:opacity .25s,transform .25s}
-.hd-nav a:hover,.hd-nav a.on{color:#fff}
-.hd-nav a:hover::after,.hd-nav a.on::after{opacity:1;transform:none}
-/* כפתור הוואטסאפ עם התמונה (מהדר ג׳), בזהב כדי שיבלוט על הכחול */
-.hd-me{display:inline-flex;align-items:center;gap:10px;flex:none;height:46px;padding:4px;padding-inline-end:20px;border-radius:999px;color:var(--navy);
-  background:linear-gradient(180deg,#E9CB66,#C9A227 58%,#B38F1E);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 6px 16px rgba(201,162,39,.3);transition:transform .3s var(--ease),box-shadow .3s,height .4s var(--ease)}
-.hd-me:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 24px rgba(201,162,39,.45)}
-header.solid .hd-me{height:40px}
-.hd-av{position:relative;flex:none;width:38px;height:38px;transition:width .4s var(--ease),height .4s var(--ease)}
-header.solid .hd-av{width:32px;height:32px}
-.hd-av img{width:100%;height:100%;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--navy)}
-.hd-av i{position:absolute;left:-4px;bottom:-3px;width:18px;height:18px;border-radius:50%;background:#25D366;border:2px solid #BF9A24;display:flex;align-items:center;justify-content:center}
-.hd-av .ic{width:10px;height:10px;fill:#fff}
-.hd-tx{line-height:1.2;white-space:nowrap}
-.hd-tx b{display:block;font-size:13.5px;font-weight:800}
-.hd-tx small{display:block;font-size:11px;font-weight:500;color:rgba(10,25,48,.72)}
-.hd-burger{display:none;width:40px;height:40px;flex:none;border:0;border-radius:50%;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:#F4EDE4;background:rgba(244,237,228,.08)}
-.hd-burger i{display:block;width:16px;height:1.6px;border-radius:2px;background:currentColor;transition:transform .3s var(--ease)}
-.hd-burger[aria-expanded="true"] i:first-child{transform:translateY(3.3px) rotate(45deg)}
-.hd-burger[aria-expanded="true"] i:last-child{transform:translateY(-3.3px) rotate(-45deg)}
-header a:focus-visible,header button:focus-visible,.hd-menu a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-/* התפריט בטלפון */
-.hd-menu{position:fixed;z-index:71;top:72px;left:10px;right:10px;padding:8px 12px;border-radius:22px;color:#F4EDE4;background:var(--navy);border:1px solid rgba(201,162,39,.4);box-shadow:0 24px 60px rgba(10,25,48,.35)}
-.hd-menu nav{display:grid}
-.hd-menu nav a{display:flex;align-items:baseline;gap:12px;padding:15px 6px;font-size:20px;font-weight:800;border-bottom:1px solid rgba(244,237,228,.1)}
-.hd-menu nav a b{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--gold-2)}
-.hd-menu nav a.on{color:var(--gold-2)}
-.hd-menu-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 6px 8px;font-size:15px;font-weight:700}
-.hd-menu-foot a:first-child{direction:ltr;unicode-bidi:embed}
-.hd-menu-wa{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:800}
-.ic{width:18px;height:18px;flex:none;fill:currentColor}
-#contact{scroll-margin-top:90px}  /* שהקפיצה ל"יצירת קשר" לא תיכנס מתחת להדר */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;font-weight:800;font-size:15.5px;padding:15px 30px;border:0;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s,background .3s}
-.btn-g{background:var(--gold);color:var(--navy);box-shadow:0 10px 26px rgba(201,162,39,.32)}
-.btn-g:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(201,162,39,.45)}
-.btn-n{background:var(--navy);color:#fff}
-.btn-n:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(10,25,48,.3)}
-.btn-w{background:rgba(255,255,255,.9);color:var(--navy);border:1px solid var(--line)}
-.btn-w:hover{background:#fff}
-.btn-sm{padding:10px 20px;font-size:13.5px;border-radius:999px}
+/* ===== מותג ===== */
+/* גדלי גופן: כותרת הפתיחה תמיד כפולה מכותרת של חלק (כלל קבוע של אפרים). 96 / 48 / 24 / 18 */
+:root{--fs-a:48px;--fs-hero:calc(var(--fs-a) * 2);--fs-b:24px;--fs-c:18px;--sp1:12px;--sp2:20px;--sp3:32px;--sp4:96px;--n:#0F1E6E;--c:#F6F1E7;--m:#3DDBB0;--soft:#DDE1F5;--u:1px;--uu:1;--ox:0px;--u2:1;--ox2:0px;--oy2:76px;--pl:6.4;--glass:linear-gradient(135deg,rgba(255,255,255,.42),rgba(255,255,255,.12) 55%,rgba(255,255,255,.22))}
+*{box-sizing:border-box}
+html{scroll-behavior:auto;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:GS,system-ui,sans-serif;color:var(--n);background:var(--c);overflow-x:clip}
+h1,h2,h3,h4,p,figure,blockquote,ul{margin:0}
+ul{padding:0;list-style:none}
+img{display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;right:-999px;top:12px;z-index:100;background:var(--n);color:var(--c);padding:10px 18px;border-radius:999px;font-weight:700;font-size:var(--fs-c)}
+.skip:focus{right:16px}
+:focus-visible{outline:3px solid var(--m);outline-offset:3px}
 
-/* ===================== המסע ===================== */
-#journey{height:1820vh;position:relative;z-index:2}
-.stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--paper)}
-.room{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);transform-origin:50% 50%;will-change:transform}
-.room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
-.room img.on{opacity:1}
-.room canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0}
-.room video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
-.screen{position:absolute;left:var(--scr-l);top:var(--scr-t);width:var(--scr-w);height:var(--scr-h);overflow:hidden;background:#0A1930;opacity:0;border-radius:.4vw}
-/* פס כותרת דק בראש המסך עם שם הפרויקט, ומתחתיו הפרויקטים אחד-אחד, כל אחד ממלא את המסך */
-.scr-in{position:absolute;inset:0;direction:rtl;background:#0A1930}
-.strip{position:absolute;left:0;top:0;width:100%;will-change:transform}
-.slide{position:relative;overflow:hidden}
-.room .slide img{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;opacity:1}
-.slide+.slide{box-shadow:0 -1px 0 rgba(255,255,255,.08)}
-.side{position:absolute;right:5vw;top:50%;transform:translateY(-50%);z-index:6;max-width:32vw;opacity:0;pointer-events:none}
-.side .k{font-size:12px;letter-spacing:.28em;font-weight:800;color:var(--gold-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
-.side .k::before{content:"";width:34px;height:2px;background:var(--gold)}
-.side h2{font-size:clamp(34px,4.4vw,66px);font-weight:900;line-height:.95;letter-spacing:-.045em;color:var(--navy)}
-.side p{margin-top:18px;color:var(--navy);opacity:.86;font-size:17px;font-weight:500;line-height:1.55;max-width:30ch}
-.side h2,.side p,.side .k{text-shadow:0 0 .35em rgba(255,255,255,.95),0 0 1.1em rgba(255,255,255,.85),0 0 2em rgba(255,255,255,.7)}
-.side .dots{margin-top:28px;display:flex;gap:8px}
-.side .dots i{width:24px;height:4px;border-radius:99px;background:rgba(10,25,48,.16);transition:width .35s,background .35s}
-.side .dots i.on{width:46px;background:var(--gold)}
-.side .biz{margin-top:24px;padding-top:20px;border-top:1px solid rgba(10,25,48,.16);will-change:opacity}
-.side .biz h3{font-size:clamp(26px,2.7vw,42px);font-weight:900;line-height:1.05;letter-spacing:-.03em;color:var(--navy)}
-.side .biz .cat{display:block;margin-top:6px;font-size:13.5px;font-weight:700;color:var(--gold-deep);letter-spacing:.05em}
-.side .biz .lbl{display:block;margin-top:16px;font-size:11.5px;font-weight:800;letter-spacing:.24em;color:var(--navy);opacity:.55}
-.side .biz p{margin-top:6px}
-.side h3,.side .cat,.side .lbl{text-shadow:0 0 .6em rgba(255,255,255,.85),0 0 1.4em rgba(255,255,255,.6)}
-/* הוא מדבר: בועה שמצביעה אליו, נפתחת ברגע שרואים אותו יושב ליד השולחן */
-.say{position:absolute;z-index:5;opacity:0;pointer-events:none;font-size:16px;direction:rtl}
-.say .in{position:relative;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.85);border-radius:1.4em;padding:1.15em 1.35em;box-shadow:0 1.4em 3em rgba(10,25,48,.18);backdrop-filter:blur(8px)}
-.say .in::after{content:"";position:absolute;right:-.72em;top:2.6em;width:1.45em;height:1.45em;background:inherit;border-right:1px solid rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.85);border-radius:0 .35em 0 0;transform:rotate(45deg)}
-.say b{display:block;font-size:1.45em;font-weight:900;line-height:1.16;letter-spacing:-.03em;color:var(--navy)}
-.say i{display:block;margin-top:.5em;font-style:normal;font-size:1.02em;font-weight:800;color:var(--gold-deep)}
-.say .dots{display:flex;gap:.3em;padding:.45em .1em}
-.say .dots s{width:.55em;height:.55em;border-radius:50%;background:#9aa4b8;text-decoration:none;animation:tp 1s infinite}
-.say .dots s:nth-child(2){animation-delay:.15s}.say .dots s:nth-child(3){animation-delay:.3s}
-.act{position:absolute;inset:0;display:flex;align-items:center;z-index:5;opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .5s var(--ease);pointer-events:none}
-.act.on{opacity:1;transform:none;pointer-events:auto}
-.act .in{max-width:1180px;margin:0 auto;padding:0 28px;width:100%}
-.act.low{align-items:flex-end;padding-bottom:9vh}
-/* כרטיס בצד שמאל למעלה (מעל החלון), כשאפרים יושב בצד ימין */
-.act.lft{align-items:flex-start;padding-top:14vh}
-.act.lft .in{text-align:left}.act.lft .card{text-align:right;max-width:520px}
-.act.top{align-items:flex-start;padding-top:14vh}
-/* מלל ישר על התמונה, בלי כרטיסייה: הילה לבנה עדינה מאחורי האותיות כדי שיהיה קריא גם על רקע עמוס */
-.card.wall.glow h2,.card.wall.glow .p,.card.wall.glow .kick{color:var(--navy);text-shadow:0 0 .35em rgba(255,255,255,.95),0 0 1.1em rgba(255,255,255,.85),0 0 2em rgba(255,255,255,.7)}
-.card.wall.glow h2 .g{color:var(--gold-deep)}
-.card{display:inline-block;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:22px;padding:30px 34px;max-width:600px;box-shadow:0 24px 60px rgba(10,25,48,.16)}
-/* כותרת ההירו כתובה ישר על קיר השיש, בצבע הדלת — בלי כרטיסייה */
-.card.wall{background:none;backdrop-filter:none;border:0;border-radius:0;box-shadow:none;padding:0}
-.card.wall h1,.card.wall .h1b,.card.wall .p,.card.wall .kick{color:var(--navy)}
-.card.wall .p{opacity:.85}
-.kick{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.26em;color:var(--gold-deep);font-weight:800;margin-bottom:14px}
-.kick b{width:6px;height:6px;border-radius:50%;background:var(--gold)}
-h1{font-size:clamp(36px,5.4vw,72px);font-weight:900;line-height:1;letter-spacing:-.045em}
-h1 .t{font-weight:200}
-.h1b{font-size:clamp(20px,2.6vw,34px);font-weight:900;color:var(--gold-deep);letter-spacing:-.02em;margin-top:10px}
-.act h2{font-size:clamp(26px,3.8vw,50px);font-weight:900;line-height:1.06;letter-spacing:-.035em}
-.act h2 .g{color:var(--gold-deep)}
-.p{margin-top:14px;font-size:16.5px;color:var(--soft);max-width:46ch}
-.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
-.plate{position:absolute;z-index:4;left:29.58%;top:35.37%;width:4.48%;height:2.87%;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1;font-weight:900;color:#3A2A08;font-size:.82vw;letter-spacing:.06em;text-shadow:0 1px 0 rgba(255,255,255,.35)}
-.hint{position:absolute;bottom:26px;right:50%;transform:translateX(50%);z-index:6;font-size:11px;letter-spacing:.26em;color:var(--navy);display:flex;flex-direction:column;align-items:center;gap:8px;transition:opacity .4s}
-.hint span{width:1px;height:36px;background:linear-gradient(var(--gold),transparent);animation:cue 1.9s infinite}
-@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}50.1%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+/* כפתורים: כל כפתור אומר מה יקרה אחרי הלחיצה */
+.btn-n{display:inline-flex;align-items:center;gap:10px;background:var(--n);color:var(--c);font-weight:700;font-size:var(--fs-c);padding:16px 30px;border-radius:999px;text-decoration:none;text-shadow:none;border:0;cursor:pointer}
+.btn-m{display:inline-flex;align-items:center;gap:12px;background:var(--m);color:var(--n);font-weight:700;font-size:var(--fs-c);padding:16px 32px;border-radius:999px;text-decoration:none}
+.btn-m svg,.btn-n svg{width:22px;height:22px;flex:none}
 
-/* ---------- הטלפון: וואטסאפ וסרטונים על המסך. גדלים לפי רוחב החדר (--u), כדי שיישבו בדיוק על הטלפון בכל מסך ---------- */
-.pscreen{position:absolute;left:var(--ph-l);top:var(--ph-t);width:var(--ph-w);height:var(--ph-h);overflow:hidden;opacity:0;border-radius:9% / 4.3%;background:#efeae2;direction:rtl}
-.ps-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:54%;height:3.6%;background:#050607;border-radius:0 0 calc(var(--u)*.9) calc(var(--u)*.9);z-index:6}
-.ps-status{position:absolute;inset:0 0 auto 0;height:3.6%;display:flex;justify-content:space-between;align-items:center;padding:0 8%;font-size:calc(var(--u)*.5);font-weight:700;color:#fff;z-index:5;direction:ltr;background:#075e54}
-.ps-bat{width:calc(var(--u)*1);height:calc(var(--u)*.45);border:1px solid #fff;border-radius:2px;position:relative}
-.ps-bat::after{content:"";position:absolute;inset:1px 25% 1px 1px;background:#fff}
-.wapp{position:absolute;inset:0;padding-top:3.6%;display:flex;flex-direction:column}
-.wapp-top{display:flex;align-items:center;gap:6%;padding:3.5% 5%;background:#075e54;color:#fff;font-size:calc(var(--u)*.55)}
-.wapp-top b{display:block;font-size:calc(var(--u)*.68);line-height:1.2}
-.wapp-top small{opacity:.8;font-size:calc(var(--u)*.48)}
-.wapp-av{width:calc(var(--u)*1.9);height:calc(var(--u)*1.9);border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:calc(var(--u)*.9);flex:none}
-.wapp-body{flex:1;overflow:hidden;padding:5% 4%;display:flex;flex-direction:column;gap:calc(var(--u)*.45);background:#efeae2}
-.wapp-day{align-self:center;background:#fff;border-radius:calc(var(--u)*.3);padding:calc(var(--u)*.15) calc(var(--u)*.8);font-size:calc(var(--u)*.46);color:#667781;margin-bottom:calc(var(--u)*.2)}
-.bub{max-width:84%;padding:calc(var(--u)*.45) calc(var(--u)*.6) calc(var(--u)*.85);border-radius:calc(var(--u)*.55);font-size:calc(var(--u)*.64);line-height:1.38;color:#111b21;background:#fff;position:relative;opacity:0;transform:translateY(calc(var(--u)*.5)) scale(.96);transition:opacity .35s var(--ease),transform .35s var(--ease);box-shadow:0 1px .5px rgba(0,0,0,.13)}
-.bub.in{align-self:flex-start;border-top-right-radius:0}
-.bub.out{align-self:flex-end;background:#d9fdd3;border-top-left-radius:0}
-.bub.show{opacity:1;transform:none}
-.bub i{position:absolute;left:calc(var(--u)*.45);bottom:calc(var(--u)*.2);font-style:normal;font-size:calc(var(--u)*.42);color:#667781}
-.bub i u{text-decoration:none;color:#53bdeb;margin-right:2px}
-.bub.typing{display:flex;gap:calc(var(--u)*.22);padding:calc(var(--u)*.6) calc(var(--u)*.8)}
-.bub.typing s{width:calc(var(--u)*.32);height:calc(var(--u)*.32);border-radius:50%;background:#8696a0;animation:tp 1s infinite}
-.bub.typing s:nth-child(2){animation-delay:.15s}.bub.typing s:nth-child(3){animation-delay:.3s}
-@keyframes tp{0%,60%,100%{opacity:.35;transform:none}30%{opacity:1;transform:translateY(-2px)}}
-.reels{position:absolute;inset:0;opacity:0;background:#000;overflow:hidden}
-.reel{position:absolute;inset:0;will-change:transform}
-.reel-bg{position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 35%,hsl(var(--h) 45% 40%),hsl(var(--h) 55% 9%))}
-.reel-play{position:absolute;left:50%;top:45%;width:24%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.92);color:var(--navy);display:flex;align-items:center;justify-content:center;transform:translate(-50%,-50%);font-size:calc(var(--u)*1.2)}
-.reel-cap{position:absolute;inset:auto 0 0 0;padding:10% 8% 14%;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff}
-.reel-cap b{display:block;font-size:calc(var(--u)*.85);line-height:1.2}
-.reel-cap small{font-size:calc(var(--u)*.5);opacity:.85}
-.reel-tag{position:absolute;top:8%;right:7%;background:var(--gold);color:var(--navy);font-size:calc(var(--u)*.48);font-weight:800;padding:calc(var(--u)*.12) calc(var(--u)*.6);border-radius:99px}
-#side-wa h2,#side-reels h2{font-size:clamp(30px,3.4vw,54px)}
-/* ---------- סוף המסע: הטלפון זז ימינה, ומשמאל "קצת עליי". קצה התמונה נמס לרקע כדי שלא ייראה כמו חיתוך ---------- */
-.room .phone-cut{inset:auto;left:19.1667%;top:19.2593%;width:20%;height:77.7778%;object-fit:fill;opacity:0;will-change:transform}
-.pscreen{will-change:transform,opacity}
-/* התמונה של אפרים על מסך הטלפון */
-.me-shot{position:absolute;inset:0;z-index:5;opacity:0;overflow:hidden;background:linear-gradient(#fff,#F6F2EA)}
-.room .me-shot img{inset:auto;left:-6%;top:-16%;height:122%;width:auto;max-width:none;object-fit:unset;opacity:1}
-.me-cap{position:absolute;inset:auto 0 0 0;padding:26% 8% 16%;background:linear-gradient(rgba(10,25,48,0),rgba(10,25,48,.9) 58%);color:#fff;text-align:right}
-.me-cap b{display:block;font-size:calc(var(--u)*.95);line-height:1.15;font-weight:900}
-.me-cap small{display:block;margin-top:calc(var(--u)*.2);font-size:calc(var(--u)*.55);color:var(--gold-2);font-weight:700}
-.about-j{position:absolute;left:0;top:0;bottom:0;width:54%;z-index:6;display:flex;align-items:center;justify-content:center;padding:90px 3.5vw 40px 5vw;opacity:0;pointer-events:none;direction:rtl}
-.about-j.live{pointer-events:auto}
-.about-j .in{max-width:520px;width:100%;position:relative}
-.about-j .in::before{content:"";position:absolute;inset:-14% -16%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(246,242,234,.82),rgba(246,242,234,.55) 62%,rgba(246,242,234,0))}
-.about-j .k,.about-j h2,.about-j p,.about-j li{text-shadow:0 0 .35em rgba(255,255,255,.95),0 0 1.1em rgba(255,255,255,.8)}
-.about-j .in>*{will-change:opacity,transform}
-.about-j .k{font-size:12px;letter-spacing:.28em;font-weight:800;color:var(--gold-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
-.about-j .k::before{content:"";width:34px;height:2px;background:var(--gold)}
-.about-j h2{font-size:clamp(34px,3.9vw,60px);font-weight:900;line-height:1;letter-spacing:-.045em;color:var(--navy)}
-.about-j h2 .g{display:block;margin-top:12px;font-size:.5em;line-height:1.2;letter-spacing:-.02em;color:var(--gold-deep)}
-.about-j p{margin-top:18px;color:var(--navy);opacity:.86;font-size:17px;font-weight:500;line-height:1.6;max-width:44ch}
-.about-j ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
-.about-j li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.5;color:var(--navy)}
-.about-j li i{font-style:normal;flex:none;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold-2);font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
-.about-j li b{font-weight:900;margin-left:7px}
-.about-j .row{margin-top:26px}
-.side .demo-tag{display:inline-block;margin-top:18px;font-size:12.5px;font-weight:700;color:var(--gold-deep);border:1px dashed var(--gold);border-radius:99px;padding:5px 12px;background:rgba(255,255,255,.75)}
+/* ===== הדר ===== */
+.hd{position:fixed;z-index:60;top:14px;left:50%;transform:translateX(-50%);width:min(1240px,calc(100% - 32px));height:64px;display:flex;align-items:center;gap:24px;padding:0 24px 0 9px;background:rgba(246,241,231,.84);-webkit-backdrop-filter:blur(14px) saturate(140%);backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(255,255,255,.75);border-radius:999px;box-shadow:0 12px 32px -14px rgba(15,30,110,.35)}
+.hd-logo img{height:40px;width:auto}
+.hd-nav{flex:1;display:flex;justify-content:center;gap:30px}
+.hd-nav a{font-size:var(--fs-c);font-weight:500;text-decoration:none;padding:6px 3px;background:linear-gradient(transparent 62%,var(--m) 62% 90%,transparent 90%) no-repeat right/0% 100%;transition:background-size .3s}
+.hd-nav a:hover,.hd-nav a.on{background-size:100% 100%}
+.hd-btn{display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-c);font-weight:700;background:var(--n);color:var(--c);text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap}
+.hd-btn svg{width:20px;height:20px}
+.hd-menu{display:none;width:44px;height:44px;border:0;background:none;padding:10px;cursor:pointer}
+.hd-menu span{display:block;height:2.5px;margin:5px 0;background:var(--n);border-radius:2px;transition:transform .25s,opacity .25s}
+.hd.open .hd-menu span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hd.open .hd-menu span:nth-child(2){opacity:0}
+.hd.open .hd-menu span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
 
-/* ===================== סקשנים ===================== */
-.sec{position:relative;z-index:3;padding:110px 0;background:var(--paper)}
-.sec.white{background:var(--white)}
-.eyebrow{font-size:11.5px;letter-spacing:.26em;color:var(--gold-deep);font-weight:800;display:block;margin-bottom:14px}
-.sec h2{font-size:clamp(28px,4.2vw,52px);font-weight:900;line-height:1.06;letter-spacing:-.04em}
-.sec h2 .g{color:var(--gold-deep)}
-.lead{color:var(--soft);font-size:17.5px;max-width:620px;margin-top:16px}
-.center{text-align:center}.center .lead{margin-inline:auto}
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.creed{margin-top:24px;padding:22px 26px;border-radius:18px;background:#FBF6E8;border:1px solid rgba(201,162,39,.35);position:relative;font-size:16.5px}
-.creed::before{content:"";position:absolute;top:0;bottom:0;right:0;width:3px;border-radius:99px;background:var(--gold)}
-.creed b{display:block;margin-top:10px;color:var(--gold-deep);font-size:13.5px}
-.does{display:grid;gap:14px}
-.do{display:flex;gap:16px;align-items:flex-start;padding:22px 24px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px rgba(10,25,48,.05);transition:.35s var(--ease)}
-.do:hover{transform:translateX(-6px);border-color:rgba(201,162,39,.5)}
-.do i{flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:900;font-size:17px}
-.do h3{font-size:18px;font-weight:900;margin-bottom:4px}
-.do p{font-size:14.5px;color:var(--soft)}
-.steps{margin-top:56px;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.steps::before{content:"";position:absolute;top:30px;right:7%;left:7%;height:1px;background:var(--line)}
-.steps .run{position:absolute;top:30px;right:7%;height:2px;width:0;background:var(--gold)}
-.step{text-align:center;position:relative}
-.step .dot{width:60px;height:60px;margin:0 auto 18px;border-radius:50%;background:#fff;border:1px solid rgba(201,162,39,.5);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;color:var(--gold-deep);position:relative;z-index:2;transition:.4s var(--ease)}
-.step.on .dot{background:var(--gold);color:var(--navy);box-shadow:0 0 0 8px rgba(201,162,39,.15)}
-.step h3{font-size:18px;font-weight:900;margin-bottom:8px}
-.step p{font-size:14px;color:var(--soft)}
-.models{margin-top:46px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.model{border:1px solid var(--line);border-radius:22px;padding:30px 28px;background:#fff;transition:.35s var(--ease);box-shadow:0 10px 30px rgba(10,25,48,.05)}
-.model:hover{transform:translateY(-6px)}
-.model.hl{border:2px solid var(--gold)}
-.model h3{font-size:21px;font-weight:900;margin-bottom:8px}
-.model p{font-size:15px;color:var(--soft)}
-.model .why{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:14px;color:var(--gold-deep);font-weight:600}
-#contact{padding:0 0 100px}
-.cta{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;background:var(--navy);color:#F4EDE4;border-radius:30px;padding:52px 46px;position:relative;overflow:hidden}
-.cta::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;top:-220px;left:-160px;background:radial-gradient(closest-side,rgba(201,162,39,.24),transparent)}
-.cta > *{position:relative;z-index:2}
-.cta h2{color:#fff}.cta .eyebrow{color:var(--gold-2)}.cta .lead{color:rgba(244,237,228,.75)}
-.lines{margin-top:24px;display:grid;gap:10px;font-size:15.5px}
-.lines a:hover{color:var(--gold-2)}
-form{background:rgba(255,255,255,.05);border:1px solid rgba(244,237,228,.14);border-radius:22px;padding:26px}
-.field{margin-bottom:14px}
-.field label{display:block;font-size:12.5px;color:rgba(244,237,228,.65);margin-bottom:6px}
-.field input,.field textarea{width:100%;background:rgba(10,25,48,.55);border:1px solid rgba(244,237,228,.16);border-radius:12px;padding:12px 14px;color:#F4EDE4;font-size:15px}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
-.field textarea{min-height:90px;resize:vertical}
-form .btn{width:100%;margin-top:6px}
-.form-msg{margin-top:12px;font-size:14px;color:var(--gold-2);min-height:20px}
-footer{position:relative;z-index:3;background:var(--paper);border-top:1px solid var(--line);padding:28px 0;text-align:center;font-size:13px;color:var(--soft)}
-.wa{position:fixed;bottom:22px;left:22px;z-index:90;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(10,25,48,.25);transition:transform .25s}
-.wa:hover{transform:scale(1.08)}.wa svg{width:28px;height:28px}
-html.anim .rv{opacity:0;transform:translateY(34px)}
+/* ===== פתיחה (הירו) ===== */
+.hero{position:relative;min-height:100vh;overflow:hidden;background:var(--n) url(assets/img/plaster-navy.jpg);background-size:1400px;color:var(--c)}
+.hero .copy{position:relative;z-index:10;width:54%;margin-right:max(40px,calc((100vw - 1240px)/2));min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0}
+.hero h1{font-size:var(--fs-hero);line-height:1.02;font-weight:700;text-wrap:balance}
+.hero h1 .k{white-space:nowrap}.hero h1 em{font-style:normal;color:var(--m)}
+.hero .lead{font-size:var(--fs-c);line-height:1.6;color:var(--soft);margin:var(--sp3) 0;max-width:560px}
+.hero .btn-m{align-self:flex-start}
+.hero .note{font-size:var(--fs-c);opacity:.75;margin-top:var(--sp1)}
+.hero .stage{position:absolute;left:0;top:0;bottom:0;width:52%;z-index:1;perspective:1100px}
+.dense .hero .stage{width:100%}
+.hero svg.star{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:5;pointer-events:none}
+.hero svg.sw{z-index:1}
+/* מערבולת המשימות (9.11.2026): הכוכב מעל הכול, המשימות הגדולות מעל השובל */
+.hero .wi{position:absolute;left:var(--cx,50%);top:50%;width:var(--wb,142px);height:var(--wb,142px);margin:calc(var(--wb,142px) / -2) 0 0 calc(var(--wb,142px) / -2);z-index:3;pointer-events:none;will-change:transform,opacity}
+.hero .wi svg{display:block;width:100%;height:100%;overflow:visible}
+.hero .wi.big{z-index:4;filter:drop-shadow(0 16px 14px rgba(0,0,0,.42)) drop-shadow(0 3px 3px rgba(0,0,0,.25))}
+.hero .it{position:absolute;left:var(--cx,50%);top:50%;transform-origin:0 0;transform-style:preserve-3d;will-change:transform,opacity}
+.hero .it .card{transform:translate(-50%,-50%);filter:drop-shadow(0 18px 16px rgba(0,0,0,.42)) drop-shadow(0 3px 3px rgba(0,0,0,.25))}
+.hero .it svg{display:block;width:130px;height:130px;overflow:visible}
+.hero .bub{background:#fff;color:#111B21;border-radius:14px;padding:11px 16px 18px;font-size:17px;white-space:nowrap;position:relative}
+.hero .bub:after{content:"";position:absolute;right:-7px;top:0;border:9px solid transparent;border-top-color:#fff;border-right:0}
+.hero .bub small{position:absolute;left:10px;bottom:4px;font-size:11px;color:#667781;direction:ltr}
+.hero .back{z-index:2}.hero .front{z-index:3}.hero .grab{z-index:5}
+.hero .order{display:none}
+.still .hero .it{display:none}
 
-@media(max-width:960px){
-  header,header.solid{top:10px}
-  header{padding:0 10px}
-  .hd-cap,header.solid .hd-cap{width:100%;gap:8px;padding:5px;padding-inline-start:16px}
-  .hd-nav{display:none}
-  .hd-logo{margin-inline-end:auto}
-  .hd-logo img,header.solid .hd-logo img{height:22px}
-  .hd-me,header.solid .hd-me{height:40px;padding-inline-end:14px}
-  .hd-av,header.solid .hd-av{width:32px;height:32px}
-  .hd-tx b{font-size:12.5px}.hd-tx small{font-size:10.5px}
-  .hd-burger{display:flex}
-  #journey{height:1480vh}
-  .about-j{top:auto;right:0;width:auto!important;padding:40px 20px calc(7vh + 64px);align-items:flex-end;background:linear-gradient(rgba(246,242,234,0),var(--paper) 26%)}
-  .about-j h2{font-size:34px}.about-j p{font-size:14.5px}.about-j ul{display:none}
-  h1{font-size:clamp(32px,8.6vw,48px)}.act h2{font-size:clamp(24px,7vw,36px)}
-  .card{padding:22px 22px;max-width:100%}
-  .side{right:20px;left:20px;max-width:none;top:auto;bottom:8vh;transform:none}
-  .side h2{font-size:38px}.side p{font-size:14px}
-  .about,.models,.cta{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr 1fr;gap:30px}.steps::before,.steps .run{display:none}
-  .sec{padding:84px 0}.cta{padding:36px 24px}
-  .say{left:20px!important;right:20px!important;top:auto!important;bottom:9vh!important;width:auto!important;font-size:15px!important}
-  .say .in::after{display:none}
-  .plate{display:none}
-}
-@media(max-width:560px){.steps{grid-template-columns:1fr}.wrap{padding:0 20px}.row{flex-direction:column}
-  /* בטלפון קטן: בכפתור הוואטסאפ רק התמונה */
-  .hd-me,header.solid .hd-me{padding:3px}.hd-tx{display:none}.hd-av,header.solid .hd-av{width:34px;height:34px}}
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  .stage{position:relative;height:auto;display:block;padding-top:80px}#journey{height:auto}
-  .room{position:relative;left:auto;top:auto;transform:none!important;width:100%!important;height:auto!important;aspect-ratio:16/9;opacity:1;margin-bottom:20px}
-  .room img{display:none}.room img.on{display:block}.room canvas,.room video,.pscreen{display:none}
-  .act{position:relative;inset:auto;opacity:1;transform:none;padding:30px 0;pointer-events:auto}
-  .rv{opacity:1!important;transform:none!important}
+/* ===== שלוש שכבות: הטבעת נפתחת לכל המסך ===== */
+#portal{position:relative;height:calc(100vh + 900px)}
+#portal .pin{position:sticky;top:0;height:100vh;overflow:hidden}
+#portal .hero{position:absolute;inset:0;min-height:0}
+.scene{position:absolute;inset:0;z-index:20;background:var(--c) url(assets/img/plaster-cream.jpg) center/cover fixed;-webkit-mask-image:radial-gradient(circle at 0 0,#000 0,transparent 0);mask-image:radial-gradient(circle at 0 0,#000 0,transparent 0);overflow:hidden}
+.fxring{position:absolute;inset:0;width:100%;height:100%;z-index:21;pointer-events:none;opacity:0}
+/* הרקע: אותו לוגו גדול של "הסיפור שלי", שהקרניים שלו כבר עולות לכאן ונמשכות למטה בלי תפר */
+.bgl{position:absolute;left:0;bottom:0;width:1440px;height:810px;transform-origin:0 100%;opacity:0;pointer-events:none}
+.bgl svg{position:absolute;inset:0;overflow:visible}
+/* 9.11 · המשפט ושלוש השכבות (אחרי שהעיגול נפתח) */
+.sent{position:absolute;left:50%;top:calc(50% + 36px);width:1200px;transform:translate(-50%,-50%) scale(var(--sc,1));text-align:center;color:var(--n)}
+.sent .kick{font-size:var(--fs-c);font-weight:500;opacity:.7;margin-bottom:var(--sp1)}
+.sent .big{font-size:var(--fs-hero);line-height:1.06;font-weight:700}
+.sent .w{display:inline-block;will-change:transform,opacity}
+.sent .w.em{background:linear-gradient(transparent 60%,var(--m) 60% 90%,transparent 90%) no-repeat right/var(--mk,100%) 100%;padding:0 8px}
+.tree{display:block;width:1200px;height:64px;margin:var(--sp3) auto 0;overflow:visible}
+.tree path{fill:none;stroke:var(--n);stroke-opacity:.28;stroke-width:3;stroke-linecap:round;stroke-dasharray:1 1}
+.lys{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp3);margin-top:var(--sp2)}
+.ly .lyl{display:inline-block;font-size:var(--fs-c);font-weight:700;background:var(--n);color:var(--c);padding:6px 16px;border-radius:999px;margin-bottom:var(--sp1)}
+.ly h3{font-size:var(--fs-b);font-weight:700;margin-bottom:var(--sp1)}
+.ly h3 span{background:linear-gradient(transparent 58%,var(--m) 58% 92%,transparent 92%) no-repeat right/var(--mk,100%) 100%;padding:0 4px}
+.ly p{font-size:var(--fs-c);line-height:1.55;max-width:340px;margin:0 auto;opacity:.85}
+.sdot{position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--m);box-shadow:0 0 0 12px rgba(61,219,176,.22);opacity:0;pointer-events:none;z-index:2}
+.nb{position:absolute;top:-8px;right:-8px;width:30px;height:30px;border-radius:50%;background:var(--n);color:var(--c);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+
+/* בטלפון ובלי אנימציות: חלקים רגילים אחד אחרי השני */
+.static #portal{height:auto}
+.static #portal .pin{position:relative;height:auto;overflow:visible}
+.static #portal .hero{position:relative;min-height:100vh}
+.static .scene{position:relative;clip-path:none!important;-webkit-mask-image:none!important;mask-image:none!important;padding:110px 24px}
+.static .bgl{opacity:1!important}
+.static .sent{position:relative;left:auto;top:auto;transform:none;width:auto;max-width:1200px;margin:0 auto}
+.static .tree,.static .sdot{display:none}
+.static .fxring{display:none}
+
+/* ===== האזור השמנת: הסיפור והפרויקטים על אותו טיח ===== */
+.cream{position:relative;z-index:21;margin-top:-2px;background:var(--c) url(assets/img/plaster-cream.jpg) center/cover fixed}
+
+/* ===== הסיפור שלי ===== */
+.story{position:relative;z-index:3;height:calc(var(--u) * 910);overflow-x:clip}
+.story .cv{position:absolute;left:var(--ox);top:0;width:1440px;height:910px;transform:scale(var(--uu));transform-origin:0 0}
+.story .art{position:absolute;left:0;top:0;width:1440px;height:910px;overflow:visible}
+.story .tx{position:absolute;right:90px;top:405px;transform:translateY(-50%);width:600px;text-shadow:0 0 6px #F6F1E7,0 0 14px #F6F1E7,0 0 22px #F6F1E7}
+.story .lb{font-weight:700;font-size:var(--fs-c)}
+.story h2{font-size:var(--fs-a);margin:var(--sp1) 0 var(--sp3);line-height:1.08}
+.story h2 em{font-style:normal;background:linear-gradient(transparent 60%,var(--m) 60% 90%,transparent 90%);padding:0 4px}
+.story .st{font-size:var(--fs-c);line-height:1.7;margin:0;font-weight:500}
+.story .q{position:relative;font-size:var(--fs-b);font-weight:700;line-height:1.5;margin:var(--sp3) 0;padding-right:27px}
+.nt{font-size:var(--fs-c);margin-top:var(--sp1);color:rgba(15,30,110,.72)}
+/* אנימציות הסיפור צמודות לגלילה: גוללים למטה והן מתקדמות, גוללים למעלה והן חוזרות אחורה */
+.story .q::before{content:"";position:absolute;right:0;top:0;bottom:0;width:5px;background:var(--m);border-radius:3px;transform:scaleY(var(--qb,1));transform-origin:top}
+.story .qt{display:block}
+.story h2 .w,.story h2 .ch{display:inline-block}
+.story h2 em{background-size:var(--mk2,100%) 100%;background-repeat:no-repeat;background-position:right}
+.story .tx>.btn-n{position:relative;overflow:hidden}
+.story .tx>.btn-n::after{content:"";position:absolute;top:0;bottom:0;left:var(--sh,130%);width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg)}
+
+/* ===== פרויקטים: מחשב נייח עם מקל ===== */
+.projects{position:relative;z-index:1;height:calc(100vh + var(--pl) * 35vh)}
+.projects .pin{position:sticky;top:0;height:100vh;overflow:hidden}
+.projects .rl{position:absolute;left:var(--ox);top:0;width:1440px;height:810px;transform:scale(var(--uu));transform-origin:0 0;pointer-events:none}
+.projects .rl svg{overflow:visible}
+.projects .cv{position:absolute;left:var(--ox2);top:var(--oy2);width:1440px;height:810px;transform:scale(var(--u2));transform-origin:0 0}
+.mk{position:absolute;left:110px;top:150px;transform:scale(.86);transform-origin:top left;width:820px;height:656px}
+.mk .sh{position:absolute;left:164px;right:164px;bottom:-6px;height:34px;border-radius:50%;background:radial-gradient(rgba(15,30,110,.35),rgba(15,30,110,0) 70%);filter:blur(4px)}
+.scr{position:absolute;overflow:hidden;background:var(--n)}
+.mk .scr{left:35.73px;top:32.8px;width:749.71px;height:384.23px}
+.slide{position:absolute;inset:0}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;pointer-events:none;user-select:none;-webkit-user-drag:none}
+/* הקו שמפריד בין מבחוץ למבפנים: קו אחד ישר מהמקל עד תחתית המסך, על פיקסלים שלמים */
+.sep{position:absolute;z-index:4;background:var(--m);pointer-events:none;box-shadow:0 0 0 1px rgba(15,30,110,.22)}
+.frame{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.row{position:absolute;left:0;right:0;top:-74px;height:56px}
+.pill{position:absolute;top:6px;font-weight:700;font-size:var(--fs-c);padding:8px 18px;border-radius:99px;border:2px solid var(--n);background:var(--c);white-space:nowrap;transition:background .25s,color .25s}
+.pill.on{background:var(--n);color:var(--c)}
+.po{left:0}.pi{right:0}
+/* "מבחוץ" ו"מבפנים" יושבים בדיוק על הקצוות של המסך, מעל המקל: כשהמקל מגיע לקצה הוא נעלם מתחתם */
+.row .pill{top:0;height:56px;display:flex;align-items:center;padding:0 24px;z-index:5;transform:translateX(-50%);box-shadow:0 6px 16px -6px rgba(15,30,110,.35)}
+.row .po{left:35.73px;right:auto}.row .pi{left:785.44px;right:auto}
+.kn{position:absolute;top:0;left:122px;width:56px;height:56px;border-radius:50%;background:var(--m);border:4px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:var(--fs-c);color:var(--n);cursor:grab;touch-action:none;padding:0;z-index:3}
+.kn:active{cursor:grabbing}
+.lab{position:absolute;top:16px;white-space:nowrap;font-weight:700;font-size:var(--fs-c)}
+/* הטקסט מימין על אותם קווים ישרים כמו המחשב: למעלה, ראש הספרה בגובה הראש של "מבחוץ/מבפנים" (91.5).
+   למטה, תחתית הכפתור בתחתית גוף המחשב (שורה 921 בתמונה = 613.9). הרווח מתחלק שווה מעל ומתחת לפסקה. */
+.projects .tx{position:absolute;right:80px;top:88px;height:526px;width:400px;display:flex;flex-direction:column;align-items:flex-start}
+/* המספר: מלא ובולט, ומתגלגל כמו מונה כשעוברים פרויקט */
+.nm{font-size:var(--fs-a);font-weight:700;line-height:1;color:var(--n);overflow:hidden;padding-bottom:.06em}
+.nmi{display:inline-block}
+.lbl{font-weight:700;font-size:var(--fs-c);margin-top:var(--sp1)}
+/* שם הפרויקט: האותיות עולות מתוך השורה */
+.projects h3{font-size:var(--fs-a);line-height:1;margin:var(--sp1) 0 0;padding-bottom:.18em;overflow:hidden}
+.projects h3 .lt{display:inline-block}
+.sb span{font-size:var(--fs-b);font-weight:500;background:linear-gradient(transparent 60%,var(--m) 60% 92%,transparent 92%) no-repeat right/100% 100%;padding:0 4px}
+.projects .tx p{font-size:var(--fs-c);line-height:1.65;margin:auto 0;font-weight:500}
+
+/* ===== המלצות: בנוי ומוסתר עד שיש 3 אמיתיות ===== */
+.reviews{padding:var(--sp4) 24px}
+.reviews h2{font-size:var(--fs-a);text-align:center;margin-bottom:var(--sp3)}
+.rv-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:var(--glass);border:1.5px solid rgba(255,255,255,.8);border-radius:30px;padding:30px}
+.rv-img{width:64px;height:64px;border-radius:50%;object-fit:cover;margin-bottom:16px}
+.rv blockquote{font-size:var(--fs-c);line-height:1.6;margin-bottom:var(--sp2)}
+.rv figcaption{display:flex;flex-direction:column;gap:4px;font-size:var(--fs-c)}
+
+/* ===== פוטר עם טופס ===== */
+.ft{position:relative;overflow:hidden;background:var(--n) url(assets/img/plaster-navy.jpg);background-size:1400px;color:var(--c);padding:var(--sp4) 0 40px}
+.ft-star{position:absolute;left:-300px;bottom:-360px;width:1150px;height:1150px;opacity:.1;pointer-events:none}
+.ft .in{position:relative;max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 520px;gap:80px;align-items:center}
+.ft .lb{font-weight:700;font-size:var(--fs-c);color:var(--m)}
+.ft h2{font-size:var(--fs-a);line-height:1.12;margin:var(--sp1) 0 var(--sp3)}
+.ft h2 em{font-style:normal;color:var(--m)}
+.ft .nt{color:var(--soft)}
+.ft-c{margin-top:var(--sp3);display:grid;gap:var(--sp1);font-size:var(--fs-c)}
+.ft-c li{display:flex;gap:14px;align-items:baseline}
+.ft-c span{min-width:62px;color:var(--soft);font-size:var(--fs-c)}
+.ft-c a{text-decoration:none;font-weight:500}
+.ft-c a:hover{text-decoration:underline}
+.form{background:var(--c) url(assets/img/plaster-cream.jpg) center/700px;color:var(--n);border-radius:30px;padding:38px 38px 30px;box-shadow:0 40px 80px -30px rgba(0,0,0,.55),inset 0 1.5px 0 rgba(255,255,255,.9)}
+.form .f{margin-bottom:var(--sp2)}
+.form label{display:block;font-size:var(--fs-c);font-weight:700;margin-bottom:8px}
+.form input,.form textarea{width:100%;font:inherit;font-size:var(--fs-c);padding:13px 18px;border-radius:16px;border:1.5px solid rgba(15,30,110,.2);background:rgba(255,255,255,.65);color:var(--n);resize:vertical}
+.form input:focus,.form textarea:focus{outline:3px solid var(--m);outline-offset:0;border-color:var(--n)}
+.form ::placeholder{color:rgba(15,30,110,.45)}
+.form .btn-n{width:100%;justify-content:center;margin-top:4px}
+.form .nt{text-align:center;color:rgba(15,30,110,.75)}
+.form .err{color:#B3261E;font-weight:700;font-size:var(--fs-c);text-align:center;min-height:0}
+.form .err:not(:empty){margin-top:var(--sp1)}
+.bar{position:relative;max-width:1240px;margin:var(--sp4) auto 0;padding:28px 32px 0;border-top:1px solid rgba(246,241,231,.16);display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:var(--fs-c);color:rgba(246,241,231,.72)}
+.bar img{height:44px;width:auto}
+
+/* ===== כפתורים צפים: וואטסאפ מימין, נגישות משמאל ===== */
+.wa-float{position:fixed;z-index:70;right:20px;bottom:20px;width:62px;height:62px;border-radius:50%;background:var(--m);color:var(--n);display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(15,30,110,.55),0 0 0 4px rgba(255,255,255,.85)}
+.wa-float svg{width:32px;height:32px}
+.a11y{position:fixed;z-index:70;left:20px;bottom:20px}
+.a11y-btn{width:52px;height:52px;border-radius:50%;border:3px solid var(--c);background:var(--n);color:var(--c);display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 24px -8px rgba(15,30,110,.6)}
+.a11y-btn svg{width:28px;height:28px}
+.a11y-p{display:none;position:absolute;left:0;bottom:64px;width:240px;background:var(--c);color:var(--n);border-radius:22px;padding:10px;box-shadow:0 20px 50px -12px rgba(15,30,110,.45)}
+.a11y.open .a11y-p{display:block}
+.a11y-p button{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:none;padding:12px 14px;border-radius:14px;font-size:var(--fs-c);font-weight:500;cursor:pointer;text-align:right}
+.a11y-p button:hover{background:rgba(15,30,110,.07)}
+.a11y-p button::after{content:"";width:34px;height:20px;border-radius:99px;background:rgba(15,30,110,.18);box-shadow:inset 0 0 0 2px transparent;transition:background .2s}
+.a11y-p button[aria-pressed="true"]::after{background:var(--m) radial-gradient(circle at 25% 50%,var(--n) 0 5px,transparent 6px)}
+.hc .cd,.hc .rv{background:var(--c);-webkit-backdrop-filter:none;backdrop-filter:none}
+.hc .cd p,.hc .hero .note,.hc .nm{opacity:1}
+.hc .hero .lead,.hc .ft .nt,.hc .ft-c span{color:var(--c)}
+.hc .story .tx{background:rgba(246,241,231,.95);padding:26px;border-radius:26px}
+.hc .scene,.hc .cream{background-image:none}
+.ul a{text-decoration:underline!important;text-underline-offset:5px}
+
+/* מחשב נייד צר: הכל קטן קצת יחד, והפתיחה נשארת כפולה */
+@media(max-width:1280px){:root{--fs-a:42px}}
+
+/* ===== טלפון ===== */
+@media(max-width:899px){
+  :root{--fs-a:32px;--fs-b:20px;--fs-c:16px;--sp3:24px;--sp4:72px}
+  .hd{top:10px;height:58px;padding:0 6px 0 16px;gap:10px;justify-content:space-between}
+  .hd-menu{display:block}
+  .hd-logo{margin-left:auto}
+  .hd-logo img{height:34px}
+  .hd-btn{display:none}
+  .hd-nav{display:none;position:absolute;top:66px;right:0;left:0;flex-direction:column;gap:0;padding:10px;background:var(--c);border-radius:24px;box-shadow:0 20px 40px -14px rgba(15,30,110,.4)}
+  .hd.open .hd-nav{display:flex}
+  .hd-nav a{font-size:var(--fs-c);padding:14px 16px;background:none;border-radius:14px}
+  .hd-nav a.on{background:rgba(61,219,176,.25)}
+
+  .hero .copy{width:auto;margin:0 20px;min-height:auto;padding:440px 0 70px;text-align:center;align-items:center}
+  .hero .btn-m{align-self:center}
+  .hero .stage{width:100%;height:460px;bottom:auto}
+  .hero h1 .k{white-space:normal}.hero h1 br{display:none}
+  .hero .it svg{width:84px;height:84px}.hero .bub{font-size:13px}
+  .static #portal .hero{min-height:0}
+
+  .static .scene{padding:var(--sp4) 18px}
+  .lys{grid-template-columns:1fr;gap:var(--sp3);margin-top:var(--sp3)}
+  .sent .big br{display:none}.sent .big{text-wrap:balance}
+  .nb{width:26px;height:26px;font-size:13px}
+
+  .story{height:auto;overflow:hidden}
+  .story .cv{position:relative;left:0;width:auto;height:auto;transform:none}
+  .story .art{position:relative;width:100%;height:auto;overflow:hidden}
+  .story .tx{position:relative;right:auto;top:auto;transform:none;width:auto;padding:0 22px 80px;text-shadow:none}
+  .btn-n{padding:15px 26px}
+
+  .projects{height:auto;padding:10px 20px 40px}
+  .pm{max-width:560px;margin:0 auto var(--sp4)}
+  .pm-row{position:relative;height:40px}
+  .pm .pill{top:0;padding:6px 14px}
+  .pm .kn{width:48px;height:48px;left:0;top:-58px}
+  .pm-mk{position:relative;aspect-ratio:1400/1120;margin-top:66px}
+  .pm-mk .scr{left:4.357%;top:5%;width:91.43%;height:58.57%}
+  .projects .pm .tx{position:static;right:auto;top:auto;transform:none;width:auto;height:auto;display:block;margin-top:4px}
+  .pm .tx p{line-height:1.6;margin:var(--sp2) 0 var(--sp3)}
+
+  .rv-grid{grid-template-columns:1fr}
+
+  .ft{padding:var(--sp4) 0 110px}
+  .ft .in{grid-template-columns:1fr;gap:var(--sp3);padding:0 20px}
+  .form{padding:26px 20px 22px;border-radius:24px}
+  .bar{flex-direction:column;text-align:center;margin-top:var(--sp4);padding:24px 20px 0}
+  .ft-star{width:700px;height:700px;left:-260px;bottom:-280px}
 }
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-wa" viewBox="0 0 32 32"><path fill-rule="evenodd" d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9C13.5 28 14.7 27 16 27c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.6 16.8c-.3.7-1.5 1.4-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.3.6.9 2.1.9 2.3.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.8 2.1 1 .3.1.5.2.5.3.1.2.1.7-.2 1.5z"/></symbol></svg>
-<div class="prog" id="prog"></div>
+<a class="skip" href="#main">דילוג לתוכן</a>
 
-<!-- ההדר: קפסולה כחולה צפה (הדר א׳ "השלט"), עם כפתור וואטסאפ והתמונה של אפרים (מהדר ג׳) -->
-<header id="hdr">
-  <div class="hd-cap">
-    <a href="#top" class="hd-logo"><img src="assets/img/logo-transparent.png" alt="אפרים קוסטנטינר" width="1302" height="222"></a>
-    <nav class="hd-nav" aria-label="ניווט ראשי">
-      <a href="#about" data-sec="about">מה אני עושה</a>
-      <a href="#process" data-sec="process">איך מתקדמים</a>
-      <a href="#contact" data-sec="contact">יצירת קשר</a>
-    </nav>
-    <a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="hd-me" aria-label="דברו עם אפרים בוואטסאפ">
-      <span class="hd-av"><img src="assets/img/brand/efraim-face.jpg" alt="" width="144" height="144"><i><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></i></span>
-      <span class="hd-tx"><b>דברו עם אפרים</b><small>ישירות בוואטסאפ</small></span>
-    </a>
-    <button type="button" class="hd-burger" id="burger" aria-label="תפריט" aria-expanded="false" aria-controls="hd-menu"><i></i><i></i></button>
-  </div>
-</header>
-<!-- התפריט בטלפון -->
-<div class="hd-menu" id="hd-menu" hidden>
-  <nav aria-label="תפריט">
-    <a href="#about" data-sec="about"><b>01</b>מה אני עושה</a>
-    <a href="#process" data-sec="process"><b>02</b>איך מתקדמים</a>
-    <a href="#contact" data-sec="contact"><b>03</b>יצירת קשר</a>
+<!-- גרדיאנטים לפריטים של הבלגן ולאייקוני הכרטיסיות -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E9E9E6"/></linearGradient>
+<linearGradient id="curlg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2D2CF"/><stop offset=".45" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BDBDB9"/></linearGradient>
+<linearGradient id="curlg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C9C9C5"/><stop offset=".5" stop-color="#FBFBFA"/><stop offset="1" stop-color="#D6D6D2"/></linearGradient>
+<linearGradient id="clipg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F5F7"/><stop offset=".5" stop-color="#A7ABB3"/><stop offset="1" stop-color="#E3E5E9"/></linearGradient>
+<linearGradient id="boardg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A4D55"/><stop offset="1" stop-color="#2B2D33"/></linearGradient>
+<linearGradient id="stickyg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6B8"/><stop offset="1" stop-color="#F3E07A"/></linearGradient>
+<linearGradient id="tapeg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E9E2C9" stop-opacity=".85"/><stop offset=".5" stop-color="#F7F2DE" stop-opacity=".7"/><stop offset="1" stop-color="#E2D9BB" stop-opacity=".85"/></linearGradient>
+<linearGradient id="pencil" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E9967A"/><stop offset=".5" stop-color="#F7B89E"/><stop offset="1" stop-color="#D9805F"/></linearGradient>
+<linearGradient id="bsh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2"/></filter>
+<linearGradient id="clay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FEBCF"/><stop offset="1" stop-color="#22B98F"/></linearGradient>
+<filter id="cs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0F1E6E" flood-opacity=".22"/></filter>
+</defs></svg>
+
+<header class="hd" id="hd">
+  <button class="hd-menu" id="menuBtn" type="button" aria-label="פתיחת התפריט" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <a class="hd-logo" href="#top" data-go="top"><img src="assets/img/logo-navy.svg" alt="אפרים קוסטנטינר" width="141" height="40"></a>
+  <nav class="hd-nav" id="nav" aria-label="ניווט ראשי">
+    <a href="#layers" data-go="layers">מה אני בונה</a>
+    <a href="#story" data-go="story">הסיפור שלי</a>
+    <a href="#projects" data-go="projects">פרויקטים</a>
+    <a href="#contact" data-go="contact">צור קשר</a>
   </nav>
-  <div class="hd-menu-foot"><a href="tel:+972534191131">053-419-1131</a><a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="hd-menu-wa"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>וואטסאפ</a></div>
+  <a class="hd-btn" href="https://wa.me/972534191131" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>דברו איתי בוואטסאפ</a>
+</header>
+
+<main id="main">
+<!-- 1+2 · הפתיחה, ומתוך הטבעת של הכוכב: שלוש שכבות -->
+<section id="portal" aria-label="פתיחה">
+ <div class="pin">
+  <div class="hero" id="top">
+   <div class="stage" id="stage">
+    <svg class="star sw" id="sw" aria-hidden="true"></svg>
+    <svg class="star" id="s" aria-hidden="true"><defs><radialGradient id="glow"><stop offset="0" stop-color="#3DDBB0" stop-opacity=".55"/><stop offset="1" stop-color="#3DDBB0" stop-opacity="0"/></radialGradient></defs><circle id="glowc" r="150" fill="url(#glow)" opacity="0"/><g id="rays"></g></svg>
+    <svg class="star" id="s2" style="z-index:6" aria-hidden="true"><circle id="ring" r="40" fill="none" stroke="#F6F1E7" stroke-width="18"/></svg>
+    <div class="order" id="order" aria-hidden="true"></div>
+   </div>
+   <div class="copy">
+    <h1>די! <br>אני כבר לא יכול <span class="k">עם <em>הסחרור</em> הזה.</span></h1>
+    <p class="lead">כל יום אותו סיבוב: אותן שאלות, אותן הזמנות, אותה מקדמה שצריך לרדוף אחריה. אתה רץ מהבוקר עד הלילה, ונשאר באותו מקום. אני פה כדי לעצור את זה, עם אתר ומערכת עם AI שעושים את הסיבוב במקומך ומחזירים לך סדר.</p>
+    <a class="btn-m" href="https://wa.me/972534191131" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>בואו נדבר על העסק שלך</a>
+    <p class="note">נפתח צ'אט בוואטסאפ, ואחזור אליך עוד היום</p>
+   </div>
+  </div>
+
+  <div class="scene" id="layers">
+   <div class="bgl" aria-hidden="true"><svg width="1440" height="810"><g id="bglg" transform="translate(300,1230) scale(9.1125)" opacity=".5"><g data-star="rays"></g><circle class="s-ring" r="40" fill="none" stroke="#0F1E6E" stroke-width="18" transform="rotate(-90)" pathLength="100"/></g></svg></div>
+    <!-- 9.11 · אחרי שהעיגול נפתח: משפט אחד שנכתב מילה אחרי מילה ומתפצל לשלוש השכבות -->
+    <div class="sent" id="sent">
+     <div class="kick">מה אני בונה</div>
+     <h2 class="big" id="bigq"><span class="w">ומה</span> <span class="w">אם</span> <span class="w">כל</span> <span class="w">זה</span> <br><span class="w">היה</span> <span class="w">רץ</span> <span class="w em">לבד?</span></h2>
+     <svg class="tree" id="tree" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path class="st0" d="M600 0V32" pathLength="1"/><path d="M600 32H1000V64" pathLength="1"/><path d="M600 32V64" pathLength="1"/><path d="M600 32H200V64" pathLength="1"/></svg>
+     <div class="lys">
+      <div class="ly"><span class="lyl">מבחוץ</span><h3><span>נגמרות אותן שאלות.</span></h3><p>הלקוח נכנס לאתר, מבין מיד שהוא במקום הנכון ומזמין לבד.</p></div>
+      <div class="ly"><span class="lyl">מבפנים</span><h3><span>מפסיקים לחפש.</span></h3><p>כל הזמנה, לקוח ותשלום במקום אחד. בלי לרוץ בין האקסל, המחברת והוואטסאפ.</p></div>
+      <div class="ly"><span class="lyl">במקומך</span><h3><span>הסיבוב ממשיך, בלעדיך.</span></h3><p>בשתיים וחצי בלילה לקוחה שואלת, והמערכת עונה, מאשרת ומזכירה. ואתה ישן.</p></div>
+     </div>
+    </div>
+    <div class="sdot" id="sdot" aria-hidden="true"></div>
+  </div>
+  <svg class="fxring" id="fx" aria-hidden="true"><circle id="fxc" r="0" fill="none" stroke="#3DDBB0" stroke-width="18"/></svg>
+ </div>
+</section>
+
+<div class="cream">
+<!-- 3 · הסיפור שלי -->
+<section id="story" class="story" aria-labelledby="story-h">
+ <div class="cv">
+  <svg class="art" viewBox="0 0 1440 910" aria-hidden="true">
+   <defs>
+    <clipPath id="sclip"><rect x="-3000" y="0" width="7440" height="910"/></clipPath>
+    <clipPath id="pc"><circle id="pcc" cx="300" cy="420" r="282.4875"/></clipPath>
+   </defs>
+   <!-- הלוגו הגדול: הקרניים ממשיכות מלמעלה (שלוש השכבות) ולמטה (הפרויקטים). הטבעת נסגרת סביב התמונה. -->
+   <g clip-path="url(#sclip)"><g transform="translate(300,420) scale(9.1125)" opacity=".5"><g data-star="rays"></g><circle class="s-ring" r="40" fill="none" stroke="#0F1E6E" stroke-width="18" transform="rotate(-90)" pathLength="100"/></g></g>
+   <!-- התמונה: רק בתוך העיגול -->
+   <g clip-path="url(#pc)"><image id="sphoto" href="assets/img/profile.webp" x="11.3657" y="131.3657" width="577.2687" height="577.2687" transform="rotate(2.5 300 420)"/></g>
+  </svg>
+  <div class="tx">
+   <div class="lb">הסיפור שלי</div>
+   <h2 id="story-h">גם אצלנו זה התחיל <em>מבלגן</em>.</h2>
+   <p class="st">כשפתחנו את עסק הקינוחים, ניהלנו הכל מהראש, מהאקסל ומהמחברת. זה החזיק, עד שהגיע עומס. הזמנה עברה ליום אחר, מקדמה נשכחה, ובסוף החודש לא ידענו כמה באמת הכנסנו. אז בניתי לנו אתר ומערכת כגוף אחד. כל הזמנה מהאתר נוחתת ישר במקום אחד, וה-AI עונה, מאשר ומזכיר במקומנו, גם בוואטסאפ.</p>
+   <p class="q"><span class="qt">היום פטיסייר רץ על זה.<br>ואת זה בדיוק אני רוצה לבנות גם לעסק שלך.</span></p>
+   <a class="btn-n" href="https://wa.me/972534191131" data-wa>בוא נדבר על העסק שלך</a>
+   <div class="nt">נפתח צ'אט בוואטסאפ, ואחזור אליך עוד היום</div>
+  </div>
+ </div>
+</section>
+
+<!-- 4 · פרויקטים (נבנה מהרשימה שבסקריפט) -->
+<section id="projects" class="projects" aria-label="פרויקטים"></section>
+
+<!-- 5 · המלצות: בנוי, ומוסתר עד שיש 3 המלצות אמיתיות. לא ממציאים. -->
+<section id="reviews" class="reviews" hidden aria-labelledby="rv-h">
+ <h2 id="rv-h">מה אומרים בעלי העסקים</h2>
+ <div class="rv-grid"></div>
+ <template id="rv-card"><figure class="rv"><img class="rv-img" alt=""><blockquote></blockquote><figcaption><b class="rv-name"></b><a class="rv-link" target="_blank" rel="noopener"></a></figcaption></figure></template>
+</section>
+</div>
+</main>
+
+<!-- 6 · פוטר עם טופס -->
+<footer class="ft" id="contact">
+ <svg class="ft-star" viewBox="-160 -160 320 320" aria-hidden="true"><g data-star="cream"></g></svg>
+ <div class="in">
+  <div class="ft-tx">
+   <div class="lb">צור קשר</div>
+   <h2>השארו פרטים, ואחזור אליכם <em>עוד היום</em> לדבר על העסק שלכם.</h2>
+   <a class="btn-m" href="https://wa.me/972534191131" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>דברו איתי בוואטסאפ</a>
+   <div class="nt">נפתח צ'אט בוואטסאפ, ואחזור אליך עוד היום</div>
+   <ul class="ft-c">
+    <li><span>טלפון</span><a href="tel:+972534191131" dir="ltr">053-419-1131</a></li>
+    <li><span>מייל</span><a href="mailto:p0534191131@gmail.com" dir="ltr">p0534191131@gmail.com</a></li>
+   </ul>
+  </div>
+  <form class="form" id="form" novalidate>
+   <div class="f"><label for="f-name">שם</label><input id="f-name" name="name" autocomplete="name" required></div>
+   <div class="f"><label for="f-phone">טלפון</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required style="text-align:right"></div>
+   <div class="f"><label for="f-biz">סוג העסק</label><input id="f-biz" name="biz" placeholder="למשל: קינוחים לאירועים"></div>
+   <div class="f"><label for="f-pain">מה הכי מעיק לך היום?</label><textarea id="f-pain" name="pain" rows="3"></textarea></div>
+   <button type="submit" class="btn-n">שליחה בוואטסאפ ←</button>
+   <p class="nt">נפתח צ'אט בוואטסאפ עם הפרטים, ואחזור אליכם עוד היום</p>
+   <p class="err" id="ferr" role="alert"></p>
+  </form>
+ </div>
+ <div class="bar">
+  <img src="assets/img/logo-cream.svg" alt="אפרים קוסטנטינר" width="156" height="44">
+  <span>© <span id="yr">2026</span> אפרים קוסטנטינר · אתרים ומערכות AI לעסקים</span>
+ </div>
+</footer>
+
+<!-- 7 · וואטסאפ צף (ימין למטה) ונגישות (שמאל למטה) -->
+<a class="wa-float" href="https://wa.me/972534191131" data-wa aria-label="שיחה בוואטסאפ"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<div class="a11y" id="a11y">
+ <button class="a11y-btn" type="button" aria-expanded="false" aria-controls="a11y-p" aria-label="התאמות נגישות"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.2" r="1.9" fill="currentColor" stroke="none"/><path d="M4.5 8.6 12 10l7.5-1.4M12 10v5.2m0 0-3.6 6.2M12 15.2l3.6 6.2"/></svg></button>
+ <div class="a11y-p" id="a11y-p" role="group" aria-label="התאמות נגישות">
+  <button type="button" data-a="still" aria-pressed="false">עצירת אנימציות</button>
+  <button type="button" data-a="hc" aria-pressed="false">ניגודיות גבוהה</button>
+  <button type="button" data-a="ul" aria-pressed="false">הדגשת קישורים</button>
+ </div>
 </div>
 
-<!-- ===================== המסע ===================== -->
-<section id="journey">
-  <div class="stage" id="top">
-
-    <div class="room" id="room">
-      <img src="assets/img/office/door-closed.jpg" alt="דלת המשרד" class="on" id="im-door" fetchpriority="high">
-      <img src="assets/img/office/office-messy.jpg" alt="משרד גדול ומבולגן" id="im-messy">
-      <img src="assets/img/office/me-desk.jpg" alt="אפרים ליד השולחן" id="im-me">
-      <img src="assets/img/office/desk-screen.jpg" alt="המחשב על השולחן" id="im-screen">
-      <img src="assets/img/office/phone-stand.jpg" alt="הטלפון על המעמד" id="im-phone">
-      <img src="assets/img/office/phone-plate.jpg" alt="" id="im-plate">
-      <!-- הפריימים מעל כל התמונות (התמונות רק גיבוי עד שהפריימים נטענים), ומתחת לשלט ולמסך -->
-      <canvas id="seq" width="1600" height="900" aria-hidden="true"></canvas>
-      <!-- אדים עולים מהקפה בלולאה, בזמן שהפרויקטים נגללים על המסך -->
-      <video id="steam" src="assets/img/office/steam.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video>
-      <!-- מסך הטלפון: וואטסאפ עם הודעות תודה, ואחר כך סרטונים בגלילה. כרגע הכול לדוגמה -->
-      <img src="assets/img/office/phone-cut.png" alt="" class="phone-cut" id="phone-cut">
-      <div class="pscreen" id="pscreen" aria-hidden="true">
-        <div class="ps-notch"></div>
-        <div class="ps-status"><span>9:41</span><span class="ps-bat"></span></div>
-        <div class="wapp" id="wapp">
-          <div class="wapp-top"><span class="wapp-av">ל</span><div><b>לקוח מרוצה</b><small>הודעות לדוגמה</small></div></div>
-          <div class="wapp-body">
-            <div class="wapp-day">היום</div>
-            <div class="bub in">אפרים, תודה ענקית. מאז שהמערכת עלתה אני סוף סוף רואה הכול במקום אחד 🙏<i>09:12</i></div>
-            <div class="bub in">ההזמנות נכנסות לבד, ואני כבר לא רודף אחרי אף אחד.<i>09:13</i></div>
-            <div class="bub out">איזה כיף לשמוע! בשביל זה בנינו את זה 💪<i>09:15<u>✓✓</u></i></div>
-            <div class="bub in">לקוחה אמרה לי היום שהאתר נראה כמו של חברה גדולה 😄<i>11:40</i></div>
-            <div class="bub in">ממליץ עליך לכל מי שאני מכיר.<i>11:41</i></div>
-            <div class="bub in typing"><s></s><s></s><s></s></div>
-          </div>
-        </div>
-        <div class="me-shot" id="me-shot"><img src="assets/img/efraim.png" alt="אפרים קוסטנטינר"><div class="me-cap"><b>אפרים קוסטנטינר</b><small>יועץ הצלחה דיגיטלית</small></div></div>
-        <div class="reels" id="reels">
-          <div class="reel"><div class="reel-bg" style="--h:212"></div><span class="reel-tag">בקרוב</span><span class="reel-play">▶</span><div class="reel-cap"><b>סיפור הצלחה 1</b><small>סרטון לדוגמה · יוחלף בסיפור אמיתי</small></div></div>
-          <div class="reel"><div class="reel-bg" style="--h:42"></div><span class="reel-tag">בקרוב</span><span class="reel-play">▶</span><div class="reel-cap"><b>סיפור הצלחה 2</b><small>סרטון לדוגמה · יוחלף בסיפור אמיתי</small></div></div>
-          <div class="reel"><div class="reel-bg" style="--h:330"></div><span class="reel-tag">בקרוב</span><span class="reel-play">▶</span><div class="reel-cap"><b>סיפור הצלחה 3</b><small>סרטון לדוגמה · יוחלף בסיפור אמיתי</small></div></div>
-        </div>
-      </div>
-      <div class="plate" id="plate">משרד</div>
-
-      <div class="screen" id="screen">
-        <div class="scr-in" id="slides"><div class="strip" id="strip">
-          <div class="slide" data-k="ברי פירות לאירועים" data-t="קריספרי" data-p="אתר מכירה עם עולם תוכן, ופאנל ניהול שבו מעדכנים לבד מחירים, מוצרים וטקסטים, בלי לחכות למתכנת."><img src="assets/img/admin/crispery-dashboard.jpg" alt="פאנל הניהול של קריספרי"></div>
-          <div class="slide" data-k="קינוחים ואירועים" data-t="פטיסייר" data-p="כל ההזמנות, המוצרים, הברים והלקוחות בפאנל ניהול אחד מסודר, עם חנות אונליין שמקבלת הזמנות לבד."><img src="assets/img/projects/patissier-home.jpg" alt="האתר של פטיסייר"></div>
-          <div class="slide" data-k="אפליקציה לעסקים" data-t="סינקאפ" data-p="מערכת שלמה מאפס: הרשמה, פרופיל עסקי, ותוכן לסטטוס שנוצר אוטומטית בכל יום."><img src="assets/img/projects/syncap-home.jpg" alt="האפליקציה של סינקאפ"></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="act on" data-act="0"><div class="in"><div class="card wall">
-      <span class="kick"><b></b> יועץ הצלחה דיגיטלית · עין מעצבת</span>
-      <h1><span class="t">בעל עסק,</span><br>ויש בלגן?</h1>
-      <div class="h1b">הסדר נמצא פה — מאחורי הדלת.</div>
-      <p class="p">מערכת אחת שמנהלת את כל העסק — לידים, לקוחות, פרויקטים, משימות וכסף — במקום ראש שצריך לזכור.</p>
-      <div class="row">
-        <a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="btn btn-g">בואו נדבר בוואטסאפ</a>
-        <a href="#about" class="btn btn-w">מה אני עושה</a>
-      </div>
-    </div></div></div>
-
-    <div class="act top" data-act="1"><div class="in"><div class="card wall glow">
-      <span class="kick"><b></b> ככה זה נראה היום</span>
-      <h2>כמה עובדים <span class="g">אתם צריכים</span><br>כדי להחזיק את כל זה?</h2>
-      <p class="p">עמדה לכל משימה, אקסל לכל עמדה, וערימה שמישהו אמור לזכור.</p>
-    </div></div></div>
-
-    <div class="say" id="say"><div class="in">
-      <div class="dots" id="say-dots" aria-hidden="true"><s></s><s></s><s></s></div>
-      <div class="txt" id="say-txt"><b>בוא, אני אראה לך איזה עסקים סידרתי.</b><i>אתר אחד מסודר, וכיף לעבוד איתו.</i></div>
-    </div></div>
-
-    <div class="side" id="side">
-      <span class="k">מבפנים · פאנלי הניהול</span>
-      <h2>עסקים שסידרתי</h2>
-      <div class="biz" id="side-biz">
-        <h3 id="side-h">קריספרי</h3>
-        <span class="cat" id="side-k">ברי פירות לאירועים</span>
-        <span class="lbl">מה הקפצנו</span>
-        <p id="side-p">אתר מכירה עם עולם תוכן, ופאנל ניהול שבו מעדכנים לבד מחירים, מוצרים וטקסטים, בלי לחכות למתכנת.</p>
-      </div>
-      <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
-    </div>
-
-    <div class="side" id="side-wa">
-      <span class="k">אחרי שהמערכת עולה</span>
-      <h2>ככה נראה הוואטסאפ כשהעסק מסודר</h2>
-      <p>הלקוחות מקבלים תשובה בזמן, ההזמנות לא הולכות לאיבוד, והתודות מגיעות לבד.</p>
-      <span class="demo-tag">הודעות לדוגמה · יוחלפו בהודעות אמיתיות</span>
-    </div>
-
-    <div class="side" id="side-reels">
-      <span class="k">סיפורי הצלחה</span>
-      <h2>תשמעו את זה מהם</h2>
-      <p>סרטונים קצרים של בעלי עסקים: מה היה לפני, ומה השתנה.</p>
-      <span class="demo-tag">סרטונים לדוגמה · יוחלפו בסיפורים אמיתיים</span>
-    </div>
-    <div class="about-j" id="about-j">
-      <div class="in">
-        <span class="k">קצת עליי</span>
-        <h2>נעים מאוד,<br>אני אפרים.<span class="g">אני הופך בלגן בעסק למערכת שעובדת לבד.</span></h2>
-        <p>יועץ הצלחה דיגיטלית. אני יושב איתכם על העסק, מבין איפה העבודה נתקעת, ובונה מערכת ניהול אחת עם אוטומציות שעושות את העבודה החוזרת במקומכם.</p>
-        <ul>
-          <li><i>1</i><span><b>מאפיין</b>מה חוזר על עצמו, ואיפה העבודה נתקעת.</span></li>
-          <li><i>2</i><span><b>בונה</b>מערכת אחת סביב איך שהעסק באמת עובד.</span></li>
-          <li><i>3</i><span><b>מטמיע</b>ומלווה, עד שהמערכת באמת מקצרת לכם את היום.</span></li>
-        </ul>
-        <div class="row"><a href="#contact" class="btn btn-g">בואו נדבר ←</a></div>
-      </div>
-    </div>
-    <div class="hint" id="hint">גללו<span></span></div>
-  </div>
-</section>
-
-<section id="contact" class="sec">
-  <div class="wrap">
-    <div class="cta rv">
-      <div>
-        <span class="eyebrow">יצירת קשר</span>
-        <h2>ספרו לי מה חוזר על עצמו<br><span style="color:var(--gold-2)">אצלכם כל שבוע.</span></h2>
-        <p class="lead">שיחת אבחון של 30 דקות, בלי תשלום. אני אחזור אליכם עם הדבר הראשון שהייתי מכניס למערכת — גם אם לא נעבוד יחד.</p>
-        <div class="lines">
-          <a href="https://wa.me/972534191131" target="_blank" rel="noopener">💬 וואטסאפ — התשובה הכי מהירה</a>
-          <a href="tel:+972534191131">📞 053-419-1131</a>
-          <a href="mailto:p0534191131@gmail.com">✉️ p0534191131@gmail.com</a>
-        </div>
-      </div>
-      <form id="leadForm" novalidate>
-        <div class="field"><label for="f-name">שם מלא</label><input id="f-name" name="name" type="text" placeholder="ישראל ישראלי" required></div>
-        <div class="field"><label for="f-phone">טלפון</label><input id="f-phone" name="phone" type="tel" inputmode="tel" placeholder="050-0000000" required></div>
-        <div class="field"><label for="f-msg">מה הכי תוקע אתכם בעסק?</label><textarea id="f-msg" name="message" placeholder="משפט אחד מספיק"></textarea></div>
-        <button type="submit" class="btn btn-g">לתיאום שיחת אבחון ←</button>
-        <div class="form-msg" id="formMsg" role="status"></div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="sec white">
-  <div class="wrap">
-    <div class="about">
-      <div class="rv">
-        <span class="eyebrow">מה אני עושה</span>
-        <h2>לא מוכר אוטומציה.<br><span class="g">מוכר עסק שרץ בלעדיך.</span></h2>
-        <p class="lead">אני אפרים קוסטנטינר, יועץ הצלחה דיגיטלית עם עין מעצבת. אני יושב על העסק, מאפיין אותו לעומק, ומזהה את הנקודה האחת שבה הכי הרבה תפוקה נתקעת על הכי מעט עבודה — ובונה בדיוק את זה.</p>
-        <div class="creed">כל עסק שרוב העבודה בו מבוססת מחשב ומסמכים — אסור לו להסתמך על עובדים, אלא על מערכת מאופיינת נכון, עם אוטומציות שפועלות לבד.<b>— אני מאמין</b></div>
-      </div>
-      <div class="does rv">
-        <div class="do"><i>1</i><div><h3>מאפיין</h3><p>שיחה ושאלון עומק: מה חוזר על עצמו, איפה הידע יושב, מי ממתין למי, ומה לא נמדד.</p></div></div>
-        <div class="do"><i>2</i><div><h3>בונה</h3><p>מערכת אחת סביב איך שהעסק באמת עובד — לידים, לקוחות, פרויקטים, משימות וכסף, מחוברים.</p></div></div>
-        <div class="do"><i>3</i><div><h3>מטמיע</h3><p>מעביר את העסק למערכת ומלווה בהרצה — עד שהיא באמת מקצרת לך את היום.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="process" class="sec">
-  <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">איך מתקדמים</span>
-      <h2>ארבעה שלבים. <span class="g">אפס הפתעות.</span></h2>
-      <p class="lead">אותו תהליך בכל פרויקט — ככה תמיד יודעים איפה הדברים עומדים.</p>
-    </div>
-    <div class="steps" id="steps">
-      <div class="run" id="run"></div>
-      <div class="step"><div class="dot">1</div><h3>שיחת אבחון</h3><p>30 דקות, בלי תשלום. מספרים לי מה חוזר על עצמו, ואני אומר מה הייתי מכניס למערכת ראשון.</p></div>
-      <div class="step"><div class="dot">2</div><h3>איפיון</h3><p>שאלון עומק ומפת מסכים. בסופו — מחיר ולוח זמנים סגורים.</p></div>
-      <div class="step"><div class="dot">3</div><h3>עיצוב ובנייה</h3><p>רואים את המערכת לפני שורת קוד אחת. ואז בונים — עם אבטחה, נגישות ופרטיות.</p></div>
-      <div class="step"><div class="dot">4</div><h3>הטמעה</h3><p>מעבירים את העסק פנימה, מריצים יחד, ומוודאים שזה באמת עובד.</p></div>
-    </div>
-    <div class="models">
-      <div class="model rv"><h3>תשלום פר פרויקט</h3><p>תשלום חד־פעמי על בניית המערכת, לפי היקף הפרויקט. מחיר סגור מראש, אחרי האיפיון.</p><div class="why">מתאים כשרוצים לדעת בדיוק מה העלות, מראש.</div></div>
-      <div class="model hl rv"><h3>חלוקת רווחים</h3><p>כשהמערכת מכפילה את התפוקה — אחוז מההכנסות שהיא מייצרת, בנוסף לפרויקט. אם היא לא מייצרת, אני לא מרוויח.</p><div class="why">מתאים כשרוצים שהאינטרס שלי יהיה זהה לשלכם.</div></div>
-    </div>
-  </div>
-</section>
-
-<footer>© <span id="yr">2026</span> אפרים קוסטנטינר · יועץ הצלחה דיגיטלית · כל הזכויות שמורות</footer>
-
-<a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="wa" aria-label="וואטסאפ">
-  <svg viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9C13.5 28 14.7 27 16 27c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.6 16.8c-.3.7-1.5 1.4-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.3.6.9 2.1.9 2.3.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.8 2.1 1 .3.1.5.2.5.3.1.2.1.7-.2 1.5z"/></svg>
-</a>
-
+<script>window.__heroOn=true;</script>
+<script src="assets/hero.js"></script>
 <script>
-(function(){
-/* כתובת הטופס (formspree.io). ריק = פותח וואטסאפ עם הפרטים מוכנים. */
-const FORM_ENDPOINT = '';
-const WA = '972534191131';
-const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-document.getElementById('yr').textContent = new Date().getFullYear();
-if(!reduce) document.documentElement.classList.add('anim');
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const R=document.documentElement;
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),seg=(p,a,b)=>cl((p-a)/(b-a)),eio=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2,eo=t=>1-Math.pow(1-t,3),ss=t=>t*t*(3-2*t);
+const pageTop=el=>el.getBoundingClientRect().top+scrollY;
+const RM=matchMedia('(prefers-reduced-motion: reduce)');
 
-const $ = id => document.getElementById(id);
-const room=$('room'), screen=$('screen'), slides=[...document.querySelectorAll('.slide')],
-      side=$('side'), hint=$('hint'), prog=$('prog'),
-      pscreen=$('pscreen'), bubs=[...document.querySelectorAll('.bub')], reels=[...document.querySelectorAll('.reel')];
-const ims={door:$('im-door'),messy:$('im-messy'),me:$('im-me'),scr:$('im-screen'),phone:$('im-phone')};
-const steam=$('steam');
+/* וואטסאפ: כל כפתור פותח צ'אט עם הודעה מוכנה */
+const WA='972534191131',wa=t=>'https://wa.me/'+WA+'?text='+encodeURIComponent(t);
+$$('[data-wa]').forEach(a=>{a.href=wa(a.dataset.wa||'היי אפרים, אשמח לדבר על העסק שלי');a.target='_blank';a.rel='noopener';});
+$('#yr').textContent=new Date().getFullYear();
 
-/* סרטונים שמתקדמים עם הגלילה — פריימים אמיתיים מהסרטון */
-const SEQ1={dir:'seq',  n:120, a:.04, b:.24};  /* הדלת נפתחת ונכנסים למשרד המבולגן */
-const SEQ2={dir:'seq2', n:120, a:.32, b:.50};  /* הדפים, הכסאות והשולחנות עפים — ומתגלה אפרים ליד השולחן */
-const SEQ3={dir:'seq3', n:60,  a:.56, b:.62};  /* המצלמה מסתובבת מאפרים אל המסך */
-const SEQ4={dir:'seq4', n:60,  a:.79, b:.84};  /* מהשולחן אל הטלפון שנעמד — בסקאלה של כל המסע (P) */
-const seqEl=$('seq'), sctx=seqEl.getContext('2d');
-let seqCur=null, seqDrawn=null;
-/* הפריימים ארוזים בגיליונות של 3x2 (assets/img/office/sheets) — 60 קבצים במקום 360, אותה איכות בדיוק */
-const SH={cols:3, rows:2, fw:1600, fh:900};
-const SHN=SH.cols*SH.rows;
-[SEQ1,SEQ2,SEQ3,SEQ4].forEach(s=>{
-  s.want=0; s.ready=false; s.sheets=Math.ceil(s.n/SHN);
-  s.frames=Array.from({length:s.n},(_,i)=>({
-    img:null, ok:false,
-    sx:(i%SHN%SH.cols)*SH.fw, sy:Math.floor(i%SHN/SH.cols)*SH.fh
-  }));
-});
-function nearest(s,i){
-  for(let d=0;d<s.n;d++){
-    if(s.frames[i-d]&&s.frames[i-d].ok) return s.frames[i-d];
-    if(s.frames[i+d]&&s.frames[i+d].ok) return s.frames[i+d];
-  }
-  return null;
+/* כוכב הלוגו: 12 קרניים שוות, עיגול בקצה כל קרן, טבעת חלולה באמצע */
+function star(ring){let h='';for(let i=0;i<12;i++){const a=i/12*Math.PI*2-Math.PI/2,c=Math.cos(a),s=Math.sin(a),f=n=>n.toFixed(1);h+=`<line x1="${f(c*46)}" y1="${f(s*46)}" x2="${f(c*132)}" y2="${f(s*132)}" stroke="#3DDBB0" stroke-width="17" stroke-linecap="round"/><circle cx="${f(c*132)}" cy="${f(s*132)}" r="15" fill="#3DDBB0"/>`;}return ring?h+`<circle r="40" fill="none" stroke="${ring}" stroke-width="18"/>`:h;}
+$$('[data-star]').forEach(g=>{const k=g.dataset.star;g.innerHTML=star(k==='rays'?null:k==='cream'?'#F6F1E7':'#0F1E6E');});
+
+/* ===== הפרויקטים ===== */
+const PJ=[
+ {n:'פטיסייר',s:'בר קינוחים לאירועים',t:'אתר שמקבל הזמנות ומציג את הברים, ומערכת שבה כל הזמנה, לקוח ותשלום נמצאים במקום אחד.',k:'patissier',url:''},
+ {n:'קריספרי',s:'עיצוב מגשי פירות',t:'אתר עם קטלוג והזמנה מסודרת, ומערכת שמראה מה צריך להכין היום ולמי.',k:'crispery',url:''},
+ {n:'מנטורי',s:'ליווי כלכלי למשפחות',t:'אתר שמסביר את השירות, ומערכת שבה כל משפחה רואה איפה היא עומדת החודש.',k:'mentori',url:''}
+];
+const IMG=k=>`assets/img/projects/${k}.webp`;
+const txHTML=(p,i)=>`<div class="nm" aria-hidden="true"><span class="nmi">0${i+1}</span></div><div class="lbl">הפרויקטים</div><h3 aria-label="${p.n}">${[...p.n].map(c=>`<span class="lt" aria-hidden="true">${c}</span>`).join('')}</h3><div class="sb"><span>${p.s}</span></div><p>${p.t}</p><a class="btn-n" href="${p.url||'#'}"${p.url?' target="_blank" rel="noopener"':' data-nourl'}>לראות את האתר ←</a>`;
+const screenHTML=p=>`<img src="${IMG(p.k)}" alt="האתר של ${p.n}" loading="lazy"><img class="in" src="${IMG(p.k+'-in')}" alt="מערכת הניהול של ${p.n}" loading="lazy">`;
+const KN='<button class="kn" type="button" aria-label="להזיז את המקל בין האתר למערכת">‹ ›</button>';
+
+/* ציר הזמן בגלילה: מחכים, המקל עובר מהאתר למערכת, מחכים, הפרויקט הבא עולה בתוך המסך */
+const TL=(()=>{const a=[];PJ.forEach((p,i)=>{const last=i===PJ.length-1;a.push({k:'h',i,l:.15,pos:1},{k:'s',i,l:1},{k:'h',i,l:last?.2:.15,pos:0});if(!last)a.push({k:'t',i,l:.6});});let o=0;a.forEach(s=>{s.o=o;o+=s.l;});a.L=o;return a;})();
+R.style.setProperty('--pl',TL.L);
+const at=q=>{for(const s of TL)if(q<=s.o+s.l)return{s,t:cl((q-s.o)/s.l)};const s=TL[TL.length-1];return{s,t:1};};
+
+const pj=$('#projects');let D=null;const drag={on:false,v:null,y:0};
+function bindKnob(kn,scrOf,set){
+ kn.addEventListener('pointerdown',e=>{e.preventDefault();kn.setPointerCapture(e.pointerId);const mv=ev=>{const r=scrOf().getBoundingClientRect();set(cl((ev.clientX-r.left)/r.width),true);};mv(e);kn.onpointermove=mv;kn.onpointerup=kn.onpointercancel=()=>{kn.onpointermove=null;set(null,false);};});
+ kn.addEventListener('keydown',e=>{if(e.key!=='ArrowLeft'&&e.key!=='ArrowRight')return;e.preventDefault();set('step'+(e.key==='ArrowRight'?1:-1),false);});
 }
-/* mix = {s:הסרטון הקודם, t:0..1}: בתפר בין שני סרטונים מציירים את הפריים האחרון של הקודם מתחת, ואת החדש בשקיפות t */
-function drawSeq(s,i,mix){
-  s.want=i; seqCur=s;
-  const f=nearest(s,i); if(!f) return false;
-  const u=mix&&mix.t<1?nearest(mix.s,mix.s.n-1):null;
-  if(f===seqDrawn&&!u) return true;
-  if(u){ sctx.globalAlpha=1; blit(u); sctx.globalAlpha=mix.t; }
-  blit(f); sctx.globalAlpha=1;
-  seqDrawn=u?null:f;
-  return true;
+function buildProjects(mob){
+ if(!mob){
+  pj.innerHTML=`<div class="pin"><div class="rl" aria-hidden="true"><svg width="1440" height="810"><g transform="translate(300,-490) scale(9.1125)" opacity=".5">${star('#0F1E6E')}</g></svg></div><div class="cv"><div class="mk"><div class="sh"></div><div class="scr">${PJ.map(p=>`<div class="slide">${screenHTML(p)}</div>`).join('')}</div><img class="frame" src="assets/img/monitor.webp" alt="" width="1400" height="1120"><div class="row"><span class="pill po">מבחוץ</span><span class="pill pi">מבפנים</span><span class="lab la">נראה מיליון דולר</span><span class="lab lr">הכל במקום אחד</span>${KN}</div></div><div class="txs">${PJ.map((p,i)=>`<div class="tx">${txHTML(p,i)}</div>`).join('')}</div></div><div class="sep sk"></div><div class="sep sl"></div></div>`;
+  D={mk:$('#projects .mk'),pin:$('#projects .pin'),slides:$$('#projects .slide'),ins:$$('#projects .slide .in'),txs:$$('#projects .tx'),kn:$('#projects .kn'),sk:$('#projects .sk'),sl:$('#projects .sl'),la:$('#projects .la'),lr:$('#projects .lr'),po:$('#projects .po'),pi:$('#projects .pi'),scr:$('#projects .scr'),cur:0,kd:1};
+  bindKnob(D.kn,()=>D.scr,(v,on)=>{if(typeof v==='string'){drag.v=cl((drag.v??D.kd)+(v==='step1'?.1:-.1));drag.y=scrollY;}else if(v!==null){drag.v=v;drag.on=true;}else{drag.on=false;drag.y=scrollY;}req();});
+ }else{
+  D=null;
+  pj.innerHTML=PJ.map((p,i)=>`<div class="pm"><div class="pm-row"><span class="pill po">מבחוץ</span><span class="pill pi">מבפנים</span></div><div class="pm-mk"><div class="scr">${screenHTML(p)}</div><img class="frame" src="assets/img/monitor.webp" alt="" width="1400" height="1120">${KN}<div class="sep sk"></div><div class="sep sl"></div></div><div class="tx">${txHTML(p,i)}</div></div>`).join('');
+  $$('.pm').forEach(b=>{b._d={on:false,v:null,y:0};bindKnob(b.querySelector('.kn'),()=>b.querySelector('.scr'),(v,on)=>{const d=b._d;if(typeof v==='string'){d.v=cl((d.v??b._kd??1)+(v==='step1'?.1:-.1));d.y=scrollY;}else if(v!==null){d.v=v;d.on=true;}else{d.on=false;d.y=scrollY;}req();});});
+ }
 }
-/* חותך את הפריים מתוך הגיליון ומותח אותו על כל הקנבס */
-function blit(f){ sctx.drawImage(f.img, f.sx, f.sy, SH.fw, SH.fh, 0, 0, seqEl.width, seqEl.height); }
-function loadSeq(s,done){
-  /* קודם הגיליון הראשון והאחרון, אחר כך כל 8, כל 4… — הגלילה עובדת מהר ומתחדדת תוך כדי טעינה */
-  const N=s.sheets, order=[], seen=new Set();
-  [0,N-1].concat(...[8,4,2,1].map(k=>Array.from({length:Math.ceil(N/k)},(_,j)=>j*k)))
-    .forEach(i=>{ if(i<N&&!seen.has(i)){ seen.add(i); order.push(i); } });
-  let at=0, busy=0, left=order.length;
-  const next=()=>{ while(busy<4&&at<order.length){
-    const k=order[at++], img=new Image(); busy++;
-    const end=()=>{ busy--; if(--left===0&&done) done(); next(); };
-    img.onload=()=>{
-      for(let i=k*SHN, last=Math.min(s.n,(k+1)*SHN); i<last; i++){ s.frames[i].img=img; s.frames[i].ok=true; }
-      if(!s.ready){ s.ready=true; if(lastP!=null) setJourney(lastP); }
-      else if(seqCur===s) drawSeq(s,s.want);
-      end(); };
-    img.onerror=end;
-    img.src='assets/img/office/sheets/'+s.dir+'_'+String(k+1).padStart(2,'0')+'.jpg';
-  } };
-  next();
+pj.addEventListener('click',e=>{if(e.target.closest('[data-nourl]'))e.preventDefault();});
+
+function renderProjectsDesk(){
+ const span=pj.offsetHeight-H,q=cl((scrollY-pageTop(pj))/span)*TL.L,{s,t}=at(q),i=s.i,tr=s.k==='t'?eio(t):0;
+ let pos=s.k==='h'?s.pos:s.k==='s'?1-ss(t):0;
+ if(drag.v!==null&&s.k!=='t'&&(drag.on||Math.abs(scrollY-drag.y)<40))pos=drag.v;else if(!drag.on)drag.v=null;
+ const kd=s.k==='t'?tr:pos;D.kd=pos;
+ D.slides.forEach((el,k)=>{const d=k<i?0:k>i?1:pos;D.ins[k].style.clipPath=`inset(0 0 0 ${(d*100).toFixed(2)}%)`;let y=k<=i?0:100;if(s.k==='t'&&k===i+1)y=(1-tr)*100;el.style.transform=`translateY(${y.toFixed(2)}%)`;el.style.visibility=(k<i||k>i+1)?'hidden':'';});
+ const lineD=s.k==='t'?(tr<.5?0:1):pos,lo=s.k==='t'?Math.abs(1-2*tr):1;
+ /* המקל יושב בדיוק מעל הקו: אותה נקודה על רוחב המסך */
+ const kx=35.73+kd*749.71;D.kn.style.left=(kx-28)+'px';
+ const pr=D.pin.getBoundingClientRect(),sr=D.scr.getBoundingClientRect(),kr=D.kn.getBoundingClientRect(),w=Math.max(3,Math.round(sr.width/749.71*4));
+ const xk=Math.round((kr.left+kr.right)/2-pr.left-w/2),xl=Math.round(sr.left+lineD*sr.width-pr.left-w/2),st=Math.round(sr.top-pr.top),kb=Math.floor(kr.bottom-pr.top);
+ D.sk.style.cssText=`left:${xk}px;width:${w}px;top:${kb}px;height:${Math.max(0,st-kb)}px`;
+ D.sl.style.cssText=`left:${xl}px;width:${w}px;top:${st}px;height:${Math.round(sr.bottom-pr.top)-st}px;opacity:${lo}`;
+ const poR=35.73+D.po.offsetWidth/2,piL=785.44-D.pi.offsetWidth/2,wl=D.la.offsetWidth,wr=D.lr.offsetWidth;
+ /* המשפטים ליד המקל לא נכנסים מתחת ל"מבחוץ/מבפנים": נעצרים 12 פיקסלים לפניהם, ונעלמים כשאין מקום */
+ const laR=Math.min(kx-40,piL-12),lrL=Math.max(kx+40,poR+12);
+ D.la.style.left=(laR-wl)+'px';D.la.style.opacity=cl((laR-wl-poR-14)/30);
+ D.lr.style.left=lrL+'px';D.lr.style.opacity=cl((piL-14-(lrL+wr))/30);
+ D.po.classList.toggle('on',kd>=.5);D.pi.classList.toggle('on',kd<.5);
+ /* כניסה של החלק: המחשב עולה למקום, והטקסט של הפרויקט הראשון נכנס, הכל לפי הגלגלת */
+ const e0=R.classList.contains('still')?1:cl((H*.9-pj.getBoundingClientRect().top)/(H*.8));
+ D.mk.style.transform=`translateY(${((1-eo(e0))*60).toFixed(1)}px) scale(.86)`;
+ D.txs.forEach((el,k)=>{let ein=0,eout=0;
+  if(k<i){ein=1;eout=1;}else if(k===i){ein=k===0?e0:1;if(s.k==='t')eout=cl(tr*1.6);}else if(k===i+1&&s.k==='t')ein=cl((tr-.3)/.7);
+  txAnim(el,ein,eout);});
 }
-/* הסרטונים נטענים גס → עדין, כדי שגם מי שגולל מהר יראה תנועה ולא תמונה קפואה. הסיבוב למסך נטען אחרי החפצים העפים */
-if(!reduce){ loadSeq(SEQ1); loadSeq(SEQ2,()=>loadSeq(SEQ3,()=>loadSeq(SEQ4))); }
-const acts=[...document.querySelectorAll('.act')];
-const ss=(x,a,b)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t);};
-const lerp=(a,b,t)=>a+(b-a)*t;
-
-/* החדר מכסה את המסך ביחס 16:9 קבוע — כך אחוזי המסך בתמונה תמיד נכונים */
-let RW=0,RH=0;
-function sizeRoom(){
-  RW=Math.max(innerWidth, innerHeight*16/9); RH=RW*9/16;
-  room.style.width=RW+'px'; room.style.height=RH+'px';
-  room.style.setProperty('--u',(RW/100)+'px');  /* יחידת גודל לפי רוחב החדר, לטקסט שעל מסך הטלפון */
+/* הטקסט של פרויקט: ein = כמה הוא נכנס, eout = כמה הוא יצא. הכל לפי הגלגלת.
+   המספר מתגלגל כמו מונה, האותיות של השם עולות אחת אחרי השנייה מתוך השורה, המרקר נמתח, והכפתור קופץ. */
+function txAnim(el,ein,eout){
+ const vis=ein>0&&eout<1;el.style.visibility=vis?'':'hidden';if(!vis)return;
+ const q=el._q||(el._q={nm:el.querySelector('.nmi'),lbl:el.querySelector('.lbl'),lts:[...el.querySelectorAll('.lt')],sb:el.querySelector('.sb'),sbs:el.querySelector('.sb span'),p:el.querySelector('p'),btn:el.querySelector('.btn-n')});
+ q.nm.style.transform=`translateY(${((1-eo(seg(ein,0,.45)))*110-eo(seg(eout,0,.6))*110).toFixed(1)}%)`;
+ q.lbl.style.opacity=(eo(seg(ein,.1,.45))*(1-seg(eout,0,.5))).toFixed(3);
+ const n=q.lts.length;q.lts.forEach((c,j)=>{const a=eo(seg(ein,.15+j/n*.3,.45+j/n*.3)),b=eo(seg(eout,j/n*.25,.45+j/n*.25));c.style.transform=`translateY(${((1-a)*115-b*115).toFixed(1)}%)`;});
+ q.sbs.style.backgroundSize=`${(eo(seg(ein,.55,.85))*100).toFixed(1)}% 100%`;q.sb.style.opacity=(eo(seg(ein,.35,.6))*(1-seg(eout,0,.5))).toFixed(3);
+ const pe=eo(seg(ein,.45,.85)),px=seg(eout,0,.5);q.p.style.opacity=(pe*(1-px)).toFixed(3);q.p.style.transform=`translateY(${((1-pe)*18-px*18).toFixed(1)}px)`;
+ const be=seg(ein,.65,1),bx=seg(eout,0,.4);q.btn.style.opacity=(Math.min(1,be*1.6)*(1-bx)).toFixed(3);q.btn.style.transform=be<1?`translateY(${((1-be)*14).toFixed(1)}px) scale(${(.92+.08*backOut(be)).toFixed(4)})`:'';
 }
-sizeRoom(); addEventListener('resize',()=>{sizeRoom(); if(lastP!=null) setJourney(lastP);});
-
-
-let lastP=null;
-const say=$('say'), sayDots=$('say-dots'), sayTxt=$('say-txt');
-const aj=$('about-j'), ajKids=[...aj.querySelector('.in').children];
-function setJourney(R){
-  lastP=R;
-  prog.style.width=(R*100)+'%';
-  hint.style.opacity=R>.03?0:1;
-  /* R = כל הגלילה. P = המסע עד סוף סיפורי ההצלחה, בדיוק כמו קודם. A = השלב האחרון: הטלפון זז ימינה ו"קצת עליי" נכנס משמאל */
-  const KA=.88, P=Math.min(1,R/KA), A=Math.min(1,Math.max(0,(R-KA)/(1-KA)));
-  const VW=innerWidth, wide=VW>960;
-  /* בסוף רק הטלפון זז: השולחן והרקע נשארים. מרכז הטלפון בתמונה = 29.15% מרוחב החדר, והוא מחליק עד 72% מרוחב המסך */
-  const phoneDx=wide?Math.max(0,.72*VW-((VW-RW)/2+.2915*RW))*ss(A,.06,.5):0, slide=wide&&A>0;
-  /* P = כל המסע. p = החלק עד המחשב, באותה סקאלה שהייתה לפני שנוסף הטלפון */
-  const K=.88, p=Math.min(1,P/K), inPhone=P>=SEQ4.a;
-  /* מהדלת ועד המסך רואים רק פריימים מהסרטונים — בלי תמונות ביניים ובלי זום.
-     אם פריימים עוד לא נטענו, מוצגת התמונה של אותו שלב: דלת / משרד מבולגן / אפרים ליד השולחן / המסך. */
-  let cur, fi, mix=null;
-  if(inPhone){ cur=SEQ4; fi=Math.round(Math.min(1,Math.max(0,(P-SEQ4.a)/(SEQ4.b-SEQ4.a)))*(SEQ4.n-1)); }
-  else{
-    cur=p<(SEQ1.b+SEQ2.a)/2?SEQ1:(p<(SEQ2.b+SEQ3.a)/2?SEQ2:SEQ3);
-    fi=Math.round(Math.min(1,Math.max(0,(p-cur.a)/(cur.b-cur.a)))*(cur.n-1));
-    mix=cur===SEQ3?{s:SEQ2,t:ss(p,SEQ3.a,SEQ3.a+.01)}:null;
-  }
-  const shown=!reduce&&drawSeq(cur,fi,mix);
-  seqEl.style.opacity=shown?(inPhone?1-ss(P,SEQ4.b,SEQ4.b+.01):1-ss(p,SEQ3.b,SEQ3.b+.01)):0;
-  ims.door.classList.toggle('on', p<SEQ1.b);
-  ims.messy.classList.toggle('on', p>=SEQ1.b&&p<SEQ2.b);
-  ims.me.classList.toggle('on', p>=SEQ2.b&&p<SEQ3.b);
-  ims.scr.classList.toggle('on', p>=SEQ3.b&&P<SEQ4.b);
-  ims.phone.classList.toggle('on', P>=SEQ4.b&&!(slide&&A>=.05));
-  /* כשהטלפון מתחיל לזוז: הרקע הנקי + שכבת הטלפון החתוכה. במקום ההתחלתי הם נראים בדיוק כמו התמונה המקורית */
-  $('im-plate').classList.toggle('on', slide); $('im-plate').style.opacity=slide?ss(A,0,.05).toFixed(3):'';
-  $('phone-cut').style.opacity=slide?1:0;
-  $('phone-cut').style.transform='translateX('+phoneDx.toFixed(1)+'px)';
-  $('plate').style.opacity=1-ss(p,SEQ1.a,SEQ1.a+.02);
-
-  /* על המסך: האדים עולים מהקפה בלולאה. הסרטון מתנגן רק כשרואים אותו */
-  const steamOn=!reduce&&p>=SEQ3.b-.02&&P<SEQ4.a+.004;
-  steam.style.opacity=ss(p,SEQ3.b-.02,SEQ3.b)*(1-ss(P,SEQ4.a-.002,SEQ4.a+.004));
-  if(steamOn&&steam.paused) steam.play().catch(()=>{}); else if(!steamOn&&!steam.paused) steam.pause();
-
-  /* המצלמה לא זזה — הפרויקטים נגללים בתוך מסך המחשב */
-  room.style.transformOrigin='50% 50%';
-  room.style.transform='translate(-50%,-50%)';
-
-  screen.style.opacity=ss(p,SEQ3.b,SEQ3.b+.02)*(1-ss(P,SEQ4.a-.008,SEQ4.a));
-  /* 3 הפרויקטים ברצועה אחת ארוכה שנגללת בתוך המסך, כמו אתר אחד ארוך: הגלילה לא נעצרת ולא נעלמת, רק מאטה קצת על כל פרויקט */
-  const S0=.63, S1=.86, H=screen.clientWidth*10/16, SH=screen.clientHeight, n=slides.length-1;
-  const travel=Math.max(0,slides.length*H-SH), stops=slides.map((_,k)=>k===n?travel:Math.min(k*H,travel));
-  const u=Math.min(1,Math.max(0,(p-S0)/(S1-S0))), q=u*n, seg=Math.min(n-1,Math.floor(q)), fq=q-seg;
-  const pos=lerp(stops[seg],stops[seg+1],.35*fq+.65*ss(fq,.2,.8));
-  $('strip').style.transform='translateY('+(-pos).toFixed(1)+'px)';
-  /* איזה פרויקט באמצע המסך — הוא מופיע בצד */
-  const c=H>0?(pos+SH/2)/H:0, active=Math.min(n,Math.max(0,Math.floor(c))), fc=c-active;
-  const sl0=slides[active];
-
-  /* בצד ימין: שם הפרויקט בגדול, התחום והתיאור. הטקסט נעלם ומופיע רך בדיוק כשהגבול בין שני פרויקטים עובר באמצע המסך */
-  const edge=(active===0&&fc<.5)||(active===n&&fc>.5)?0:Math.abs(fc-.5);
-  const swap=1-ss(edge,.3,.48);
-  side.style.opacity=ss(p,SEQ3.b,SEQ3.b+.03)*(1-ss(p,.86,.89));
-  $('side-biz').style.opacity=swap;
-  if($('side-h').textContent!==sl0.dataset.t){
-    $('side-k').textContent=sl0.dataset.k;
-    $('side-h').textContent=sl0.dataset.t;
-    $('side-p').textContent=sl0.dataset.p;
-  }
-  side.querySelectorAll('.dots i').forEach((d,k)=>d.classList.toggle('on',k===active));
-
-  /* הטלפון: וואטסאפ עם הודעות תודה שנכנסות אחת-אחת, ואחר כך סרטונים בגלילה. הכול לדוגמה, עד שיהיו אמיתיים */
-  pscreen.style.opacity=ss(P,SEQ4.b,SEQ4.b+.01);
-  pscreen.style.transform='translateX('+phoneDx.toFixed(1)+'px)';
-  $('me-shot').style.opacity=ss(A,.03,.16);
-  $('wapp').style.opacity=1-ss(P,.93,.94);
-  bubs.forEach((bb,k)=>bb.classList.toggle('show', P>=.855+k*.012));
-  $('reels').style.opacity=ss(P,.93,.945);
-  const feed=ss(P,.95,.995);
-  reels.forEach((r,k)=>{ r.style.transform='translateY('+((k-feed*(reels.length-1))*100).toFixed(2)+'%)'; });
-  $('side-wa').style.opacity=ss(P,SEQ4.b+.005,SEQ4.b+.02)*(1-ss(P,.925,.935));
-  $('side-reels').style.opacity=ss(P,.94,.955)*(1-ss(A,0,.12));
-
-  /* "קצת עליי": תופס את השטח שהתפנה משמאל, ונכנס שורה אחרי שורה אחרי שהטלפון התחיל לזוז */
-  aj.style.opacity=ss(A,.2,.3);
-  ajKids.forEach((el,k)=>{ const t=ss(A,.28+k*.05,.42+k*.05); el.style.opacity=t.toFixed(3); el.style.transform='translateY('+((1-t)*22).toFixed(1)+'px)'; });
-  aj.classList.toggle('live',A>.5);
-
-  /* הוא מדבר: הבועה יושבת ליד הראש שלו (69% מרוחב החדר), קודם שלוש נקודות ואז המשפט */
-  if(wide){ say.style.left=((VW-RW)/2+RW*.30).toFixed(0)+'px'; say.style.width=(RW*.30).toFixed(0)+'px';
-    say.style.top=((innerHeight-RH)/2+RH*.125).toFixed(0)+'px'; say.style.fontSize=Math.max(13,Math.min(22,RW/100*1.08)).toFixed(1)+'px'; }
-  else { say.style.left=say.style.width=say.style.top=say.style.fontSize=''; }
-  say.style.opacity=(ss(p,SEQ2.b-.006,SEQ2.b+.018)*(1-ss(p,SEQ3.a-.014,SEQ3.a-.002))).toFixed(3);
-  const typed=p>=SEQ2.b+.013;
-  sayDots.style.display=typed?'none':'flex';
-  sayTxt.style.display=typed?'block':'none';
-
-  let idx=-1;
-  if(p<.10) idx=0; else if(p>=SEQ1.b&&p<SEQ2.a) idx=1;
-  acts.forEach((a,i)=>a.classList.toggle('on',i===idx));
-  $('hdr').classList.toggle('solid', p>.06);
-}
-window.setJourney=setJourney;
-setJourney(0);
-
-if(window.gsap && !reduce){
-  gsap.registerPlugin(ScrollTrigger);
-  ScrollTrigger.create({trigger:'#journey',start:'top top',end:'bottom bottom',scrub:.5,onUpdate:s=>setJourney(s.progress)});
-  gsap.utils.toArray('.rv').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
-  const steps=gsap.utils.toArray('.step');
-  ScrollTrigger.create({trigger:'#steps',start:'top 72%',end:'bottom 60%',scrub:.6,onUpdate:s=>{
-    $('run').style.width=(s.progress*86)+'%'; steps.forEach((st,i)=>st.classList.toggle('on',s.progress>(i/steps.length)*.92));}});
-}else{
-  document.documentElement.classList.remove('anim');
-  document.querySelectorAll('.step').forEach(s=>s.classList.add('on'));
+/* הקווים הישרים: ראש הספרה בגובה הראש של "מבחוץ/מבפנים" (86.4), ותחתית הכפתור בתחתית גוף המחשב (613.9). נמדד מהגופן עצמו. */
+function alignPT(){if(!D)return;const nm=D.txs[0].querySelector('.nmi'),pr=document.createElement('span');pr.style.cssText='display:inline-block;width:0;height:0;vertical-align:baseline';nm.appendChild(pr);
+ const ctx=document.createElement('canvas').getContext('2d');ctx.font=`700 ${parseFloat(getComputedStyle(nm).fontSize)}px GS`;const asc=ctx.measureText(nm.textContent).actualBoundingBoxAscent;
+ let y=0,o=pr;while(o&&o!==D.txs[0]){y+=o.offsetTop;o=o.offsetParent;}pr.remove();
+ const top=86.36-(y-asc);D.txs.forEach(t=>{t.style.top=top+'px';t.style.height=(613.9-top)+'px';});}
+function renderProjectsMob(){
+ $$('.pm').forEach(b=>{const mk=b.querySelector('.pm-mk'),r=mk.getBoundingClientRect(),d0=b._d;
+  let d=cl((r.top+r.height/2-H*.3)/(H*.35));
+  if(d0.v!==null&&(d0.on||Math.abs(scrollY-d0.y)<40))d=d0.v;else if(!d0.on)d0.v=null;b._kd=d;
+  b.querySelector('.in').style.clipPath=`inset(0 0 0 ${(d*100).toFixed(2)}%)`;
+  /* המקל, החיבור והקו על אותו פיקסל */
+  const cw=mk.clientWidth,ch=mk.clientHeight,x=Math.round(cw*(.04357+d*.9143)),st=Math.round(ch*.05);
+  b.querySelector('.kn').style.left=(x-24)+'px';
+  b.querySelector('.sk').style.cssText=`left:${x-2}px;width:4px;top:-10px;height:${st+10}px`;
+  b.querySelector('.sl').style.cssText=`left:${x-2}px;width:4px;top:${st}px;height:${Math.round(ch*.6357)-st}px`;
+  const po=b.querySelector('.po'),pi=b.querySelector('.pi');po.classList.toggle('on',d>=.5);pi.classList.toggle('on',d<.5);});
 }
 
-const form=$('leadForm'), msg=$('formMsg');
-form.addEventListener('submit',async e=>{
-  e.preventDefault();
-  const name=form.name.value.trim(), ph=form.phone.value.trim(), text=form.message.value.trim();
-  if(!name||!ph){msg.textContent='רק שם וטלפון, ואני חוזר אליכם.';return;}
-  if(FORM_ENDPOINT){
-    msg.textContent='שולח…';
-    try{const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
-      msg.textContent=r.ok?'תודה! חוזר אליכם בהקדם.':'משהו נתקע — אפשר גם בוואטסאפ.'; if(r.ok)form.reset();}
-    catch(_){msg.textContent='משהו נתקע — אפשר גם בוואטסאפ.';}
-  }else{
-    const body='היי אפרים, אני '+name+' ('+ph+').'+(text?'\n'+text:'');
-    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(body),'_blank','noopener');
-    msg.textContent='נפתח וואטסאפ עם הפרטים — רק ללחוץ שליחה.';
-  }
-});
+/* ===== מידות ===== */
+let W=0,H=0,mob=null,stat=false;
+const portal=$('#portal'),scene=$('#layers'),fx=$('#fx'),fxc=$('#fxc'),bgl=$('.bgl'),sent=$('#sent'),kick=$('#sent .kick'),words=$$('#bigq .w'),trees=$$('#tree path'),lys=$$('.ly'),lyMk=$$('.ly h3 span'),sdot=$('#sdot'),story=$('#story'),art=$('#story .art'),ft=$('#contact');
+let DOT=null;
+function measure(){
+ W=R.clientWidth;H=innerHeight;const m=W<900;
+ const U=Math.min(W/1440,H/810);
+ R.style.setProperty('--u',U+'px');R.style.setProperty('--uu',U);R.style.setProperty('--ox',(W-1440*U)/2+'px');
+ /* הפרויקטים: הרגל של המחשב עומדת על תחתית המסך (שורה 1106 בתמונה = 707.1 בקנבס),
+    והחלק העליון (המקל, 86) נשאר מתחת להדר. מסך גבוה במיוחד: לא מרחיקים את הראש יותר מ-240 מלמעלה. */
+ const BASE=707.1,TOP=86,U2=Math.min(W/1440,(H-96)/(BASE-TOP));let oy2=H-BASE*U2;if(oy2+TOP*U2>240)oy2=240-TOP*U2;
+ R.style.setProperty('--u2',U2);R.style.setProperty('--ox2',(W-1440*U2)/2+'px');R.style.setProperty('--oy2',oy2+'px');
+ stat=m||RM.matches;R.classList.toggle('static',stat);R.classList.toggle('mob',m);
+ art.setAttribute('viewBox',m?'0 60 600 900':'0 0 1440 910');VB=m?[0,60,600,900]:[0,0,1440,910];pwOff=null;
+ /* הקרניים ברקע של שלוש השכבות: ממוקמות כך שהמרכז שלהן הוא בדיוק המרכז של הלוגו בסיפור, מתחת לחלק */
+ bgl.style.transform=`translateX(${m?0:(W-1440*U)/2}px) scale(${m?W/600:U})`;
+ $('#bglg').setAttribute('transform',`translate(300,${810+(m?360:420)}) scale(9.1125)`);
+ sent.style.setProperty('--sc',Math.min(1,W/1300,(H-120)/600));DOT=null;
+ if(m!==mob){mob=m;buildProjects(m);if(!m)alignPT();}
+ if(stat){scene.style.clipPath='';scene.style.webkitMaskImage='';scene.style.maskImage='';[kick,...words,...lys].forEach(el=>{el.style.opacity='';el.style.transform='';el.style.filter='';});trees.forEach(t=>t.style.strokeDashoffset='');[...lyMk,words[words.length-1]].forEach(m=>m.style.removeProperty('--mk'));sdot.style.opacity=0;window.__heroSuck=0;}
+}
+
+/* ===== הפתיחה ושלוש השכבות ===== */
+function renderPortal(){
+ const still=R.classList.contains('still');
+ if(stat){window.__heroOn=!still&&$('#top').getBoundingClientRect().bottom>0;return;}
+ const span=portal.offsetHeight-H,p=cl((scrollY-pageTop(portal))/span),q=still?1:p;
+ /* 9.11: נקישה ראשונה, הסחרור נעצר וכל המשימות נבלעות בטבעת. אחר כך העיגול נפתח עם קצה רך, ובפנים נשארת נקודה אחת.
+    הנקודה עולה אל המשפט, המשפט נכתב מילה אחרי מילה, ומתפצל לשלוש השכבות. הכל צמוד לגלגלת וחוזר אחורה */
+ window.__heroSuck=still?0:eio(seg(p,0,.125));
+ const cx=W*.26,cy=H/2,FE=260,Dd=Math.hypot(W-cx,H/2)+FE+40,e=ss(seg(p,.09,.375)),r=40+e*Dd,fe=40+e*(FE-40);
+ const mk=e<=0?'radial-gradient(circle at 0 0,#000 0,transparent 0)':e>=1?'none':`radial-gradient(circle at ${cx}px ${cy}px,#000 ${Math.max(0,r-fe).toFixed(1)}px,transparent ${r.toFixed(1)}px)`;
+ scene.style.webkitMaskImage=mk;scene.style.maskImage=mk;
+ fxc.setAttribute('cx',cx);fxc.setAttribute('cy',cy);fxc.setAttribute('r',Math.max(40,r-fe*.55).toFixed(1));fxc.setAttribute('stroke-width',(18*(1-.6*e)).toFixed(1));
+ fx.style.opacity=(e>0&&e<1)?(.85*Math.pow(1-e,1.6)).toFixed(3):0;
+ bgl.style.opacity=ss(seg(q,.74,.95)).toFixed(3);
+ if(!DOT){const kr=kick.getBoundingClientRect();DOT=[kr.left+kr.width/2,kr.top-26];}
+ const dm=ss(seg(q,.3,.46)),dx=cx+(DOT[0]-cx)*dm,dy=cy+(DOT[1]-cy)*dm;
+ sdot.style.opacity=(seg(p,.1,.18)*(1-seg(q,.46,.52))).toFixed(3);sdot.style.transform=`translate(${dx.toFixed(1)}px,${dy.toFixed(1)}px) scale(${(1-.45*dm).toFixed(3)})`;
+ kick.style.opacity=seg(q,.42,.48).toFixed(3);
+ words.forEach((w,i)=>{const t=eo(seg(q,.44+i*.03,.52+i*.03)),last=i===words.length-1;w.style.opacity=t.toFixed(3);
+  w.style.transform=t<1?`translateY(${((1-t)*44).toFixed(1)}px)${last?` scale(${(1+.3*(1-t)).toFixed(3)})`:''}`:'';w.style.filter=t<1?`blur(${((1-t)*6).toFixed(2)}px)`:'';
+  if(last)w.style.setProperty('--mk',(seg(q,.66,.72)*100).toFixed(1)+'%');});
+ trees.forEach((t,k)=>{const v=k===0?seg(q,.66,.7):seg(q,.69+(k-1)*.08,.74+(k-1)*.08);t.style.strokeDashoffset=(1-v).toFixed(3);});
+ lys.forEach((l,k)=>{const t=eo(seg(q,.71+k*.08,.79+k*.08));l.style.opacity=t.toFixed(3);l.style.transform=t<1?`translateY(${((1-t)*30).toFixed(1)}px)`:'';l.style.filter=t<1?`blur(${((1-t)*5).toFixed(2)}px)`:'';
+  lyMk[k].style.setProperty('--mk',(seg(q,.75+k*.08,.83+k*.08)*100).toFixed(1)+'%');});
+ window.__heroOn=!still&&e<1;
+}
+
+/* ===== הסיפור שלי: אנימציות כניסה ===== */
+/* הטבעת מצוירת בשני מקומות: רוב הטבעת בסיפור, והקצה העליון שלה ברקע של שלוש השכבות. שתיהן נסגרות יחד. */
+const sRings=$$('.s-ring'),ringAttr=(k,v)=>sRings.forEach(r=>v===null?r.removeAttribute(k):r.setAttribute(k,v)),pcc=$('#pcc'),sPhoto=$('#sphoto'),sH2=$('#story-h');
+/* התמונה נפתחת מהמרכז ונכנסת למקום, עד שהפס הטורקיז יושב בדיוק על קצה העיגול */
+const photoAt=t=>{const s=1.14-.14*t;sPhoto.setAttribute('transform',`rotate(2.5 300 420) translate(300 420) scale(${s.toFixed(4)}) translate(-300 -420)`);pcc.setAttribute('r',(282.4875*t).toFixed(2));};
+(()=>{const rnd=a=>(Math.random()*2-1)*a;
+ [...sH2.childNodes].forEach(n=>{
+  if(n.nodeType===3){const fr=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){fr.append(w);return;}const s=document.createElement('span');s.className='w';s.textContent=w;fr.append(s);});n.replaceWith(fr);}
+  else if(n.tagName==='EM'){const t=n.textContent;n.textContent='';[...t].forEach(c=>{const s=document.createElement('span');s.className='ch';s.textContent=c;s._m=[rnd(20),rnd(24),rnd(32)];n.append(s);});}
+ });
+ /* הפסקה: כל מילה נדלקת בתורה כשגוללים, כמו קריאה */
+ const st=$('#story .st');st.innerHTML=st.textContent.trim().split(/\s+/).map(w=>`<span class="pw">${w}</span>`).join(' ');
+ /* "מבלגן" והנקודה שאחריו נשארים תמיד באותה שורה */
+ const em=sH2.querySelector('em'),nx=em.nextSibling;const nw=document.createElement('span');nw.style.whiteSpace='nowrap';em.replaceWith(nw);nw.append(em);if(nx&&nx.classList&&nx.classList.contains('w'))nw.append(nx);
 })();
-</script>
-
-<script>
-/* ההדר: פתיחה וסגירה של התפריט בטלפון, וסימון הקישור של החלק שבו נמצאים */
-(function(){
-const burger=document.getElementById('burger'), menu=document.getElementById('hd-menu');
-const setMenu=open=>{ menu.hidden=!open; burger.setAttribute('aria-expanded',String(open)); };
-burger.addEventListener('click',()=>setMenu(menu.hidden));
-menu.addEventListener('click',e=>{ if(e.target.closest('a')) setMenu(false); });
-document.addEventListener('click',e=>{ if(!menu.hidden&&!e.target.closest('#hd-menu,#burger')) setMenu(false); });
-addEventListener('keydown',e=>{ if(e.key==='Escape') setMenu(false); });
-
-const links=[...document.querySelectorAll('[data-sec]')], secs=['contact','about','process'].map(id=>document.getElementById(id));
-let cur, queued=false;
-function mark(){
-  queued=false;
-  let id=null;
-  secs.forEach(s=>{ if(s.getBoundingClientRect().top<=innerHeight*.45) id=s.id; });
-  if(id===cur) return; cur=id;
-  links.forEach(a=>{ const on=a.dataset.sec===id; a.classList.toggle('on',on); if(on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+sH2.setAttribute('aria-label','גם אצלנו זה התחיל מבלגן.');
+const sTx=$('#story .tx'),sLb=$('#story .lb'),sWords=$$('#story-h .w'),sChars=$$('#story-h .ch'),sEm=$('#story-h em'),sPW=$$('#story .st .pw'),sQ=$('#story .q'),sQT=$('#story .qt'),sBtn=$('#story .tx>.btn-n'),sNt=$('#story .tx>.nt');
+const backOut=t=>{const c=1.7;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2);};
+const fadeUp=(el,e,dy)=>{el.style.opacity=e.toFixed(3);el.style.transform=e<1?`translateY(${((1-e)*dy).toFixed(1)}px)`:'';};
+/* הסיפור זז רק עם הגלגלת, ורק כשרואים אותו: כל חלק מתחיל כשהוא נכנס למסך,
+   ונגמר עד שהסיפור עומד במקום. גוללים למעלה והכל חוזר אחורה. */
+let VB=[0,0,1440,910],pwOff=null;
+/* התקדמות לפי איפה הראש של החלק על המסך. set = איפה הוא יעמוד כשהסיפור במקום (במחשב) */
+const rng=(top,set)=>{const s=H*.95,e=mob?H*.6:Math.min(Math.max(H*.6,set),H*.83);return cl((s-top)/(s-e));};
+const cachePW=()=>{const pr=sPW[0].parentElement.getBoundingClientRect();pwOff=sPW.map(w=>{const r=w.getBoundingClientRect();return [r.top-pr.top,pr.right-r.right];});};
+function renderStory(){
+ const still=R.classList.contains('still'),s0=story.getBoundingClientRect().top,F=still?()=>1:rng;
+ /* הטבעת נסגרת סביבך, והתמונה נפתחת מהמרכז: לפי מרכז העיגול */
+ const ar=art.getBoundingClientRect(),cy=ar.top+ar.height*((420-VB[1])/VB[3]);
+ const aP=still?1:cl((H*.98-cy)/(H*.98-(mob?H*.5:Math.max(H*.5,cy-s0))));
+ const re=eio(seg(aP,0,.9));
+ if(re>=1)ringAttr('stroke-dasharray',null);else{ringAttr('stroke-dasharray','100 120');ringAttr('stroke-dashoffset',(100*(1-re)).toFixed(2));}
+ photoAt(eo(seg(aP,.15,1)));
+ /* הכותרת: מילה אחרי מילה, ו"מבלגן" מסתדר מבלגן לשורה */
+ const tt=sTx.getBoundingClientRect().top;fadeUp(sLb,eo(F(tt,tt-s0)),18);
+ const ht=sH2.getBoundingClientRect().top,hp=F(ht,ht-s0),n=sWords.length;
+ sWords.forEach((w,i)=>fadeUp(w,eo(seg(hp,i/n*.55,i/n*.55+.45)),30));
+ const et=sEm.getBoundingClientRect().top,ep=F(et,et-s0);
+ sChars.forEach((c,j)=>{const a=eo(seg(ep,j*.06,.25+j*.06)),b=backOut(seg(ep,.25+j*.07,.6+j*.07)),k=1-b,[mx,my,mr]=c._m;c.style.opacity=a.toFixed(3);c.style.transform=Math.abs(k)>.001?`translate(${(mx*k).toFixed(1)}px,${(my*k).toFixed(1)}px) rotate(${(mr*k).toFixed(1)}deg)`:'';});
+ sEm.style.setProperty('--mk2',(eo(seg(ep,.8,1))*100).toFixed(1)+'%');
+ /* הפסקה נדלקת מילה אחרי מילה, שורה אחרי שורה */
+ if(!pwOff)cachePW();const pt=sPW[0].parentElement.getBoundingClientRect().top;
+ sPW.forEach((w,k)=>{const t=pt+pwOff[k][0]+pwOff[k][1]*.12;w.style.opacity=(.14+.86*F(t,t-s0)).toFixed(3);});
+ /* הציטוט: הפס נמתח, והמשפט נכנס */
+ const qr=sQ.getBoundingClientRect(),qp=F(qr.top,qr.top-s0);
+ sQ.style.setProperty('--qb',eo(seg(qp,0,.6)).toFixed(3));
+ const qe=eo(seg(qp,.3,1));sQT.style.opacity=qe.toFixed(3);sQT.style.transform=qe<1?`translateX(${(-(1-qe)*18).toFixed(1)}px)`:'';
+ /* הכפתור קופץ ועובר עליו ברק, ואחריו המשפט הקטן */
+ const bt=qr.bottom+24,be=seg(F(bt,bt-s0),0,.8),bs=seg(F(bt,bt-s0),.6,1);
+ sBtn.style.opacity=Math.min(1,be*1.6).toFixed(3);sBtn.style.transform=be<1?`translateY(${((1-be)*14).toFixed(1)}px) scale(${(.92+.08*backOut(be)).toFixed(4)})`:'';
+ sBtn.style.setProperty('--sh',(-60+190*bs).toFixed(1)+'%');
+ const nt=qr.bottom+100;fadeUp(sNt,eo(F(nt,nt-s0)),10);
 }
-addEventListener('scroll',()=>{ if(!queued){ queued=true; requestAnimationFrame(mark); } },{passive:true});
-mark();
+
+/* ===== הדר: קפיצה ישר לחלק, בלי גלילה ארוכה ===== */
+const hd=$('#hd'),mb=$('#menuBtn');
+const closeMenu=()=>{hd.classList.remove('open');mb.setAttribute('aria-expanded','false');};
+mb.addEventListener('click',()=>{const o=hd.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
+function go(k){let y=0;
+ if(k==='layers')y=stat?pageTop(scene)-60:pageTop(portal)+(portal.offsetHeight-H);
+ else if(k==='story')y=pageTop(story)-(mob?60:0);
+ else if(k==='projects')y=pageTop(pj)-(mob?70:0);
+ else if(k==='contact')y=pageTop(ft);
+ scrollTo({top:y,behavior:'auto'});closeMenu();}
+$$('[data-go]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.dataset.go);}));
+function spy(){const y=scrollY+H*.45;let k='';
+ if(y>=pageTop(ft))k='contact';else if(y>=pageTop(pj))k='projects';else if(y>=pageTop(story))k='story';
+ else if(stat?y>=pageTop(scene):scrollY>pageTop(portal)+.2*(portal.offsetHeight-H))k='layers';
+ $$('.hd-nav a').forEach(a=>a.classList.toggle('on',a.dataset.go===k));}
+
+/* ===== עדכון בגלילה ===== */
+let raf=0;function req(){if(!raf)raf=requestAnimationFrame(()=>{raf=0;renderPortal();mob?renderProjectsMob():renderProjectsDesk();spy();renderStory();});}
+addEventListener('scroll',req,{passive:true});
+addEventListener('resize',()=>{measure();req();});
+/* כל התנועה באתר באה רק מהגלגלת: אין גלילה שזזה לבד, אין קפיצות ואין אנימציה שרצה בזמן. */
+
+/* ===== טופס: נפתח בוואטסאפ עם הפרטים ===== */
+$('#form').addEventListener('submit',e=>{e.preventDefault();const f=e.target,v=n=>f.elements[n].value.trim(),err=$('#ferr');
+ if(!v('name')){err.textContent='חסר שם, כדי שאדע למי לחזור.';f.elements.name.focus();return;}
+ if(v('phone').replace(/\D/g,'').length<9){err.textContent='חסר מספר טלפון, כדי שאוכל לחזור אליך.';f.elements.phone.focus();return;}
+ err.textContent='';
+ const msg=`היי אפרים, השארתי פרטים באתר.\nשם: ${v('name')}\nטלפון: ${v('phone')}`+(v('biz')?`\nסוג העסק: ${v('biz')}`:'')+(v('pain')?`\nמה הכי מעיק לי היום: ${v('pain')}`:'');
+ window.open(wa(msg),'_blank','noopener');});
+
+/* ===== נגישות ===== */
+const ap=$('#a11y'),ab=ap.querySelector('.a11y-btn');
+ab.addEventListener('click',()=>{const o=ap.classList.toggle('open');ab.setAttribute('aria-expanded',o);});
+document.addEventListener('click',e=>{if(!ap.contains(e.target)&&ap.classList.contains('open')){ap.classList.remove('open');ab.setAttribute('aria-expanded','false');}if(!hd.contains(e.target))closeMenu();});
+const setA=(k,on)=>{R.classList.toggle(k,on);$(`[data-a="${k}"]`).setAttribute('aria-pressed',on);};
+['still','hc','ul'].forEach(k=>{let on=false;try{on=localStorage.getItem('a11y-'+k)==='1';}catch(e){}if(k==='still'&&RM.matches)on=true;setA(k,on);});
+$$('#a11y-p [data-a]').forEach(b=>b.addEventListener('click',()=>{const on=!R.classList.contains(b.dataset.a);setA(b.dataset.a,on);try{localStorage.setItem('a11y-'+b.dataset.a,on?'1':'');}catch(e){}req();}));
+
+measure();req();
+if(document.fonts)document.fonts.ready.then(()=>{pwOff=null;if(!mob)alignPT();req();});
+/* צילומי הפרויקטים נטענים אחרי שהפתיחה מוכנה, כדי שיחכו במסך כשמגיעים */
+addEventListener('load',()=>setTimeout(()=>$$('#projects img[loading="lazy"]').forEach(i=>i.loading='eager'),600));
 })();
 </script>
 </body>
