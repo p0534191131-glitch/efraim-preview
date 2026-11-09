@@ -369,7 +369,7 @@ button{font:inherit;color:inherit}
   </svg>
   <div class="tx">
    <div class="lb">הסיפור שלי</div>
-   <h2 id="story-h">גם אצלנו זה התחיל <em>מבלגן</em>.</h2>
+   <h2 id="story-h">גם אצלנו זה התחיל <em>מסחרור</em>.</h2>
    <p class="st">כשפתחנו את עסק הקינוחים, ניהלנו הכל מהראש, מהאקסל ומהמחברת. זה החזיק, עד שהגיע עומס. הזמנה עברה ליום אחר, מקדמה נשכחה, ובסוף החודש לא ידענו כמה באמת הכנסנו. אז בניתי לנו אתר ומערכת כגוף אחד. כל הזמנה מהאתר נוחתת ישר במקום אחד, וה-AI עונה, מאשר ומזכיר במקומנו, גם בוואטסאפ.</p>
    <p class="q"><span class="qt">היום פטיסייר רץ על זה.<br>ואת זה בדיוק אני רוצה לבנות גם לעסק שלך.</span></p>
    <a class="btn-n" href="https://wa.me/972534191131" data-wa>בוא נדבר על העסק שלך</a>
@@ -601,14 +601,14 @@ const photoAt=t=>{const s=1.14-.14*t;sPhoto.setAttribute('transform',`rotate(2.5
 (()=>{const rnd=a=>(Math.random()*2-1)*a;
  [...sH2.childNodes].forEach(n=>{
   if(n.nodeType===3){const fr=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){fr.append(w);return;}const s=document.createElement('span');s.className='w';s.textContent=w;fr.append(s);});n.replaceWith(fr);}
-  else if(n.tagName==='EM'){const t=n.textContent;n.textContent='';[...t].forEach(c=>{const s=document.createElement('span');s.className='ch';s.textContent=c;s._m=[rnd(20),rnd(24),rnd(32)];n.append(s);});}
+  else if(n.tagName==='EM'){const t=n.textContent;n.textContent='';[...t].forEach((c,j)=>{const s=document.createElement('span'),th=.7+j*1.05;s.className='ch';s.textContent=c;s._m=[Math.cos(th)*26,Math.sin(th)*26,-(150+j*30)];n.append(s);});}
  });
  /* הפסקה: כל מילה נדלקת בתורה כשגוללים, כמו קריאה */
  const st=$('#story .st');st.innerHTML=st.textContent.trim().split(/\s+/).map(w=>`<span class="pw">${w}</span>`).join(' ');
- /* "מבלגן" והנקודה שאחריו נשארים תמיד באותה שורה */
+ /* "מסחרור" והנקודה שאחריו נשארים תמיד באותה שורה */
  const em=sH2.querySelector('em'),nx=em.nextSibling;const nw=document.createElement('span');nw.style.whiteSpace='nowrap';em.replaceWith(nw);nw.append(em);if(nx&&nx.classList&&nx.classList.contains('w'))nw.append(nx);
 })();
-sH2.setAttribute('aria-label','גם אצלנו זה התחיל מבלגן.');
+sH2.setAttribute('aria-label','גם אצלנו זה התחיל מסחרור.');
 const sTx=$('#story .tx'),sLb=$('#story .lb'),sWords=$$('#story-h .w'),sChars=$$('#story-h .ch'),sEm=$('#story-h em'),sPW=$$('#story .st .pw'),sQ=$('#story .q'),sQT=$('#story .qt'),sBtn=$('#story .tx>.btn-n'),sNt=$('#story .tx>.nt');
 const backOut=t=>{const c=1.7;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2);};
 const fadeUp=(el,e,dy)=>{el.style.opacity=e.toFixed(3);el.style.transform=e<1?`translateY(${((1-e)*dy).toFixed(1)}px)`:'';};
@@ -626,7 +626,7 @@ function renderStory(){
  const re=eio(seg(aP,0,.9));
  if(re>=1)ringAttr('stroke-dasharray',null);else{ringAttr('stroke-dasharray','100 120');ringAttr('stroke-dashoffset',(100*(1-re)).toFixed(2));}
  photoAt(eo(seg(aP,.15,1)));
- /* הכותרת: מילה אחרי מילה, ו"מבלגן" מסתדר מבלגן לשורה */
+ /* הכותרת: מילה אחרי מילה, והאותיות של "מסחרור" מסתובבות פנימה ונעצרות בשורה */
  const tt=sTx.getBoundingClientRect().top;fadeUp(sLb,eo(F(tt,tt-s0)),18);
  const ht=sH2.getBoundingClientRect().top,hp=F(ht,ht-s0),n=sWords.length;
  sWords.forEach((w,i)=>fadeUp(w,eo(seg(hp,i/n*.55,i/n*.55+.45)),30));
