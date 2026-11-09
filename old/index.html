@@ -3,47 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>אפרים קוסטנטינר | בעל עסק עם בלגן? הסדר פה</title>
-<meta name="description" content="יועץ הצלחה דיגיטלית עם עין מעצבת. מאפיין את העסק שלך ובונה לו מערכת אחת שמנהלת ומשפרת אותו — עוד תפוקה, בלי עוד עובדים.">
-<meta name="robots" content="noindex,nofollow">
+<title>אפרים קוסטנטינר | תפסיק לחזור על עצמך</title>
+<meta name="description" content="אתר ומערכת ניהול שמחוברים לגוף אחד. תפסיק לחזור על עצמך, תן למערכת AI מתקדמת לעבוד במקומך.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://efraim-k.co.il/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
-<meta property="og:title" content="אפרים קוסטנטינר | בעל עסק עם בלגן? הסדר פה">
-<meta property="og:description" content="מערכת אחת שמנהלת את כל העסק — במקום ראש שזוכר.">
-<meta property="og:image" content="https://p0534191131-glitch.github.io/efraim-preview/assets/img/office/door-closed.jpg">
-<meta property="og:url" content="https://p0534191131-glitch.github.io/efraim-preview/">
-<meta name="theme-color" content="#F6F2EA">
+<meta property="og:title" content="אפרים קוסטנטינר | תפסיק לחזור על עצמך">
+<meta property="og:description" content="ניהול העסק במערכת אחת. אתר ומערכת ניהול שמחוברים לגוף אחד.">
+<meta property="og:image" content="assets/img/office/ink/door-closed.jpg">
+<meta name="theme-color" content="#FBF7EF">
+<link rel="icon" href="assets/img/brand/icon.svg" type="image/svg+xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>/* הכותרת מוסתרת רגע עד שהיא עולה. אם משהו נתקע, אחרי 3 שניות היא מופיעה בכל מקרה */
+(function(d){ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){ d.classList.add('kin'); setTimeout(function(){ d.classList.add('kin-ready'); },3000); } })(document.documentElement);</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService",
- "name":"אפרים קוסטנטינר — יועץ הצלחה דיגיטלית",
- "description":"בניית מערכות ואוטומציות לניהול העסק: איפיון, עיצוב, פיתוח והטמעה.",
+ "name":"אפרים קוסטנטינר · ניהול העסק במערכת אחת",
+ "description":"אתר ומערכת ניהול לעסקים, מחוברים לגוף אחד: איפיון, עיצוב, פיתוח והטמעה.",
  "areaServed":"IL","availableLanguage":"he",
  "telephone":"+972-53-419-1131","email":"p0534191131@gmail.com",
- "founder":{"@type":"Person","name":"אפרים קוסטנטינר","jobTitle":"יועץ הצלחה דיגיטלית"}}
+ "founder":{"@type":"Person","name":"אפרים קוסטנטינר","jobTitle":"טכנולוג"}}
 </script>
 
 <style>
 :root{
-  --paper:#F6F2EA; --white:#fff; --navy:#0A1930; --navy2:#102A4C;
-  --gold:#C9A227; --gold-2:#E4C35C; --gold-deep:#8F7318;
-  --ink:#0A1930; --soft:#66718A; --line:#E6DFD2;
+  /* המיתוג מ-20.10: שמנת, דיו וברונזה. השמות הישנים (navy, gold) נשארו כדי לא לגעת בכל כלל, הערכים חדשים */
+  --paper:#FBF7EF; --white:#F3E3D3; --navy:#1F1D1A; --navy2:#2E2B27;
+  --gold:#B8742B; --gold-2:#E2A764; --gold-deep:#8E5A1F;
+  --ink:#1F1D1A; --soft:#6B665D; --line:#E7DCCB; --card:#FFFDF8;
+  /* ארבעה גדלים בלבד, לכל תפקיד גודל אחד בכל האתר (אפרים, 3.11: "גדול ודרמטי"). הערות ותוויות בגודל הטקסט, במשקל או בשקיפות אחרים.
+     במסך רחב: 120 / 60 / 30 / 18. במסך צר הם קטנים יחד, והטקסט לא יורד מ-16 */
+  --fs-1:clamp(44px,7.7vw,120px);   /* פתיחה. על הקיר הגודל נמדד לפי הקיר, עד 120: wallTitle */
+  --fs-2:clamp(36px,4.2vw,60px);    /* כותרת של חלק */
+  --fs-3:clamp(24px,2.1vw,30px);    /* כותרת משנה */
+  --fs-4:clamp(16px,1.25vw,18px);   /* טקסט, כפתורים, תוויות */
   --ease:cubic-bezier(.22,.61,.36,1);
+  --edge:clamp(20px,9vw,200px);  /* הקו של אפרים: ממנו מתחילים ההדר והטקסט של המסע, בשני הצדדים */
   /* מלבן המסך בתוך תמונת השולחן הנקי (אחוזים מהתמונה) — נמדד מהתמונה */
-  --scr-l:10.72%; --scr-t:32.81%; --scr-w:35.68%; --scr-h:36.2%;
+  --scr-l:7.396%; --scr-t:28.61%; --scr-w:49.95%; --scr-h:51.48%;   /* המסך של המחשב האמיתי בסוף התנועה (screen3d-final) */
   /* מסך הטלפון בתמונת הטלפון על המעמד (אחוזים), נמדד מחוץ למגרעת */
   --ph-l:21.08%; --ph-t:23.18%; --ph-w:15.92%; --ph-h:62.83%;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Heebo',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Google Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;height:auto;display:block}
 button,input,textarea{font-family:inherit;font-size:inherit}
@@ -51,100 +61,111 @@ button,input,textarea{font-family:inherit;font-size:inherit}
 
 .prog{position:fixed;top:0;right:0;height:2px;width:0;z-index:80;background:var(--gold)}
 /* ---------- ההדר: קפסולה כחולה צפה עם מסגרת זהב, מאותם חומרים של הדלת והשלט. בצד: כפתור וואטסאפ עם התמונה של אפרים ---------- */
-header{position:fixed;top:16px;left:0;right:0;z-index:70;display:flex;justify-content:center;padding:0 16px;pointer-events:none;transition:top .4s var(--ease)}
+header{position:fixed;top:16px;left:0;right:0;z-index:70;display:flex;justify-content:center;padding:0 var(--edge);pointer-events:none;transition:top .4s var(--ease)}
 header.solid{top:10px}
-.hd-cap{pointer-events:auto;display:flex;align-items:center;gap:clamp(22px,3vw,46px);padding:7px;padding-inline-start:26px;border-radius:999px;color:#F4EDE4;
-  background:linear-gradient(180deg,rgba(22,48,86,.95),rgba(10,25,48,.97));border:1px solid rgba(201,162,39,.62);
-  box-shadow:inset 0 1px 0 rgba(228,195,92,.3),0 18px 44px rgba(10,25,48,.28);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:padding .4s var(--ease),box-shadow .4s}
-header.solid .hd-cap{padding:5px;padding-inline-start:22px;box-shadow:inset 0 1px 0 rgba(228,195,92,.3),0 14px 34px rgba(10,25,48,.34)}
+.hd-cap{pointer-events:auto;width:100%;justify-content:space-between;display:flex;align-items:center;gap:clamp(22px,3vw,46px);padding:7px;padding-inline-start:26px;border-radius:999px;color:#FBF7EF;
+  background:linear-gradient(180deg,rgba(46,43,39,.95),rgba(31,29,26,.97));border:1px solid rgba(184,116,43,.62);
+  box-shadow:inset 0 1px 0 rgba(226,167,100,.3),0 18px 44px rgba(31,29,26,.28);transition:padding .4s var(--ease),box-shadow .4s}
+  /* בלי טשטוש רקע: הקפסולה כמעט אטומה ממילא, והטשטוש מעל הפריימים הזזים עלה פריימים במחשב חלש */
+header.solid .hd-cap{padding:5px;padding-inline-start:22px;box-shadow:inset 0 1px 0 rgba(226,167,100,.3),0 14px 34px rgba(31,29,26,.34)}
 .hd-logo{display:block;flex:none}
-.hd-logo img{height:30px;width:auto;transition:height .4s var(--ease)}
-header.solid .hd-logo img{height:26px}
-.hd-nav{display:flex;gap:clamp(18px,2.2vw,32px);font-size:14.5px;font-weight:500}
-.hd-nav a{position:relative;padding:6px 0;color:rgba(244,237,228,.8);transition:color .25s}
+.hd-logo img{height:40px;width:auto;transition:height .4s var(--ease)}
+header.solid .hd-logo img{height:34px}
+.hd-nav{display:flex;gap:clamp(18px,2.2vw,32px);font-size:var(--fs-4);font-weight:500}
+.hd-nav a{position:relative;padding:6px 0;color:rgba(251,247,239,.8);transition:color .25s}
 .hd-nav a::after{content:"";position:absolute;left:50%;bottom:-3px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--gold-2);opacity:0;transform:translateY(3px);transition:opacity .25s,transform .25s}
-.hd-nav a:hover,.hd-nav a.on{color:#fff}
+.hd-nav a:hover,.hd-nav a.on{color:var(--paper)}
 .hd-nav a:hover::after,.hd-nav a.on::after{opacity:1;transform:none}
 /* כפתור הוואטסאפ עם התמונה (מהדר ג׳), בזהב כדי שיבלוט על הכחול */
 .hd-me{display:inline-flex;align-items:center;gap:10px;flex:none;height:46px;padding:4px;padding-inline-end:20px;border-radius:999px;color:var(--navy);
-  background:linear-gradient(180deg,#E9CB66,#C9A227 58%,#B38F1E);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 6px 16px rgba(201,162,39,.3);transition:transform .3s var(--ease),box-shadow .3s,height .4s var(--ease)}
-.hd-me:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 24px rgba(201,162,39,.45)}
+  background:linear-gradient(180deg,#D99550,#B8742B 58%,#9A5E21);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 6px 16px rgba(184,116,43,.3);transition:transform .3s var(--ease),box-shadow .3s,height .4s var(--ease)}
+.hd-me:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 24px rgba(184,116,43,.45)}
 header.solid .hd-me{height:40px}
 .hd-av{position:relative;flex:none;width:38px;height:38px;transition:width .4s var(--ease),height .4s var(--ease)}
 header.solid .hd-av{width:32px;height:32px}
 .hd-av img{width:100%;height:100%;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--navy)}
-.hd-av i{position:absolute;left:-4px;bottom:-3px;width:18px;height:18px;border-radius:50%;background:#25D366;border:2px solid #BF9A24;display:flex;align-items:center;justify-content:center}
+.hd-av i{position:absolute;left:-4px;bottom:-3px;width:18px;height:18px;border-radius:50%;background:#25D366;border:2px solid #A9692A;display:flex;align-items:center;justify-content:center}
 .hd-av .ic{width:10px;height:10px;fill:#fff}
 .hd-tx{line-height:1.2;white-space:nowrap}
-.hd-tx b{display:block;font-size:13.5px;font-weight:800}
-.hd-tx small{display:block;font-size:11px;font-weight:500;color:rgba(10,25,48,.72)}
-.hd-burger{display:none;width:40px;height:40px;flex:none;border:0;border-radius:50%;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:#F4EDE4;background:rgba(244,237,228,.08)}
+.hd-tx b{display:block;font-size:var(--fs-4);font-weight:800}
+.hd-tx small{display:block;font-size:var(--fs-4);font-weight:500;color:rgba(31,29,26,.72)}
+.hd-burger{display:none;width:40px;height:40px;flex:none;border:0;border-radius:50%;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:#FBF7EF;background:rgba(251,247,239,.08)}
 .hd-burger i{display:block;width:16px;height:1.6px;border-radius:2px;background:currentColor;transition:transform .3s var(--ease)}
 .hd-burger[aria-expanded="true"] i:first-child{transform:translateY(3.3px) rotate(45deg)}
 .hd-burger[aria-expanded="true"] i:last-child{transform:translateY(-3.3px) rotate(-45deg)}
 header a:focus-visible,header button:focus-visible,.hd-menu a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 /* התפריט בטלפון */
-.hd-menu{position:fixed;z-index:71;top:72px;left:10px;right:10px;padding:8px 12px;border-radius:22px;color:#F4EDE4;background:var(--navy);border:1px solid rgba(201,162,39,.4);box-shadow:0 24px 60px rgba(10,25,48,.35)}
+.hd-menu{position:fixed;z-index:71;top:72px;left:10px;right:10px;padding:8px 12px;border-radius:22px;color:#FBF7EF;background:var(--navy);border:1px solid rgba(184,116,43,.4);box-shadow:0 24px 60px rgba(31,29,26,.35)}
 .hd-menu nav{display:grid}
-.hd-menu nav a{display:flex;align-items:baseline;gap:12px;padding:15px 6px;font-size:20px;font-weight:800;border-bottom:1px solid rgba(244,237,228,.1)}
-.hd-menu nav a b{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--gold-2)}
+.hd-menu nav a{display:flex;align-items:baseline;gap:12px;padding:15px 6px;font-size:var(--fs-3);font-weight:800;border-bottom:1px solid rgba(251,247,239,.1)}
+.hd-menu nav a b{font-size:var(--fs-4);font-weight:800;letter-spacing:.1em;color:var(--gold-2)}
 .hd-menu nav a.on{color:var(--gold-2)}
-.hd-menu-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 6px 8px;font-size:15px;font-weight:700}
+.hd-menu-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 6px 8px;font-size:var(--fs-4);font-weight:700}
 .hd-menu-foot a:first-child{direction:ltr;unicode-bidi:embed}
 .hd-menu-wa{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:800}
 .ic{width:18px;height:18px;flex:none;fill:currentColor}
 #contact{scroll-margin-top:90px}  /* שהקפיצה ל"יצירת קשר" לא תיכנס מתחת להדר */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;font-weight:800;font-size:15.5px;padding:15px 30px;border:0;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s,background .3s}
-.btn-g{background:var(--gold);color:var(--navy);box-shadow:0 10px 26px rgba(201,162,39,.32)}
-.btn-g:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(201,162,39,.45)}
-.btn-n{background:var(--navy);color:#fff}
-.btn-n:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(10,25,48,.3)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;font-weight:800;font-size:var(--fs-4);padding:15px 30px;border:0;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s,background .3s}
+.btn-g{background:var(--gold);color:var(--navy);box-shadow:0 10px 26px rgba(184,116,43,.32)}
+.btn-g:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(184,116,43,.45)}
+.btn-n{background:var(--navy);color:var(--paper)}
+.btn-n:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(31,29,26,.3)}
 .btn-w{background:rgba(255,255,255,.9);color:var(--navy);border:1px solid var(--line)}
-.btn-w:hover{background:#fff}
-.btn-sm{padding:10px 20px;font-size:13.5px;border-radius:999px}
+.btn-w:hover{background:var(--card)}
+.btn-sm{padding:10px 20px;font-size:var(--fs-4);border-radius:999px}
 
 /* ===================== המסע ===================== */
-#journey{height:1820vh;position:relative;z-index:2}
+#journey{height:1000vh;position:relative;z-index:2}  /* קוצר מ-1820: כל המסע קצר ומהיר יותר גם למי שגולל עם פס הגלילה */
 .stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--paper)}
 .room{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);transform-origin:50% 50%;will-change:transform}
 .room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
 .room img.on{opacity:1}
 .room canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0}
 .room video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
-.screen{position:absolute;left:var(--scr-l);top:var(--scr-t);width:var(--scr-w);height:var(--scr-h);overflow:hidden;background:#0A1930;opacity:0;border-radius:.4vw}
+.screen{position:absolute;left:var(--scr-l);top:var(--scr-t);width:var(--scr-w);height:var(--scr-h);overflow:hidden;background:#1F1D1A;opacity:0}
+.screen::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:linear-gradient(to bottom left,rgba(255,255,255,.16),rgba(255,255,255,.07) 38%,rgba(255,255,255,0) 62%);background-color:rgba(0,0,0,.05)}   /* ברק עדין על הזכוכית, כמו בתמונה */
 /* פס כותרת דק בראש המסך עם שם הפרויקט, ומתחתיו הפרויקטים אחד-אחד, כל אחד ממלא את המסך */
-.scr-in{position:absolute;inset:0;direction:rtl;background:#0A1930}
-.strip{position:absolute;left:0;top:0;width:100%;will-change:transform}
-.slide{position:relative;overflow:hidden}
-.room .slide img{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;opacity:1}
+.scr-in{position:absolute;inset:0;direction:rtl;background:#1F1D1A}
+.strip{position:absolute;left:0;top:0;width:100%;height:100%;will-change:transform}
+.slide{position:relative;overflow:hidden;height:100%}   /* כל פרויקט ממלא את המסך בדיוק */
+.room .slide video{object-position:top;opacity:1}
+.room .slide video.in{opacity:0;transition:opacity .5s var(--ease)}
+.screen.mode-in .slide video.in{opacity:1}
+/* המתג מעל המחשב, קצת מעל המסגרת: בחוץ / בפנים. הכפתור הפעיל בזהב, והזהב מחליק אליו */
+.io{position:absolute;left:calc(var(--scr-l) + var(--scr-w) / 2);top:calc(var(--scr-t) - 9%);transform:translate(-50%,-50%);z-index:7;display:flex;gap:2px;padding:5px;border-radius:999px;direction:rtl;background:rgba(251,247,239,.92);border:1px solid rgba(184,116,43,.3);box-shadow:0 14px 34px rgba(31,29,26,.18);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;pointer-events:none}
+.io.live{pointer-events:auto}
+.io button{position:relative;z-index:1;border:0;background:none;cursor:pointer;font:inherit;font-size:var(--fs-4);font-weight:500;color:var(--navy);opacity:.7;padding:11px 24px;border-radius:999px;white-space:nowrap;transition:opacity .35s}
+.io button b{font-weight:800}
+.io button.on,.io button:hover{opacity:1}
+.io button:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
+.io-thumb{position:absolute;left:0;top:5px;bottom:5px;border-radius:999px;background:var(--gold);box-shadow:0 8px 20px rgba(184,116,43,.38);transition:transform .45s var(--ease),width .45s var(--ease)}
 .slide+.slide{box-shadow:0 -1px 0 rgba(255,255,255,.08)}
 .side{position:absolute;right:5vw;top:50%;transform:translateY(-50%);z-index:6;max-width:32vw;opacity:0;pointer-events:none}
-.side .k{font-size:12px;letter-spacing:.28em;font-weight:800;color:var(--gold-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.side .k{font-size:var(--fs-4);letter-spacing:.06em;font-weight:800;color:var(--gold-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
 .side .k::before{content:"";width:34px;height:2px;background:var(--gold)}
-.side h2{font-size:clamp(34px,4.4vw,66px);font-weight:900;line-height:.95;letter-spacing:-.045em;color:var(--navy)}
-.side p{margin-top:18px;color:var(--navy);opacity:.86;font-size:17px;font-weight:500;line-height:1.55;max-width:30ch}
+.side h2{font-size:var(--fs-2);font-weight:900;line-height:.95;letter-spacing:-.045em;color:var(--navy)}
+.side p{margin-top:18px;color:var(--navy);opacity:.86;font-size:var(--fs-4);font-weight:500;line-height:1.55;max-width:30ch}
 .side h2,.side p,.side .k{text-shadow:0 0 .35em rgba(255,255,255,.95),0 0 1.1em rgba(255,255,255,.85),0 0 2em rgba(255,255,255,.7)}
 .side .dots{margin-top:28px;display:flex;gap:8px}
-.side .dots i{width:24px;height:4px;border-radius:99px;background:rgba(10,25,48,.16);transition:width .35s,background .35s}
+.side .dots i{width:24px;height:4px;border-radius:99px;background:rgba(31,29,26,.16);transition:width .35s,background .35s}
 .side .dots i.on{width:46px;background:var(--gold)}
-.side .biz{margin-top:24px;padding-top:20px;border-top:1px solid rgba(10,25,48,.16);will-change:opacity}
-.side .biz h3{font-size:clamp(26px,2.7vw,42px);font-weight:900;line-height:1.05;letter-spacing:-.03em;color:var(--navy)}
-.side .biz .cat{display:block;margin-top:6px;font-size:13.5px;font-weight:700;color:var(--gold-deep);letter-spacing:.05em}
-.side .biz .lbl{display:block;margin-top:16px;font-size:11.5px;font-weight:800;letter-spacing:.24em;color:var(--navy);opacity:.55}
+.side .biz{margin-top:24px;padding-top:20px;border-top:1px solid rgba(31,29,26,.16);will-change:opacity}
+.side .biz h3{font-size:var(--fs-3);font-weight:900;line-height:1.05;letter-spacing:-.03em;color:var(--navy)}
+.side .biz .cat{display:block;margin-top:6px;font-size:var(--fs-4);font-weight:700;color:var(--gold-deep);letter-spacing:.05em}
+.side .biz .lbl{display:block;margin-top:16px;font-size:var(--fs-4);font-weight:800;letter-spacing:.06em;color:var(--navy);opacity:.55}
 .side .biz p{margin-top:6px}
+/* כפתור לכל פרויקט: פותח וואטסאפ עם הודעה מוכנה על הפרויקט שבמסך (אפרים, 4.11). לחיץ רק כשהמלל בצד גלוי */
+.side .side-cta{margin-top:18px}
+.side.live .side-cta{pointer-events:auto}
 .side h3,.side .cat,.side .lbl{text-shadow:0 0 .6em rgba(255,255,255,.85),0 0 1.4em rgba(255,255,255,.6)}
 /* הוא מדבר: בועה שמצביעה אליו, נפתחת ברגע שרואים אותו יושב ליד השולחן */
-.say{position:absolute;z-index:5;opacity:0;pointer-events:none;font-size:16px;direction:rtl}
-.say .in{position:relative;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.85);border-radius:1.4em;padding:1.15em 1.35em;box-shadow:0 1.4em 3em rgba(10,25,48,.18);backdrop-filter:blur(8px)}
-.say .in::after{content:"";position:absolute;right:-.72em;top:2.6em;width:1.45em;height:1.45em;background:inherit;border-right:1px solid rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.85);border-radius:0 .35em 0 0;transform:rotate(45deg)}
-.say b{display:block;font-size:1.45em;font-weight:900;line-height:1.16;letter-spacing:-.03em;color:var(--navy)}
-.say i{display:block;margin-top:.5em;font-style:normal;font-size:1.02em;font-weight:800;color:var(--gold-deep)}
-.say .dots{display:flex;gap:.3em;padding:.45em .1em}
-.say .dots s{width:.55em;height:.55em;border-radius:50%;background:#9aa4b8;text-decoration:none;animation:tp 1s infinite}
-.say .dots s:nth-child(2){animation-delay:.15s}.say .dots s:nth-child(3){animation-delay:.3s}
-.act{position:absolute;inset:0;display:flex;align-items:center;z-index:5;opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .5s var(--ease);pointer-events:none}
-.act.on{opacity:1;transform:none;pointer-events:auto}
-.act .in{max-width:1180px;margin:0 auto;padding:0 28px;width:100%}
+/* הטקסט של כל שלב: נכנס ויוצא לפי ההתקדמות במסע (ראו "טיפוגרפיה קינטית" בסקריפט). כאן רק מתי רואים אותו ומתי אפשר ללחוץ */
+.act{position:absolute;inset:0;display:flex;align-items:center;z-index:5;visibility:hidden;pointer-events:none}
+.act.on{visibility:visible}
+.act.live{pointer-events:auto}
+.kw{display:inline-block}
+html.kin:not(.kin-ready) .act[data-act="0"] .card{visibility:hidden}  /* עד שהכותרת מוכנה לעלות, שלא תהבהב */
+.act .in{max-width:none;margin:0;padding:0 var(--edge);width:100%}
 .act.low{align-items:flex-end;padding-bottom:9vh}
 /* כרטיס בצד שמאל למעלה (מעל החלון), כשאפרים יושב בצד ימין */
 .act.lft{align-items:flex-start;padding-top:14vh}
@@ -153,24 +174,67 @@ header a:focus-visible,header button:focus-visible,.hd-menu a:focus-visible{outl
 /* מלל ישר על התמונה, בלי כרטיסייה: הילה לבנה עדינה מאחורי האותיות כדי שיהיה קריא גם על רקע עמוס */
 .card.wall.glow h2,.card.wall.glow .p,.card.wall.glow .kick{color:var(--navy);text-shadow:0 0 .35em rgba(255,255,255,.95),0 0 1.1em rgba(255,255,255,.85),0 0 2em rgba(255,255,255,.7)}
 .card.wall.glow h2 .g{color:var(--gold-deep)}
-.card{display:inline-block;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:22px;padding:30px 34px;max-width:600px;box-shadow:0 24px 60px rgba(10,25,48,.16)}
+.card{display:inline-block;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:22px;padding:30px 34px;max-width:600px;box-shadow:0 24px 60px rgba(31,29,26,.16)}
 /* כותרת ההירו כתובה ישר על קיר השיש, בצבע הדלת — בלי כרטיסייה */
 .card.wall{background:none;backdrop-filter:none;border:0;border-radius:0;box-shadow:none;padding:0}
 .card.wall h1,.card.wall .h1b,.card.wall .p,.card.wall .kick{color:var(--navy)}
 .card.wall .p{opacity:.85}
-.kick{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.26em;color:var(--gold-deep);font-weight:800;margin-bottom:14px}
-.kick b{width:6px;height:6px;border-radius:50%;background:var(--gold)}
-h1{font-size:clamp(36px,5.4vw,72px);font-weight:900;line-height:1;letter-spacing:-.045em}
+.act[data-act="0"] .card{max-width:min(980px,100%)}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:var(--fs-4);letter-spacing:.06em;color:var(--gold-deep);font-weight:800;margin-bottom:14px}
+.kick b{width:18px;height:18px;flex:none;background:url(assets/img/brand/icon-mark.svg) center/contain no-repeat}
+h1{font-size:var(--fs-1);font-weight:900;line-height:1;letter-spacing:-.045em}
 h1 .t{font-weight:200}
-.h1b{font-size:clamp(20px,2.6vw,34px);font-weight:900;color:var(--gold-deep);letter-spacing:-.02em;margin-top:10px}
-.act h2{font-size:clamp(26px,3.8vw,50px);font-weight:900;line-height:1.06;letter-spacing:-.035em}
+.card.wall h1 .w2{color:var(--gold)}  /* השורה השנייה של הכותרת בברונזה, הצבע השני של הלוגו */
+.lede{text-wrap:balance;margin-top:clamp(18px,1.8vw,32px);font-size:var(--fs-4);line-height:1.6;color:rgba(31,29,26,.78);max-width:31em}
+.lede b{display:block;margin-top:8px;color:var(--ink);font-weight:700}
+.act h2{font-size:var(--fs-2);font-weight:900;line-height:1.06;letter-spacing:-.035em}
 .act h2 .g{color:var(--gold-deep)}
-.p{margin-top:14px;font-size:16.5px;color:var(--soft);max-width:46ch}
+.p{margin-top:14px;font-size:var(--fs-4);color:var(--soft);max-width:46ch}
 .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+/* סרט הפתיחה: כתובית אחת לכל סצנה, למטה באמצע כמו בסרט, על הצללה כהה ורכה שקריאה על כל תמונה */
+.scrim{position:absolute;left:0;right:0;bottom:0;height:48%;z-index:4;pointer-events:none;background:linear-gradient(to top,rgba(18,15,22,.74),rgba(18,15,22,.4) 45%,rgba(18,15,22,0))}
+.act.sub{align-items:flex-end;padding-bottom:max(9vh,96px)}
+.act.sub .in{text-align:center}
+.act.sub .card{max-width:min(1100px,100%)}
+.act.sub .card h1,.act.sub .card h2{font-size:var(--fs-2);font-weight:900;line-height:1.12;letter-spacing:-.03em;color:#FBF7EF;text-shadow:0 2px 18px rgba(0,0,0,.45);text-wrap:balance}
+.act.sub .card h1 .t{font-weight:500}
+@media(max-width:960px){.scrim{height:64%}}   /* בטלפון הכתובית יושבת גבוה יותר, אז גם ההצללה */
+.act.sub .card h1 .w2,.act.sub .card h2 .g{color:#E3B866}
+.act.sub .card .p{margin:14px auto 0;max-width:40ch;font-size:var(--fs-4);line-height:1.5;color:rgba(251,247,239,.92);opacity:1;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.act.sub .row{justify-content:center}
+/* כל הכתוביות של סרט הפתיחה באותו מקום בכל סצנה: בצד ימין, באמצע הגובה, באותו גודל.
+   הקצה הימני על הקו של ההדר. המיקום והגודל לפי החדר: wallTitle */
+@media(prefers-reduced-motion:no-preference){
+  .scrim{display:none}
+  .act.sub .card{position:absolute;right:var(--wr);top:50%;transform:translateY(-50%);width:max-content;max-width:var(--tw);text-align:right}
+  /* אותיות כהות עם הילה בהירה: קריאות על הקיר, על החלון ועל העיר */
+  .act.sub .card h1,.act.sub .card h2{font-size:var(--fs-2);color:var(--navy);text-shadow:0 0 .3em rgba(251,247,239,.9),0 0 1em rgba(251,247,239,.6)}
+  /* כותרת הפתיחה: הגודל הראשון (עד 120), על כל רוחב הקיר שמימין לדלת */
+  .act[data-act="0"] .card{max-width:var(--ww)}
+  .act[data-act="0"] .card h1{font-size:var(--wfs)}
+  .act.sub .card h1 .w2,.act.sub .card h2 .g{color:var(--gold-deep)}
+  .act.sub .card .p{margin:14px 0 0;max-width:22em;color:var(--navy);text-shadow:0 0 .3em rgba(251,247,239,.9),0 0 1em rgba(251,247,239,.6)}
+  .act.sub .row{justify-content:flex-start}
+}
 .plate{position:absolute;z-index:4;left:29.58%;top:35.37%;width:4.48%;height:2.87%;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1;font-weight:900;color:#3A2A08;font-size:.82vw;letter-spacing:.06em;text-shadow:0 1px 0 rgba(255,255,255,.35)}
-.hint{position:absolute;bottom:26px;right:50%;transform:translateX(50%);z-index:6;font-size:11px;letter-spacing:.26em;color:var(--navy);display:flex;flex-direction:column;align-items:center;gap:8px;transition:opacity .4s}
+.hint{position:absolute;bottom:26px;right:50%;transform:translateX(50%);z-index:6;font-size:var(--fs-4);letter-spacing:.06em;color:var(--navy);display:flex;flex-direction:column;align-items:center;gap:8px;transition:opacity .4s}
 .hint span{width:1px;height:36px;background:linear-gradient(var(--gold),transparent);animation:cue 1.9s infinite}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}50.1%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+/* מסילת השלבים בצד: מספר השלב מתגלגל, הקו של השלב הנוכחי מתארך. לחיצה על קו = נוסעים לשלב הזה */
+.rail{position:absolute;right:clamp(12px,1.7vw,30px);top:50%;z-index:8;transform:translateY(-50%);transition:opacity .5s var(--ease),visibility .5s}
+.rail.off{opacity:0;visibility:hidden}
+.rail-in{display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px 3px 8px;border-radius:999px;background:rgba(251,247,239,.74);border:1px solid rgba(184,116,43,.22);box-shadow:0 8px 24px rgba(31,29,26,.08);animation:railIn .9s var(--ease) 1.5s both}
+@keyframes railIn{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:none}}
+.rail-n{position:relative;width:24px;height:16px;overflow:hidden;font-size:var(--fs-4);font-weight:700;letter-spacing:.06em;color:var(--gold-deep);font-variant-numeric:tabular-nums}
+.rail-n b{position:absolute;inset:0;text-align:center;font-weight:700;transition:transform .6s var(--ease),opacity .6s var(--ease)}
+.rail-n b.up{transform:translateY(-100%);opacity:0}
+.rail-n b.dn{transform:translateY(100%);opacity:0}
+.rail-t{display:flex;flex-direction:column}
+.rail-t button{width:24px;height:22px;padding:0;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.rail-t i{display:block;width:2px;height:10px;border-radius:2px;background:rgba(31,29,26,.24);transition:height .55s var(--ease),background-color .55s var(--ease)}
+.rail-t button:hover i{height:15px;background:rgba(31,29,26,.55)}
+.rail-t button.on i{height:28px;background:var(--gold)}
+.rail-t button:focus-visible{outline:2px solid var(--gold);outline-offset:1px;border-radius:6px}
 
 /* ---------- הטלפון: וואטסאפ וסרטונים על המסך. גדלים לפי רוחב החדר (--u), כדי שיישבו בדיוק על הטלפון בכל מסך ---------- */
 .pscreen{position:absolute;left:var(--ph-l);top:var(--ph-t);width:var(--ph-w);height:var(--ph-h);overflow:hidden;opacity:0;border-radius:9% / 4.3%;background:#efeae2;direction:rtl}
@@ -197,90 +261,92 @@ h1 .t{font-weight:200}
 @keyframes tp{0%,60%,100%{opacity:.35;transform:none}30%{opacity:1;transform:translateY(-2px)}}
 .reels{position:absolute;inset:0;opacity:0;background:#000;overflow:hidden}
 .reel{position:absolute;inset:0;will-change:transform}
+.room .reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1}
 .reel-bg{position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 35%,hsl(var(--h) 45% 40%),hsl(var(--h) 55% 9%))}
 .reel-play{position:absolute;left:50%;top:45%;width:24%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.92);color:var(--navy);display:flex;align-items:center;justify-content:center;transform:translate(-50%,-50%);font-size:calc(var(--u)*1.2)}
 .reel-cap{position:absolute;inset:auto 0 0 0;padding:10% 8% 14%;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff}
 .reel-cap b{display:block;font-size:calc(var(--u)*.85);line-height:1.2}
 .reel-cap small{font-size:calc(var(--u)*.5);opacity:.85}
 .reel-tag{position:absolute;top:8%;right:7%;background:var(--gold);color:var(--navy);font-size:calc(var(--u)*.48);font-weight:800;padding:calc(var(--u)*.12) calc(var(--u)*.6);border-radius:99px}
-#side-wa h2,#side-reels h2{font-size:clamp(30px,3.4vw,54px)}
+#side-wa h2,#side-reels h2{font-size:var(--fs-2)}
 /* ---------- סוף המסע: הטלפון זז ימינה, ומשמאל "קצת עליי". קצה התמונה נמס לרקע כדי שלא ייראה כמו חיתוך ---------- */
 .room .phone-cut{inset:auto;left:19.1667%;top:19.2593%;width:20%;height:77.7778%;object-fit:fill;opacity:0;will-change:transform}
 .pscreen{will-change:transform,opacity}
 /* התמונה של אפרים על מסך הטלפון */
-.me-shot{position:absolute;inset:0;z-index:5;opacity:0;overflow:hidden;background:linear-gradient(#fff,#F6F2EA)}
+.me-shot{position:absolute;inset:0;z-index:5;opacity:0;overflow:hidden;background:linear-gradient(#FFFDF8,#FBF7EF)}
 .room .me-shot img{inset:auto;left:-6%;top:-16%;height:122%;width:auto;max-width:none;object-fit:unset;opacity:1}
-.me-cap{position:absolute;inset:auto 0 0 0;padding:26% 8% 16%;background:linear-gradient(rgba(10,25,48,0),rgba(10,25,48,.9) 58%);color:#fff;text-align:right}
+.me-cap{position:absolute;inset:auto 0 0 0;padding:26% 8% 16%;background:linear-gradient(rgba(31,29,26,0),rgba(31,29,26,.9) 58%);color:#fff;text-align:right}
 .me-cap b{display:block;font-size:calc(var(--u)*.95);line-height:1.15;font-weight:900}
 .me-cap small{display:block;margin-top:calc(var(--u)*.2);font-size:calc(var(--u)*.55);color:var(--gold-2);font-weight:700}
 .about-j{position:absolute;left:0;top:0;bottom:0;width:54%;z-index:6;display:flex;align-items:center;justify-content:center;padding:90px 3.5vw 40px 5vw;opacity:0;pointer-events:none;direction:rtl}
 .about-j.live{pointer-events:auto}
 .about-j .in{max-width:520px;width:100%;position:relative}
-.about-j .in::before{content:"";position:absolute;inset:-14% -16%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(246,242,234,.82),rgba(246,242,234,.55) 62%,rgba(246,242,234,0))}
+.about-j .in::before{content:"";position:absolute;inset:-14% -16%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(251,247,239,.82),rgba(251,247,239,.55) 62%,rgba(251,247,239,0))}
 .about-j .k,.about-j h2,.about-j p,.about-j li{text-shadow:0 0 .35em rgba(255,255,255,.95),0 0 1.1em rgba(255,255,255,.8)}
 .about-j .in>*{will-change:opacity,transform}
-.about-j .k{font-size:12px;letter-spacing:.28em;font-weight:800;color:var(--gold-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.about-j .k{font-size:var(--fs-4);letter-spacing:.06em;font-weight:800;color:var(--gold-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
 .about-j .k::before{content:"";width:34px;height:2px;background:var(--gold)}
-.about-j h2{font-size:clamp(34px,3.9vw,60px);font-weight:900;line-height:1;letter-spacing:-.045em;color:var(--navy)}
-.about-j h2 .g{display:block;margin-top:12px;font-size:.5em;line-height:1.2;letter-spacing:-.02em;color:var(--gold-deep)}
-.about-j p{margin-top:18px;color:var(--navy);opacity:.86;font-size:17px;font-weight:500;line-height:1.6;max-width:44ch}
+.about-j h2{font-size:var(--fs-2);font-weight:900;line-height:1;letter-spacing:-.045em;color:var(--navy)}
+.about-j h2 .g{display:block;text-wrap:balance;margin-top:12px;font-size:var(--fs-3);line-height:1.2;letter-spacing:-.02em;color:var(--gold-deep)}
+.about-j p{margin-top:18px;color:var(--navy);opacity:.86;font-size:var(--fs-4);font-weight:500;line-height:1.6;max-width:44ch}
 .about-j ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
-.about-j li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.5;color:var(--navy)}
-.about-j li i{font-style:normal;flex:none;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold-2);font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
+.about-j li{display:flex;gap:12px;align-items:flex-start;font-size:var(--fs-4);line-height:1.5;color:var(--navy)}
+.about-j li i{font-style:normal;flex:none;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold-2);font-weight:900;font-size:var(--fs-4);display:flex;align-items:center;justify-content:center}
 .about-j li b{font-weight:900;margin-left:7px}
 .about-j .row{margin-top:26px}
-.side .demo-tag{display:inline-block;margin-top:18px;font-size:12.5px;font-weight:700;color:var(--gold-deep);border:1px dashed var(--gold);border-radius:99px;padding:5px 12px;background:rgba(255,255,255,.75)}
+.side .demo-tag{display:inline-block;margin-top:18px;font-size:var(--fs-4);font-weight:700;color:var(--gold-deep);border:1px dashed var(--gold);border-radius:99px;padding:5px 12px;background:rgba(255,255,255,.75)}
 
 /* ===================== סקשנים ===================== */
 .sec{position:relative;z-index:3;padding:110px 0;background:var(--paper)}
 .sec.white{background:var(--white)}
-.eyebrow{font-size:11.5px;letter-spacing:.26em;color:var(--gold-deep);font-weight:800;display:block;margin-bottom:14px}
-.sec h2{font-size:clamp(28px,4.2vw,52px);font-weight:900;line-height:1.06;letter-spacing:-.04em}
+.eyebrow{font-size:var(--fs-4);letter-spacing:.06em;color:var(--gold-deep);font-weight:800;display:block;margin-bottom:14px}
+.sec h2{font-size:var(--fs-2);font-weight:900;line-height:1.06;letter-spacing:-.04em}
 .sec h2 .g{color:var(--gold-deep)}
-.lead{color:var(--soft);font-size:17.5px;max-width:620px;margin-top:16px}
+.lead{color:var(--soft);font-size:var(--fs-4);max-width:620px;margin-top:16px}
 .center{text-align:center}.center .lead{margin-inline:auto}
 .about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.creed{margin-top:24px;padding:22px 26px;border-radius:18px;background:#FBF6E8;border:1px solid rgba(201,162,39,.35);position:relative;font-size:16.5px}
+.creed{margin-top:24px;padding:22px 26px;border-radius:18px;background:rgba(184,116,43,.07);border:1px solid rgba(184,116,43,.35);position:relative;font-size:var(--fs-4)}
 .creed::before{content:"";position:absolute;top:0;bottom:0;right:0;width:3px;border-radius:99px;background:var(--gold)}
-.creed b{display:block;margin-top:10px;color:var(--gold-deep);font-size:13.5px}
+.creed b{display:block;margin-top:10px;color:var(--gold-deep);font-size:var(--fs-4)}
 .does{display:grid;gap:14px}
-.do{display:flex;gap:16px;align-items:flex-start;padding:22px 24px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px rgba(10,25,48,.05);transition:.35s var(--ease)}
-.do:hover{transform:translateX(-6px);border-color:rgba(201,162,39,.5)}
-.do i{flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:900;font-size:17px}
-.do h3{font-size:18px;font-weight:900;margin-bottom:4px}
-.do p{font-size:14.5px;color:var(--soft)}
+.do{display:flex;gap:16px;align-items:flex-start;padding:22px 24px;border-radius:18px;background:var(--card);border:1px solid var(--line);box-shadow:0 10px 30px rgba(31,29,26,.05);transition:.35s var(--ease)}
+.do:hover{transform:translateX(-6px);border-color:rgba(184,116,43,.5)}
+.do i{flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:900;font-size:var(--fs-4)}
+.do h3{font-size:var(--fs-3);font-weight:900;margin-bottom:4px}
+.do p{font-size:var(--fs-4);color:var(--soft)}
 .steps{margin-top:56px;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .steps::before{content:"";position:absolute;top:30px;right:7%;left:7%;height:1px;background:var(--line)}
 .steps .run{position:absolute;top:30px;right:7%;height:2px;width:0;background:var(--gold)}
 .step{text-align:center;position:relative}
-.step .dot{width:60px;height:60px;margin:0 auto 18px;border-radius:50%;background:#fff;border:1px solid rgba(201,162,39,.5);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;color:var(--gold-deep);position:relative;z-index:2;transition:.4s var(--ease)}
-.step.on .dot{background:var(--gold);color:var(--navy);box-shadow:0 0 0 8px rgba(201,162,39,.15)}
-.step h3{font-size:18px;font-weight:900;margin-bottom:8px}
-.step p{font-size:14px;color:var(--soft)}
+.step .dot{width:60px;height:60px;margin:0 auto 18px;border-radius:50%;background:var(--card);border:1px solid rgba(184,116,43,.5);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:var(--fs-4);color:var(--gold-deep);position:relative;z-index:2;transition:.4s var(--ease)}
+.step.on .dot{background:var(--gold);color:var(--navy);box-shadow:0 0 0 8px rgba(184,116,43,.15)}
+.step h3{font-size:var(--fs-3);font-weight:900;margin-bottom:8px}
+.step p{font-size:var(--fs-4);color:var(--soft)}
 .models{margin-top:46px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.model{border:1px solid var(--line);border-radius:22px;padding:30px 28px;background:#fff;transition:.35s var(--ease);box-shadow:0 10px 30px rgba(10,25,48,.05)}
+.model{border:1px solid var(--line);border-radius:22px;padding:30px 28px;background:var(--card);transition:.35s var(--ease);box-shadow:0 10px 30px rgba(31,29,26,.05)}
 .model:hover{transform:translateY(-6px)}
 .model.hl{border:2px solid var(--gold)}
-.model h3{font-size:21px;font-weight:900;margin-bottom:8px}
-.model p{font-size:15px;color:var(--soft)}
-.model .why{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:14px;color:var(--gold-deep);font-weight:600}
+.model h3{font-size:var(--fs-3);font-weight:900;margin-bottom:8px}
+.model p{font-size:var(--fs-4);color:var(--soft)}
+.model .why{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:var(--fs-4);color:var(--gold-deep);font-weight:600}
 #contact{padding:0 0 100px}
-.cta{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;background:var(--navy);color:#F4EDE4;border-radius:30px;padding:52px 46px;position:relative;overflow:hidden}
-.cta::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;top:-220px;left:-160px;background:radial-gradient(closest-side,rgba(201,162,39,.24),transparent)}
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;background:var(--navy);color:#FBF7EF;border-radius:30px;padding:52px 46px;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;top:-220px;left:-160px;background:radial-gradient(closest-side,rgba(184,116,43,.24),transparent)}
 .cta > *{position:relative;z-index:2}
-.cta h2{color:#fff}.cta .eyebrow{color:var(--gold-2)}.cta .lead{color:rgba(244,237,228,.75)}
-.lines{margin-top:24px;display:grid;gap:10px;font-size:15.5px}
+.cta h2{color:var(--paper);font-size:var(--fs-2)}
+.sec h2{text-wrap:balance}.cta .eyebrow{color:var(--gold-2)}.cta .lead{color:rgba(251,247,239,.75)}
+.lines{margin-top:24px;display:grid;gap:10px;font-size:var(--fs-4)}
 .lines a:hover{color:var(--gold-2)}
-form{background:rgba(255,255,255,.05);border:1px solid rgba(244,237,228,.14);border-radius:22px;padding:26px}
+form{background:rgba(255,255,255,.05);border:1px solid rgba(251,247,239,.14);border-radius:22px;padding:26px}
 .field{margin-bottom:14px}
-.field label{display:block;font-size:12.5px;color:rgba(244,237,228,.65);margin-bottom:6px}
-.field input,.field textarea{width:100%;background:rgba(10,25,48,.55);border:1px solid rgba(244,237,228,.16);border-radius:12px;padding:12px 14px;color:#F4EDE4;font-size:15px}
+.field label{display:block;font-size:var(--fs-4);color:rgba(251,247,239,.65);margin-bottom:6px}
+.field input,.field textarea{width:100%;background:rgba(31,29,26,.55);border:1px solid rgba(251,247,239,.16);border-radius:12px;padding:12px 14px;color:#FBF7EF;font-size:var(--fs-4)}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
 .field textarea{min-height:90px;resize:vertical}
 form .btn{width:100%;margin-top:6px}
-.form-msg{margin-top:12px;font-size:14px;color:var(--gold-2);min-height:20px}
-footer{position:relative;z-index:3;background:var(--paper);border-top:1px solid var(--line);padding:28px 0;text-align:center;font-size:13px;color:var(--soft)}
-.wa{position:fixed;bottom:22px;left:22px;z-index:90;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(10,25,48,.25);transition:transform .25s}
+.form-msg{margin-top:12px;font-size:var(--fs-4);color:var(--gold-2);min-height:20px}
+footer{position:relative;z-index:3;background:var(--paper);border-top:1px solid var(--line);padding:28px 0;text-align:center;font-size:var(--fs-4);color:var(--soft)}
+.wa{position:fixed;bottom:22px;right:22px;z-index:90;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(31,29,26,.25);transition:transform .25s}
 .wa:hover{transform:scale(1.08)}.wa svg{width:28px;height:28px}
 html.anim .rv{opacity:0;transform:translateY(34px)}
 
@@ -290,35 +356,42 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
   .hd-cap,header.solid .hd-cap{width:100%;gap:8px;padding:5px;padding-inline-start:16px}
   .hd-nav{display:none}
   .hd-logo{margin-inline-end:auto}
-  .hd-logo img,header.solid .hd-logo img{height:22px}
+  .hd-logo img,header.solid .hd-logo img{height:30px}
   .hd-me,header.solid .hd-me{height:40px;padding-inline-end:14px}
   .hd-av,header.solid .hd-av{width:32px;height:32px}
-  .hd-tx b{font-size:12.5px}.hd-tx small{font-size:10.5px}
+  .hd-tx b{font-size:var(--fs-4)}.hd-tx small{font-size:var(--fs-4)}
   .hd-burger{display:flex}
-  #journey{height:1480vh}
-  .about-j{top:auto;right:0;width:auto!important;padding:40px 20px calc(7vh + 64px);align-items:flex-end;background:linear-gradient(rgba(246,242,234,0),var(--paper) 26%)}
-  .about-j h2{font-size:34px}.about-j p{font-size:14.5px}.about-j ul{display:none}
-  h1{font-size:clamp(32px,8.6vw,48px)}.act h2{font-size:clamp(24px,7vw,36px)}
+  #journey{height:860vh}
+  .about-j{top:auto;right:0;width:auto!important;padding:40px 20px calc(7vh + 64px);align-items:flex-end;background:linear-gradient(rgba(251,247,239,0),var(--paper) 26%)}
+  .about-j h2{font-size:var(--fs-2)}.about-j p{font-size:var(--fs-4)}.about-j ul{display:none}
+  h1{font-size:var(--fs-1)}
+  .act[data-act="0"] h1,.lede{text-shadow:0 0 .35em rgba(251,247,239,.95),0 0 1.1em rgba(251,247,239,.85),0 0 2em rgba(251,247,239,.7)}  /* בטלפון הטקסט עובר על הדלת הכהה */.act h2{font-size:var(--fs-2)}
   .card{padding:22px 22px;max-width:100%}
   .side{right:20px;left:20px;max-width:none;top:auto;bottom:8vh;transform:none}
-  .side h2{font-size:38px}.side p{font-size:14px}
+  .side{padding:18px 20px;border-radius:18px;background:rgba(251,247,239,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 12px 32px rgba(31,29,26,.14)}   /* בטלפון המלל יושב על המסך: כרטיס בהיר מאחוריו, כדי שיהיה קריא */
+  .side .side-cta{margin-top:12px;padding:10px 20px}   /* כפתור הפרויקט קטן יותר בטלפון, שהכרטיס לא יסתיר את המסך */
+  .side h2{font-size:var(--fs-2)}.side p{font-size:var(--fs-4)}
   .about,.models,.cta{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr;gap:30px}.steps::before,.steps .run{display:none}
   .sec{padding:84px 0}.cta{padding:36px 24px}
-  .say{left:20px!important;right:20px!important;top:auto!important;bottom:9vh!important;width:auto!important;font-size:15px!important}
-  .say .in::after{display:none}
   .plate{display:none}
+  .rail{display:none}
 }
 @media(max-width:560px){.steps{grid-template-columns:1fr}.wrap{padding:0 20px}.row{flex-direction:column}
+  .io button{font-size:var(--fs-4);padding:10px 18px}
   /* בטלפון קטן: בכפתור הוואטסאפ רק התמונה */
   .hd-me,header.solid .hd-me{padding:3px}.hd-tx{display:none}.hd-av,header.solid .hd-av{width:34px;height:34px}}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
   .stage{position:relative;height:auto;display:block;padding-top:80px}#journey{height:auto}
   .room{position:relative;left:auto;top:auto;transform:none!important;width:100%!important;height:auto!important;aspect-ratio:16/9;opacity:1;margin-bottom:20px}
-  .room img{display:none}.room img.on{display:block}.room canvas,.room video,.pscreen{display:none}
-  .act{position:relative;inset:auto;opacity:1;transform:none;padding:30px 0;pointer-events:auto}
+  .room img{display:none}.room img.on{display:block}.room canvas,.room video,.pscreen,.io{display:none}
+  .act{position:relative;inset:auto;opacity:1;transform:none;padding:30px 0;pointer-events:auto;visibility:visible}
   .rv{opacity:1!important;transform:none!important}
+  .rail{display:none}
+  .scrim{display:none}
+  .act.sub .card h1,.act.sub .card h2,.act.sub .card .p{color:var(--navy);text-shadow:none}
+  .act.sub .card h1 .w2,.act.sub .card h2 .g{color:var(--gold-deep)}
 }
 </style>
 </head>
@@ -329,7 +402,7 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
 <!-- ההדר: קפסולה כחולה צפה (הדר א׳ "השלט"), עם כפתור וואטסאפ והתמונה של אפרים (מהדר ג׳) -->
 <header id="hdr">
   <div class="hd-cap">
-    <a href="#top" class="hd-logo"><img src="assets/img/logo-transparent.png" alt="אפרים קוסטנטינר" width="1302" height="222"></a>
+    <a href="#top" class="hd-logo"><img src="assets/img/brand/logo-dark.svg" alt="אפרים קוסטנטינר · ניהול העסק במערכת אחת!" width="804" height="168"></a>
     <nav class="hd-nav" aria-label="ניווט ראשי">
       <a href="#about" data-sec="about">מה אני עושה</a>
       <a href="#process" data-sec="process">איך מתקדמים</a>
@@ -357,14 +430,20 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
   <div class="stage" id="top">
 
     <div class="room" id="room">
-      <img src="assets/img/office/door-closed.jpg" alt="דלת המשרד" class="on" id="im-door" fetchpriority="high">
-      <img src="assets/img/office/office-messy.jpg" alt="משרד גדול ומבולגן" id="im-messy">
-      <img src="assets/img/office/me-desk.jpg" alt="אפרים ליד השולחן" id="im-me">
-      <img src="assets/img/office/desk-screen.jpg" alt="המחשב על השולחן" id="im-screen">
-      <img src="assets/img/office/phone-stand.jpg" alt="הטלפון על המעמד" id="im-phone">
-      <img src="assets/img/office/phone-plate.jpg" alt="" id="im-plate">
+      <img src="assets/img/office/ink/door-closed.jpg" alt="דלת המשרד" class="on" id="im-door" fetchpriority="high">
+      <img src="assets/img/office/ink/office-messy.jpg" alt="משרד גדול ומבולגן" id="im-messy">
+      <img src="assets/img/office/ink/me-desk.jpg" alt="אפרים ליד השולחן" id="im-me">
+      <img src="assets/img/office/ink/desk-screen.jpg" alt="המחשב על השולחן" id="im-screen">
+      <img src="assets/img/office/ink/phone-stand.jpg" alt="הטלפון על המעמד" id="im-phone">
+      <img src="assets/img/office/ink/phone-plate.jpg" alt="" id="im-plate">
       <!-- הפריימים מעל כל התמונות (התמונות רק גיבוי עד שהפריימים נטענים), ומתחת לשלט ולמסך -->
       <canvas id="seq" width="1600" height="900" aria-hidden="true"></canvas>
+      <!-- לילה: אותו חדר בדיוק, בחוץ חושך ובפנים אור חם (הוחשך בקוד) -->
+      <img src="assets/img/office/ink/office-night-code.jpg" alt="" id="im-night" aria-hidden="true" decoding="async">
+      <!-- מי אני: אפרים עומד בתוך המשרד בלילה. צילום סטודיו אמיתי, גזור, באור של החדר ועם הצל שלו (בטלפון: במרכז) -->
+      <img src="assets/img/office/fly/office-front-me.jpg" alt="אפרים קוסטנטינר יושב מאחורי השולחן במשרד" id="im-who" decoding="async">
+      <!-- מה עשיתי לאשתי: המחשב בלילה, והמערכת דולקת על המסך (בינתיים צילום של אתר פטיסייר, עד שיגיע צילום מסך של המערכת) -->
+      <img src="assets/img/office/fly/screen3d-final.jpg?v=2" alt="האתר של פטיסייר על המחשב של אפרים" id="im-sys" decoding="async">
       <!-- אדים עולים מהקפה בלולאה, בזמן שהפרויקטים נגללים על המסך -->
       <video id="steam" src="assets/img/office/steam.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video>
       <!-- מסך הטלפון: וואטסאפ עם הודעות תודה, ואחר כך סרטונים בגלילה. כרגע הכול לדוגמה -->
@@ -373,96 +452,110 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
         <div class="ps-notch"></div>
         <div class="ps-status"><span>9:41</span><span class="ps-bat"></span></div>
         <div class="wapp" id="wapp">
-          <div class="wapp-top"><span class="wapp-av">ל</span><div><b>לקוח מרוצה</b><small>הודעות לדוגמה</small></div></div>
+          <div class="wapp-top"><span class="wapp-av">ר</span><div><b>רונית</b><small>לקוחה חדשה · שיחה לדוגמה</small></div></div>
           <div class="wapp-body">
             <div class="wapp-day">היום</div>
-            <div class="bub in">אפרים, תודה ענקית. מאז שהמערכת עלתה אני סוף סוף רואה הכול במקום אחד 🙏<i>09:12</i></div>
-            <div class="bub in">ההזמנות נכנסות לבד, ואני כבר לא רודף אחרי אף אחד.<i>09:13</i></div>
-            <div class="bub out">איזה כיף לשמוע! בשביל זה בנינו את זה 💪<i>09:15<u>✓✓</u></i></div>
-            <div class="bub in">לקוחה אמרה לי היום שהאתר נראה כמו של חברה גדולה 😄<i>11:40</i></div>
-            <div class="bub in">ממליץ עליך לכל מי שאני מכיר.<i>11:41</i></div>
+            <div class="bub in">היי, כמה עולה מגש גדול?<i>09:12</i></div>
+            <div class="bub out">היי רונית! כל המגשים והמחירים כאן, ואפשר להזמין ישר מהקישור 👇<i>09:12<u>✓✓</u></i></div>
+            <div class="bub in">הזמנתי ליום חמישי 🙂<i>09:20</i></div>
+            <div class="bub out">קיבלנו! ההזמנה ליום חמישי כבר ביומן ✓<i>09:20<u>✓✓</u></i></div>
             <div class="bub in typing"><s></s><s></s><s></s></div>
           </div>
         </div>
-        <div class="me-shot" id="me-shot"><img src="assets/img/efraim.png" alt="אפרים קוסטנטינר"><div class="me-cap"><b>אפרים קוסטנטינר</b><small>יועץ הצלחה דיגיטלית</small></div></div>
+        <div class="me-shot" id="me-shot"><img src="assets/img/efraim.png" alt="אפרים קוסטנטינר"><div class="me-cap"><b>אפרים קוסטנטינר</b><small>ניהול העסק במערכת אחת!</small></div></div>
         <div class="reels" id="reels">
-          <div class="reel"><div class="reel-bg" style="--h:212"></div><span class="reel-tag">בקרוב</span><span class="reel-play">▶</span><div class="reel-cap"><b>סיפור הצלחה 1</b><small>סרטון לדוגמה · יוחלף בסיפור אמיתי</small></div></div>
-          <div class="reel"><div class="reel-bg" style="--h:42"></div><span class="reel-tag">בקרוב</span><span class="reel-play">▶</span><div class="reel-cap"><b>סיפור הצלחה 2</b><small>סרטון לדוגמה · יוחלף בסיפור אמיתי</small></div></div>
-          <div class="reel"><div class="reel-bg" style="--h:330"></div><span class="reel-tag">בקרוב</span><span class="reel-play">▶</span><div class="reel-cap"><b>סיפור הצלחה 3</b><small>סרטון לדוגמה · יוחלף בסיפור אמיתי</small></div></div>
+          <div class="reel"><img src="assets/img/reels/tip-ten-times.jpg" alt=""><span class="reel-play">▶</span><div class="reel-cap"><b>עשר פעמים. פעם אחת.</b><small>טיפ · וואטסאפ עסקי</small></div></div>
+          <div class="reel"><img src="assets/img/reels/evening-returns.jpg" alt=""><span class="reel-play">▶</span><div class="reel-cap"><b>והערב חוזר.</b><small>נעים להכיר</small></div></div>
+          <div class="reel"><img src="assets/img/reels/one-system.jpg" alt=""><span class="reel-play">▶</span><div class="reel-cap"><b>מערכת אחת. והעסק רץ.</b><small>בלי קורסים</small></div></div>
         </div>
       </div>
       <div class="plate" id="plate">משרד</div>
 
       <div class="screen" id="screen">
         <div class="scr-in" id="slides"><div class="strip" id="strip">
-          <div class="slide" data-k="ברי פירות לאירועים" data-t="קריספרי" data-p="אתר מכירה עם עולם תוכן, ופאנל ניהול שבו מעדכנים לבד מחירים, מוצרים וטקסטים, בלי לחכות למתכנת."><img src="assets/img/admin/crispery-dashboard.jpg" alt="פאנל הניהול של קריספרי"></div>
-          <div class="slide" data-k="קינוחים ואירועים" data-t="פטיסייר" data-p="כל ההזמנות, המוצרים, הברים והלקוחות בפאנל ניהול אחד מסודר, עם חנות אונליין שמקבלת הזמנות לבד."><img src="assets/img/projects/patissier-home.jpg" alt="האתר של פטיסייר"></div>
-          <div class="slide" data-k="אפליקציה לעסקים" data-t="סינקאפ" data-p="מערכת שלמה מאפס: הרשמה, פרופיל עסקי, ותוכן לסטטוס שנוצר אוטומטית בכל יום."><img src="assets/img/projects/syncap-home.jpg" alt="האפליקציה של סינקאפ"></div></div>
+          <!-- לכל פרויקט שני סרטונים קצרים: בחוץ = האתר, בפנים = פאנל הניהול. מתנגן רק של הפרויקט שבאמצע (בלולאה, בלי קול) -->
+          <div class="slide" data-k="קינוחים ואירועים" data-t="פטיסייר" data-p="כל ההזמנות, המוצרים, הברים והלקוחות בפאנל ניהול אחד מסודר, עם חנות אונליין שמקבלת הזמנות לבד."><video class="out" src="assets/video/projects/patissier.mp4?v=3" poster="assets/video/projects/patissier.jpg?v=3" muted loop playsinline preload="none" aria-label="האתר של פטיסייר"></video><video class="in" src="assets/video/projects/patissier-in.mp4?v=3" poster="assets/video/projects/patissier-in.jpg?v=3" data-loop="2.2" muted playsinline preload="none" aria-label="פאנל הניהול של פטיסייר"></video></div>
+          <div class="slide" data-k="ברי פירות לאירועים" data-t="קריספרי" data-p="אתר מכירה עם עולם תוכן, ופאנל ניהול שבו מעדכנים לבד מחירים, מוצרים וטקסטים, בלי לחכות למתכנת."><video class="out" src="assets/video/projects/crispery.mp4?v=3" poster="assets/video/projects/crispery.jpg?v=3" muted loop playsinline preload="none" aria-label="האתר של קריספרי"></video><video class="in" src="assets/video/projects/crispery-in.mp4?v=3" poster="assets/video/projects/crispery-in.jpg?v=3" data-loop="2.1" muted playsinline preload="none" aria-label="פאנל הניהול של קריספרי"></video></div>
+          <div class="slide" data-k="ליווי כלכלי למשפחות" data-t="מנטורי" data-p="אתר, אזור אישי למשפחה ולוח למלווה, הכול על בסיס אחד. המשפחה רואה כל חודש כמה נשאר לה, והמלווה רואה את כל המשפחות במקום אחד."><video class="out" src="assets/video/projects/mentori.mp4?v=3" poster="assets/video/projects/mentori.jpg?v=3" muted loop playsinline preload="none" aria-label="האתר של מנטורי"></video><video class="in" src="assets/video/projects/mentori-in.mp4?v=3" poster="assets/video/projects/mentori-in.jpg?v=3" data-loop="2.2" muted playsinline preload="none" aria-label="פאנל הניהול של מנטורי"></video></div></div>
         </div>
+      </div>
+      <!-- מעל המחשב: בחוץ = האתר שהלקוח רואה, בפנים = פאנל הניהול שבעל העסק רואה (אפרים, 3.11) -->
+      <div class="io" id="io" role="group" aria-label="מה רואים על המסך">
+        <span class="io-thumb" aria-hidden="true"></span>
+        <button type="button" class="on" data-m="out" aria-pressed="true"><b>בחוץ</b> · האתר</button>
+        <button type="button" data-m="in" aria-pressed="false"><b>בפנים</b> · פאנל הניהול</button>
       </div>
     </div>
 
-    <div class="act on" data-act="0"><div class="in"><div class="card wall">
-      <span class="kick"><b></b> יועץ הצלחה דיגיטלית · עין מעצבת</span>
-      <h1><span class="t">בעל עסק,</span><br>ויש בלגן?</h1>
-      <div class="h1b">הסדר נמצא פה — מאחורי הדלת.</div>
-      <p class="p">מערכת אחת שמנהלת את כל העסק — לידים, לקוחות, פרויקטים, משימות וכסף — במקום ראש שצריך לזכור.</p>
+    <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+    <!-- סרט הפתיחה: הכתוביות מילה במילה, אחת לכל סצנה -->
+    <div class="act sub on live" data-act="0"><div class="in"><div class="card wall">
+      <h1><span class="t w w1">איך העסק שלך עובד היום?</span><br><span class="w w2">תיכנס, נראה.</span></h1>
       <div class="row">
-        <a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="btn btn-g">בואו נדבר בוואטסאפ</a>
+        <a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="btn btn-g">כתבו לי בוואטסאפ, ואחזור אליכם תוך 24 שעות</a>
         <a href="#about" class="btn btn-w">מה אני עושה</a>
       </div>
     </div></div></div>
 
-    <div class="act top" data-act="1"><div class="in"><div class="card wall glow">
-      <span class="kick"><b></b> ככה זה נראה היום</span>
-      <h2>כמה עובדים <span class="g">אתם צריכים</span><br>כדי להחזיק את כל זה?</h2>
-      <p class="p">עמדה לכל משימה, אקסל לכל עמדה, וערימה שמישהו אמור לזכור.</p>
+    <div class="act sub" data-act="1"><div class="in"><div class="card wall">
+      <h2>הזמנה במחברת,<br>מקדמה באקסל,<br><span class="g">והשאר בראש.</span></h2>
     </div></div></div>
 
-    <div class="say" id="say"><div class="in">
-      <div class="dots" id="say-dots" aria-hidden="true"><s></s><s></s><s></s></div>
-      <div class="txt" id="say-txt"><b>בוא, אני אראה לך איזה עסקים סידרתי.</b><i>אתר אחד מסודר, וכיף לעבוד איתו.</i></div>
-    </div></div>
+    <div class="act sub" data-act="2"><div class="in"><div class="card wall">
+      <h2>ואתה עונה להודעות<br><span class="g">עד חצות.</span></h2>
+    </div></div></div>
+
+    <div class="act sub" data-act="3"><div class="in"><div class="card wall">
+      <h2>בוא, <span class="g">אני אעשה לכם סדר.</span></h2>
+    </div></div></div>
+
+    <!-- כל הסיפור שלו בכותרת אחת ומלל אחד, על אותו מסך (אפרים: "לא בכמה שלבים") -->
+    <div class="act sub" data-act="4"><div class="in"><div class="card wall">
+      <h2>נעים מאוד, <span class="g">אני אפרים.</span></h2>
+      <p class="p">אשתי פתחה בר קינוחים, וההזמנות התבלבלו. בניתי לה אתר ומערכת כגוף אחד, והיום פטיסייר עובד עליהם.<br><strong>בוא, תראה איך זה נראה.</strong></p>
+    </div></div></div>
 
     <div class="side" id="side">
-      <span class="k">מבפנים · פאנלי הניהול</span>
+      <span class="k">אתר ומערכת לכל עסק</span>
       <h2>עסקים שסידרתי</h2>
       <div class="biz" id="side-biz">
         <h3 id="side-h">קריספרי</h3>
         <span class="cat" id="side-k">ברי פירות לאירועים</span>
         <span class="lbl">מה הקפצנו</span>
         <p id="side-p">אתר מכירה עם עולם תוכן, ופאנל ניהול שבו מעדכנים לבד מחירים, מוצרים וטקסטים, בלי לחכות למתכנת.</p>
+        <a id="side-cta" class="btn btn-g side-cta" href="https://wa.me/972534191131" target="_blank" rel="noopener">רוצה כזה לעסק שלך? ←</a>
       </div>
       <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
     </div>
 
     <div class="side" id="side-wa">
       <span class="k">אחרי שהמערכת עולה</span>
-      <h2>ככה נראה הוואטסאפ כשהעסק מסודר</h2>
-      <p>הלקוחות מקבלים תשובה בזמן, ההזמנות לא הולכות לאיבוד, והתודות מגיעות לבד.</p>
-      <span class="demo-tag">הודעות לדוגמה · יוחלפו בהודעות אמיתיות</span>
+      <h2>השאלה חוזרת.<br>התשובה כבר מוכנה.</h2>
+      <p>לקוח שואל כמה זה עולה, ומקבל מיד תשובה עם קישור להזמנה. ההזמנה נוחתת ישר במערכת.</p>
+      <span class="demo-tag">שיחה לדוגמה</span>
     </div>
 
     <div class="side" id="side-reels">
-      <span class="k">סיפורי הצלחה</span>
-      <h2>תשמעו את זה מהם</h2>
-      <p>סרטונים קצרים של בעלי עסקים: מה היה לפני, ומה השתנה.</p>
-      <span class="demo-tag">סרטונים לדוגמה · יוחלפו בסיפורים אמיתיים</span>
+      <span class="k">הסרטונים שלי</span>
+      <h2>דקה אחת.<br>ורואים איך זה עובד.</h2>
+      <p>סרטונים קצרים על סדר בעסק, ועל מה שקורה כשהמערכת עובדת במקומך.</p>
     </div>
     <div class="about-j" id="about-j">
       <div class="in">
         <span class="k">קצת עליי</span>
-        <h2>נעים מאוד,<br>אני אפרים.<span class="g">אני הופך בלגן בעסק למערכת שעובדת לבד.</span></h2>
-        <p>יועץ הצלחה דיגיטלית. אני יושב איתכם על העסק, מבין איפה העבודה נתקעת, ובונה מערכת ניהול אחת עם אוטומציות שעושות את העבודה החוזרת במקומכם.</p>
+        <h2>נעים מאוד,<br>אני אפרים.<span class="g">ואני עוזר לבעלי עסקים להפסיק לחזור על עצמם.</span></h2>
+        <p>אני בונה אתר ומערכת ניהול שמחוברים לגוף אחד. יושב איתכם על העסק, מבין מה חוזר על עצמו ואיפה העבודה נתקעת, ובונה את מה שעושה את זה במקומכם.</p>
         <ul>
           <li><i>1</i><span><b>מאפיין</b>מה חוזר על עצמו, ואיפה העבודה נתקעת.</span></li>
           <li><i>2</i><span><b>בונה</b>מערכת אחת סביב איך שהעסק באמת עובד.</span></li>
           <li><i>3</i><span><b>מטמיע</b>ומלווה, עד שהמערכת באמת מקצרת לכם את היום.</span></li>
         </ul>
-        <div class="row"><a href="#contact" class="btn btn-g">בואו נדבר ←</a></div>
+        <div class="row"><a href="#contact" class="btn btn-g">לשיחת אבחון של 30 דקות ←</a></div>
       </div>
     </div>
-    <div class="hint" id="hint">גללו<span></span></div>
+    <div class="hint" id="hint" aria-hidden="true"><span></span></div>
+    <nav class="rail" id="rail" aria-label="שלבי המסע"><div class="rail-in"><span class="rail-n" id="rail-n" aria-hidden="true"><b>01</b></span><div class="rail-t" id="rail-t"></div></div></nav>
   </div>
 </section>
 
@@ -472,9 +565,9 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
       <div>
         <span class="eyebrow">יצירת קשר</span>
         <h2>ספרו לי מה חוזר על עצמו<br><span style="color:var(--gold-2)">אצלכם כל שבוע.</span></h2>
-        <p class="lead">שיחת אבחון של 30 דקות, בלי תשלום. אני אחזור אליכם עם הדבר הראשון שהייתי מכניס למערכת — גם אם לא נעבוד יחד.</p>
+        <p class="lead">שיחת אבחון של 30 דקות, בלי תשלום. אני אחזור אליכם עם הדבר הראשון שהייתי מכניס למערכת, גם אם לא נעבוד יחד.</p>
         <div class="lines">
-          <a href="https://wa.me/972534191131" target="_blank" rel="noopener">💬 וואטסאפ — התשובה הכי מהירה</a>
+          <a href="https://wa.me/972534191131" target="_blank" rel="noopener">💬 וואטסאפ, התשובה הכי מהירה</a>
           <a href="tel:+972534191131">📞 053-419-1131</a>
           <a href="mailto:p0534191131@gmail.com">✉️ p0534191131@gmail.com</a>
         </div>
@@ -496,13 +589,13 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
       <div class="rv">
         <span class="eyebrow">מה אני עושה</span>
         <h2>לא מוכר אוטומציה.<br><span class="g">מוכר עסק שרץ בלעדיך.</span></h2>
-        <p class="lead">אני אפרים קוסטנטינר, יועץ הצלחה דיגיטלית עם עין מעצבת. אני יושב על העסק, מאפיין אותו לעומק, ומזהה את הנקודה האחת שבה הכי הרבה תפוקה נתקעת על הכי מעט עבודה — ובונה בדיוק את זה.</p>
-        <div class="creed">כל עסק שרוב העבודה בו מבוססת מחשב ומסמכים — אסור לו להסתמך על עובדים, אלא על מערכת מאופיינת נכון, עם אוטומציות שפועלות לבד.<b>— אני מאמין</b></div>
+        <p class="lead">אני אפרים קוסטנטינר. אני יושב על העסק, מאפיין אותו לעומק, ומוצא את מה שאתם עושים שוב ושוב כל יום. ואז בונה אתר ומערכת ניהול שעושים את זה במקומכם.</p>
+        <div class="creed">בעידן ה-AI אסור לך לבזבז שעות על מה שמערכת AI יכולה לעשות לבד. אתה חייב עסק שעובד חכם מבפנים ונראה מדהים מבחוץ, ולחזור לעשות את מה שרק אתה יודע.<b>אני מאמין</b></div>
       </div>
       <div class="does rv">
         <div class="do"><i>1</i><div><h3>מאפיין</h3><p>שיחה ושאלון עומק: מה חוזר על עצמו, איפה הידע יושב, מי ממתין למי, ומה לא נמדד.</p></div></div>
-        <div class="do"><i>2</i><div><h3>בונה</h3><p>מערכת אחת סביב איך שהעסק באמת עובד — לידים, לקוחות, פרויקטים, משימות וכסף, מחוברים.</p></div></div>
-        <div class="do"><i>3</i><div><h3>מטמיע</h3><p>מעביר את העסק למערכת ומלווה בהרצה — עד שהיא באמת מקצרת לך את היום.</p></div></div>
+        <div class="do"><i>2</i><div><h3>בונה</h3><p>אתר ומערכת אחת סביב איך שהעסק באמת עובד: הזמנות, לקוחות, יומן ותשלומים, מחוברים.</p></div></div>
+        <div class="do"><i>3</i><div><h3>מטמיע</h3><p>מעביר את העסק למערכת ומלווה בהרצה, עד שהיא באמת מקצרת לך את היום.</p></div></div>
       </div>
     </div>
   </div>
@@ -513,23 +606,23 @@ html.anim .rv{opacity:0;transform:translateY(34px)}
     <div class="center">
       <span class="eyebrow">איך מתקדמים</span>
       <h2>ארבעה שלבים. <span class="g">אפס הפתעות.</span></h2>
-      <p class="lead">אותו תהליך בכל פרויקט — ככה תמיד יודעים איפה הדברים עומדים.</p>
+      <p class="lead">אותו תהליך בכל פרויקט. ככה תמיד יודעים איפה הדברים עומדים.</p>
     </div>
     <div class="steps" id="steps">
       <div class="run" id="run"></div>
       <div class="step"><div class="dot">1</div><h3>שיחת אבחון</h3><p>30 דקות, בלי תשלום. מספרים לי מה חוזר על עצמו, ואני אומר מה הייתי מכניס למערכת ראשון.</p></div>
-      <div class="step"><div class="dot">2</div><h3>איפיון</h3><p>שאלון עומק ומפת מסכים. בסופו — מחיר ולוח זמנים סגורים.</p></div>
-      <div class="step"><div class="dot">3</div><h3>עיצוב ובנייה</h3><p>רואים את המערכת לפני שורת קוד אחת. ואז בונים — עם אבטחה, נגישות ופרטיות.</p></div>
+      <div class="step"><div class="dot">2</div><h3>איפיון</h3><p>שאלון עומק ומפת מסכים. בסופו: מחיר ולוח זמנים סגורים.</p></div>
+      <div class="step"><div class="dot">3</div><h3>עיצוב ובנייה</h3><p>רואים את המערכת לפני שורת קוד אחת. ואז בונים, עם אבטחה, נגישות ופרטיות.</p></div>
       <div class="step"><div class="dot">4</div><h3>הטמעה</h3><p>מעבירים את העסק פנימה, מריצים יחד, ומוודאים שזה באמת עובד.</p></div>
     </div>
     <div class="models">
-      <div class="model rv"><h3>תשלום פר פרויקט</h3><p>תשלום חד־פעמי על בניית המערכת, לפי היקף הפרויקט. מחיר סגור מראש, אחרי האיפיון.</p><div class="why">מתאים כשרוצים לדעת בדיוק מה העלות, מראש.</div></div>
-      <div class="model hl rv"><h3>חלוקת רווחים</h3><p>כשהמערכת מכפילה את התפוקה — אחוז מההכנסות שהיא מייצרת, בנוסף לפרויקט. אם היא לא מייצרת, אני לא מרוויח.</p><div class="why">מתאים כשרוצים שהאינטרס שלי יהיה זהה לשלכם.</div></div>
+      <div class="model hl rv"><h3>תשלום פר פרויקט</h3><p>תשלום חד־פעמי על האתר והמערכת, לפי היקף הפרויקט. מחיר סגור מראש, אחרי האיפיון.</p><div class="why">מתאים כשרוצים לדעת בדיוק מה העלות, מראש.</div></div>
+      <div class="model rv"><h3>ליווי חודשי</h3><p>אחרי שהמערכת עולה: תחזוקה, שיפורים ותוספות חדשות, בתשלום חודשי קבוע.</p><div class="why">מתאים כשרוצים שהמערכת תגדל יחד עם העסק.</div></div>
     </div>
   </div>
 </section>
 
-<footer>© <span id="yr">2026</span> אפרים קוסטנטינר · יועץ הצלחה דיגיטלית · כל הזכויות שמורות</footer>
+<footer>© <span id="yr">2026</span> אפרים קוסטנטינר · ניהול העסק במערכת אחת! · כל הזכויות שמורות</footer>
 
 <a href="https://wa.me/972534191131" target="_blank" rel="noopener" class="wa" aria-label="וואטסאפ">
   <svg viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9C13.5 28 14.7 27 16 27c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.6 16.8c-.3.7-1.5 1.4-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.3.6.9 2.1.9 2.3.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.8 2.1 1 .3.1.5.2.5.3.1.2.1.7-.2 1.5z"/></svg>
@@ -551,22 +644,31 @@ const room=$('room'), screen=$('screen'), slides=[...document.querySelectorAll('
 const ims={door:$('im-door'),messy:$('im-messy'),me:$('im-me'),scr:$('im-screen'),phone:$('im-phone')};
 const steam=$('steam');
 
-/* סרטונים שמתקדמים עם הגלילה — פריימים אמיתיים מהסרטון */
-const SEQ1={dir:'seq',  n:120, a:.04, b:.24};  /* הדלת נפתחת ונכנסים למשרד המבולגן */
-const SEQ2={dir:'seq2', n:120, a:.32, b:.50};  /* הדפים, הכסאות והשולחנות עפים — ומתגלה אפרים ליד השולחן */
+/* סרטונים שמתקדמים עם הגלילה — פריימים אמיתיים מהסרטון.
+   even = מהירות אחידה: בסרטון המקורי המצלמה כמעט עומדת בהתחלה ובסוף, וטסה באמצע (פי 3 מהממוצע) — זה מה שסחרר.
+   לכל פריים נמדד בכמה פיקסלים התמונה זזה (לא רק כמה היא השתנתה: על קיר לבן חלק תנועה כמעט לא "משנה" את התמונה), והמספרים כאן הם הסכום המצטבר (0 עד 1000).
+   הפריים מוצג לפי החלק היחסי של התנועה, אז העין רואה תנועה רכה ושווה מתחילה ועד סוף, בלי שיא ובלי זמן מת */
+const SEQ1={dir:'seq-walk', n:91, a:0, b:.252, /* שוט אחד אמיתי: הדלת נפתחת פנימה, ונכנסים בהליכה עד המשרד המבולגן. בלי אנשים, בלי זום. הפריים האחרון = תמונת הבלאגן */
+  even:'0,3,6,9,13,17,21,25,29,34,39,44,50,56,62,68,75,83,90,99,109,120,131,142,152,162,174,185,197,209,220,232,243,255,268,281,295,309,323,338,354,370,386,404,422,441,459,478,498,519,539,559,579,599,619,639,658,677,696,714,732,750,767,783,799,815,830,844,857,869,879,889,899,909,918,926,934,941,949,956,962,968,974,979,983,987,991,994,996,998,1000'};
+const SEQ2={dir:'seq2', n:120, a:.253,b:.46,  /* הדפים, הכסאות והשולחנות עפים, ומתגלה אפרים ליד השולחן. גם הוא מתחיל ונגמר יחד עם המעבר */
+  even:'0,2,3,5,6,8,10,11,13,15,17,20,22,25,28,31,34,38,42,46,51,56,62,69,75,83,90,99,107,116,125,134,143,152,162,171,181,192,202,213,224,235,245,256,268,279,290,302,314,326,339,352,365,377,389,400,410,420,428,438,448,458,468,478,488,499,511,522,534,546,558,571,584,599,613,626,639,650,661,672,683,694,706,717,729,741,751,762,772,782,792,803,813,824,834,844,854,864,872,881,889,896,904,911,919,927,934,942,949,956,962,967,973,978,982,986,990,994,997,1000'};
 const SEQ3={dir:'seq3', n:60,  a:.56, b:.62};  /* המצלמה מסתובבת מאפרים אל המסך */
 const SEQ4={dir:'seq4', n:60,  a:.79, b:.84};  /* מהשולחן אל הטלפון שנעמד — בסקאלה של כל המסע (P) */
+/* הכול עף: מבט ישר מול השולחן, בלילה. ערמות הדפים והקלסרים עפות, אפרים מתגלה יושב בכיסא, ובחוץ נהיה יום. המצלמה עומדת */
+const SEQF={dir:'seq-fly', n:96, a:.332, b:.398,
+  even:'0,10,20,32,45,58,71,84,97,110,124,137,151,165,178,192,205,218,231,242,254,265,276,289,301,315,328,341,355,369,383,399,415,433,452,471,489,507,524,540,555,570,584,598,611,624,636,647,659,670,681,692,703,713,724,735,745,755,766,777,788,799,810,822,833,843,853,862,872,881,890,898,907,915,922,930,937,944,950,956,961,966,970,974,978,981,984,986,988,990,992,994,995,997,998,1000'};
+/* בוא, תראה: תנועת מצלמה אחת רציפה. המחשב שעל השולחן מסתובב, המצלמה מקיפה את השולחן ונעצרת מול המסך, עם קיר השיש מאחור.
+   הפריים האחרון = התמונה החדה עם האתר האמיתי על המסך */
+const SEQS={dir:'seq-screen', v:2, n:121, a:.522, b:.5585,   /* v2 (3.11): על המסך בתנועה האתר החדש של פטיסייר, ולא הישן */   /* המצלמה מקיפה את השולחן ונעצרת מול מחשב אמיתי בצד שמאל, עם קיר שיש. הפריים האחרון = התמונה החדה עם האתר האמיתי */
+  even:'0,1,3,4,6,7,9,12,14,16,19,22,24,27,31,34,38,42,46,50,55,59,64,69,75,81,87,93,100,107,114,122,130,139,148,157,167,177,187,198,209,221,234,246,259,273,286,300,314,328,343,359,374,390,406,422,438,455,471,488,504,521,538,554,571,587,602,618,633,647,661,673,685,697,709,720,731,741,751,761,770,780,789,798,806,814,822,830,838,846,853,860,866,873,879,885,890,896,902,907,912,917,922,927,932,937,941,946,950,955,959,964,968,972,976,980,984,988,992,996,1000'};
 const seqEl=$('seq'), sctx=seqEl.getContext('2d');
-let seqCur=null, seqDrawn=null;
-/* הפריימים ארוזים בגיליונות של 3x2 (assets/img/office/sheets) — 60 קבצים במקום 360, אותה איכות בדיוק */
-const SH={cols:3, rows:2, fw:1600, fh:900};
-const SHN=SH.cols*SH.rows;
-[SEQ1,SEQ2,SEQ3,SEQ4].forEach(s=>{
-  s.want=0; s.ready=false; s.sheets=Math.ceil(s.n/SHN);
-  s.frames=Array.from({length:s.n},(_,i)=>({
-    img:null, ok:false,
-    sx:(i%SHN%SH.cols)*SH.fw, sy:Math.floor(i%SHN/SH.cols)*SH.fh
-  }));
+let seqCur=null, seqDrawn=null, gliding=false;   /* gliding: בזמן מעבר הטעינה ברקע ממתינה, כדי שלא תתחרה בציור */
+/* כל פריים בקובץ משלו (assets/img/office/frames-ink/<סרטון>/001.jpg). פריים בודד מתפענח מהר וברקע,
+   ולכן הציור לא נעצר באמצע מעבר. (בגיליונות של 6 פריימים כל גיליון חדש עצר את הדפדפן לרגע) */
+[SEQ1,SEQ2,SEQ3,SEQ4,SEQF,SEQS].forEach(s=>{
+  s.want=0; s.ready=false;
+  s.frames=Array.from({length:s.n},()=>({img:null, ok:false}));
+  if(s.even) s.even=s.even.split(',').map(v=>v/1000);
 });
 function nearest(s,i){
   for(let d=0;d<s.n;d++){
@@ -575,43 +677,116 @@ function nearest(s,i){
   }
   return null;
 }
-/* mix = {s:הסרטון הקודם, t:0..1}: בתפר בין שני סרטונים מציירים את הפריים האחרון של הקודם מתחת, ואת החדש בשקיפות t */
-function drawSeq(s,i,mix){
-  s.want=i; seqCur=s;
+/* x = מיקום בסרטון, אפשר באמצע בין שני פריימים: אז מציירים את שניהם, הבא בשקיפות לפי כמה התקדמנו אליו.
+   זה מחליק את התנועה כמו טשטוש תנועה קל, במקום קפיצה מפריים לפריים.
+   mix = {s:הסרטון הקודם, t:0..1}: בתפר בין שני סרטונים מציירים את הפריים האחרון של הקודם מתחת, ואת החדש בשקיפות t */
+let seqKey='';
+function drawSeq(s,x,mix){
+  const i=Math.floor(x), fr=x-i;
+  s.want=x; seqCur=s;
   const f=nearest(s,i); if(!f) return false;
+  const g=fr>.03&&s.frames[i+1]&&s.frames[i+1].ok?s.frames[i+1]:null;
   const u=mix&&mix.t<1?nearest(mix.s,mix.s.n-1):null;
-  if(f===seqDrawn&&!u) return true;
-  if(u){ sctx.globalAlpha=1; blit(u); sctx.globalAlpha=mix.t; }
-  blit(f); sctx.globalAlpha=1;
-  seqDrawn=u?null:f;
+  const key=(g?fr.toFixed(2):'')+(u?'|'+mix.t.toFixed(3):'');
+  if(f===seqDrawn&&key===seqKey) return true;
+  const a=u?mix.t:1;
+  if(u){ sctx.globalAlpha=1; blit(u); }
+  sctx.globalAlpha=a; blit(f);
+  if(g){ sctx.globalAlpha=a*fr; blit(g); }
+  sctx.globalAlpha=1;
+  seqDrawn=f; seqKey=key;
   return true;
 }
-/* חותך את הפריים מתוך הגיליון ומותח אותו על כל הקנבס */
-function blit(f){ sctx.drawImage(f.img, f.sx, f.sy, SH.fw, SH.fh, 0, 0, seqEl.width, seqEl.height); }
-function loadSeq(s,done){
-  /* קודם הגיליון הראשון והאחרון, אחר כך כל 8, כל 4… — הגלילה עובדת מהר ומתחדדת תוך כדי טעינה */
-  const N=s.sheets, order=[], seen=new Set();
-  [0,N-1].concat(...[8,4,2,1].map(k=>Array.from({length:Math.ceil(N/k)},(_,j)=>j*k)))
+/* מותח את הפריים על כל הקנבס */
+function blit(f){ sctx.drawImage(f.img, 0, 0, seqEl.width, seqEl.height); }
+function loadSeq(s,done,lanes){
+  /* קודם הפריים הראשון והאחרון, אחר כך כל 16, כל 8… — הגלילה עובדת מהר ומתחדדת תוך כדי טעינה */
+  const N=s.n, order=[], seen=new Set();
+  [0,N-1].concat(...[16,8,4,2,1].map(k=>Array.from({length:Math.ceil(N/k)},(_,j)=>j*k)))
     .forEach(i=>{ if(i<N&&!seen.has(i)){ seen.add(i); order.push(i); } });
   let at=0, busy=0, left=order.length;
-  const next=()=>{ while(busy<4&&at<order.length){
+  const fin=()=>{ if(--left===0&&done) done(); };
+  const next=()=>{ if(gliding&&at<order.length){ setTimeout(next,160); return; } while(busy<(lanes||4)&&at<order.length){
     const k=order[at++], img=new Image(); busy++;
-    const end=()=>{ busy--; if(--left===0&&done) done(); next(); };
-    img.onload=()=>{
-      for(let i=k*SHN, last=Math.min(s.n,(k+1)*SHN); i<last; i++){ s.frames[i].img=img; s.frames[i].ok=true; }
+    const ok=()=>{
+      s.frames[k].img=img; s.frames[k].ok=true;
       if(!s.ready){ s.ready=true; if(lastP!=null) setJourney(lastP); }
-      else if(seqCur===s) drawSeq(s,s.want);
-      end(); };
-    img.onerror=end;
-    img.src='assets/img/office/sheets/'+s.dir+'_'+String(k+1).padStart(2,'0')+'.jpg';
+      else if(seqCur===s&&!gliding) drawSeq(s,s.want);
+      fin(); };
+    /* הקובץ ירד: משחררים את הנתיב להורדה הבאה, ומפענחים ברקע לפני שמציירים */
+    img.onload=()=>{ busy--; next(); if(img.decode) img.decode().then(ok,ok); else ok(); };
+    img.onerror=()=>{ busy--; next(); fin(); };
+    img.src='assets/img/office/frames-ink/'+s.dir+'/'+String(k+1).padStart(3,'0')+'.jpg'+(s.v?'?v='+s.v:'');
   } };
   next();
 }
 /* הסרטונים נטענים גס → עדין, כדי שגם מי שגולל מהר יראה תנועה ולא תמונה קפואה. הסיבוב למסך נטען אחרי החפצים העפים */
-if(!reduce){ loadSeq(SEQ1); loadSeq(SEQ2,()=>loadSeq(SEQ3,()=>loadSeq(SEQ4))); }
+if(!reduce){ loadSeq(SEQ1,null,6); loadSeq(SEQF); loadSeq(SEQS); loadSeq(SEQ4); }
+const NIGHT=.33, WHO=.40, STORY=.52, SYS=.56;   /* בסקאלה של p: לילה, הכול עף, הסיפור שלו (על אפרים בכיסא, מיד לפני התנועה למסך), ורק אז המחשב */
 const acts=[...document.querySelectorAll('.act')];
 const ss=(x,a,b)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t);};
 const lerp=(a,b,t)=>a+(b-a)*t;
+const clamp01=x=>x<0?0:x>1?1:x;
+
+/* ---------- טיפוגרפיה קינטית: המילים עולות מתוך פוקוס רך אל חדות, כמו מחשבה שמתבהרת.
+   הטקסט נשאר טקסט חי ב-HTML (אפשר להחליף אותו בחופשיות), וכאן רק מחלקים אותו למילים.
+   הכול נקבע לפי ההתקדמות במסע, אז גם בחזרה אחורה זה מתנגן הפוך ---------- */
+function splitWords(el){
+  const out=[];
+  (function walk(n){
+    [...n.childNodes].forEach(c=>{
+      if(c.nodeType===3){
+        const f=document.createDocumentFragment();
+        c.textContent.split(/(\s+)/).forEach(s=>{
+          if(!s) return;
+          if(/^\s+$/.test(s)){ f.appendChild(document.createTextNode(s)); return; }
+          const w=document.createElement('span'); w.className='kw'; w.textContent=s; f.appendChild(w); out.push(w);
+        });
+        c.replaceWith(f);
+      }else if(c.nodeType===1&&c.tagName!=='BR') walk(c);
+    });
+  })(el);
+  return out;
+}
+/* קבוצה = הטקסט של שלב אחד: התווית, מילות הכותרת, ואחריהן הפסקה והכפתורים. si/se = מתי כל אחד מתחיל להיכנס/לצאת */
+function kinGroup(act){
+  const card=act.querySelector('.card'), els=[];
+  card.querySelectorAll('.kick').forEach(el=>els.push({el,w:0}));
+  splitWords(card.querySelector('h1,h2')).forEach(el=>els.push({el,w:1}));
+  card.querySelectorAll('.lede,.p,.row').forEach(el=>els.push({el,w:0}));
+  const n=els.length;
+  els.forEach((it,i)=>{ it.si=n>1?i*.45/(n-1):0; it.se=n>1?i*.3/(n-1):0; });
+  return {act,els,key:''};
+}
+const eOut=t=>1-Math.pow(1-t,3), eIn=t=>t*t;
+/* vin: 0..1 כמה נכנס. vex: 0..1 כמה יצא. מילה: עולה חצי שורה ומופיעה. פסקה וכפתורים: עולים קצת פחות.
+   focus: המילים גם מתחדדות מטשטוש. רק בכותרת הפתיחה כשהדף נטען: בזמן מעבר, טשטוש על כותרת עם הילה עוצר את כרטיס המסך */
+function kin(g,vin,vex,focus){
+  const key=vin.toFixed(4)+'|'+vex.toFixed(4); if(key===g.key) return; g.key=key;
+  for(const it of g.els){
+    const a=eOut(clamp01((vin-it.si)/.55)), b=eIn(clamp01((vex-it.se)/.7)), s=it.el.style, moving=a<1||b>0;
+    if(it.w){
+      s.transform=moving?'translate3d(0,'+((1-a)*.5-b*.4).toFixed(3)+'em,0)':'';
+      const bl=focus?(1-a)*8:0; s.filter=bl>.05?'blur('+bl.toFixed(2)+'px)':'';
+    }else s.transform=moving?'translate3d(0,'+((1-a)*18-b*16).toFixed(1)+'px,0)':'';
+    s.opacity=moving?(a*(1-b)).toFixed(3):'';
+  }
+  g.act.classList.toggle('on',vin>0&&vex<1);
+  g.act.classList.toggle('live',vin>.6&&vex<.4);
+}
+const [K0,K1,K2,K3,K4]=reduce?[]:acts.slice(0,5).map(kinGroup);
+/* הכותרת הראשית עולה לבד כשהדף נטען (לפי זמן), ויוצאת לפי הגלילה */
+const INTRO=1500; let introT0=0, lastSp=0;
+function renderText(p){
+  if(reduce) return;
+  lastSp=p;
+  const v0=introT0?clamp01((performance.now()-introT0)/INTRO):0;
+  kin(K0, v0, clamp01((p-.004)/.066), v0<1);
+  kin(K1, clamp01((p-.19)/.06), clamp01((p-.258)/.04));    /* כל כתובית נוחתת כשהסצנה שלה נעצרת, ויוצאת עם הנקישה הבאה */
+  kin(K2, clamp01((p-.29)/.04), clamp01((p-.3302)/.005));   /* יוצאת מיד עם הנקישה, לפני שהכול מתחיל לעוף */
+  kin(K3, clamp01((p-.36)/.04), clamp01((p-.4005)/.01));
+  kin(K4, clamp01((p-.43)/.07), clamp01((p-.5205)/.01));    /* הסיפור כולו בנקישה אחת: נכנס בדרך לעצירה, ויוצא כשהמצלמה מתחילה לנוע למחשב */
+}
 
 /* החדר מכסה את המסך ביחס 16:9 קבוע — כך אחוזי המסך בתמונה תמיד נכונים */
 let RW=0,RH=0;
@@ -619,13 +794,63 @@ function sizeRoom(){
   RW=Math.max(innerWidth, innerHeight*16/9); RH=RW*9/16;
   room.style.width=RW+'px'; room.style.height=RH+'px';
   room.style.setProperty('--u',(RW/100)+'px');  /* יחידת גודל לפי רוחב החדר, לטקסט שעל מסך הטלפון */
+  wallTitle();
+}
+/* הכותרת הראשונה על הקיר: בתמונת הדלת הדלת נגמרת ב-40.5% מהרוחב, והקיר הריק ממשיך עד הפינה. רק בחלק שרואים במסך.
+   המשתנים יושבים על הבמה, כדי שגם הכתוביות של הבלאגן והלילה ישתמשו באותו גובה ובאותו גודל */
+function wallTitle(){
+  const a=acts[0]; if(!a) return;
+  const st=a.parentElement.style, SW=a.clientWidth||innerWidth, SH=a.clientHeight||innerHeight, x0=(RW-SW)/2, pad=Math.min(200,Math.max(20,SW*.09));   /* pad = --edge: הקצוות של הכותרות על אותו קו של ההדר */
+  const L=Math.max(RW*.43, x0+pad), R=Math.min(RW*.9, x0+SW-pad), w=R-L, wide=SW>960;
+  /* הגודל הראשון (120): שלוש שורות על הקיר, והשורה הרחבה ("איך העסק שלך") בערך 6.3em. כשהקיר צר יותר, הכותרת קטנה איתו */
+  const fs=wide?Math.min(120,w/6.3):Math.max(28,Math.min(w/6.6,52));
+  st.setProperty('--wl',(L-x0).toFixed(1)+'px'); st.setProperty('--ww',w.toFixed(1)+'px');
+  st.setProperty('--wt',((SH-RH)/2+RH*.27).toFixed(1)+'px'); st.setProperty('--wfs',fs.toFixed(1)+'px');
+  /* הבלאגן והלילה: הקצה הימני בדיוק כמו של הכותרת הראשונה, ברוחב של השורה הארוכה. בטלפון הכתובית ארוכה, אז היא קצת קטנה יותר */
+  st.setProperty('--wr',(SW-(R-x0)).toFixed(1)+'px'); st.setProperty('--cw',(SW-2*pad).toFixed(1)+'px');
+  st.setProperty('--tw',(wide?Math.min(SW*.31,SW-2*pad):SW-2*pad).toFixed(1)+'px');   /* במחשב הכתובית נשארת בשליש הימני, ולא נוגעת באפרים שיושב באמצע */
 }
 sizeRoom(); addEventListener('resize',()=>{sizeRoom(); if(lastP!=null) setJourney(lastP);});
 
 
 let lastP=null;
-const say=$('say'), sayDots=$('say-dots'), sayTxt=$('say-txt');
+/* איזה פריים מראים בנקודה R של המסע (R = כל הגלילה, P = עד סוף הטלפון, p = עד המחשב) */
+function frameAt(R){
+  const P=Math.min(1,R/.88), p=Math.min(1,P/.88);
+  const s=P>=SEQ4.a?SEQ4:p>=SEQS.a?SEQS:p>=SEQF.a?SEQF:SEQ1, x=s===SEQ4?P:p;   /* אחרי הכניסה המצלמה עומדת: נשארים על הפריים האחרון (הבלאגן), עד שהכול עף */
+  const u=clamp01((x-s.a)/(s.b-s.a));
+  let f=u*(s.n-1);
+  if(s.even){   /* מהירות אחידה: מוצאים את הפריים שבו הצטברה בדיוק החלק u מכל התנועה */
+    const e=s.even; let k=0;
+    while(k<e.length-2&&e[k+1]<=u) k++;
+    f=k+clamp01((u-e[k])/((e[k+1]-e[k])||1));
+  }
+  return {s, x:f, fi:Math.round(f)};
+}
 const aj=$('about-j'), ajKids=[...aj.querySelector('.in').children];
+/* הסרטונים על המסך: רק של הפרויקט שבאמצע מתנגן, מההתחלה, וכל השאר עומדים. i=-1 = המסך לא נראה, הכול עוצר.
+   לכל פרויקט שניים: out = האתר, in = פאנל הניהול. המתג מעל המחשב בוחר איזה מהם */
+const vids=slides.map(s=>({out:s.querySelector('video.out'),in:s.querySelector('video.in')})); let vOn=-2, mode='out', vMode='';
+/* סרטוני הניהול: המספרים עולים מאפס רק בפעם הראשונה. אחר כך הלולאה חוזרת לרגע שבו הם כבר מלאים (data-loop),
+   כי אפרים לא רוצה לראות "אפס על הכול" (3.11). סוף הסרטון מתמזג בדיוק אל הרגע הזה, אז אין קפיצה */
+document.querySelectorAll('.slide video[data-loop]').forEach(v=>v.addEventListener('ended',()=>{ v.currentTime=+v.dataset.loop; v.play().catch(()=>{}); }));
+function playSlide(i){
+  if((i===vOn&&mode===vMode)||reduce) return; vOn=i; vMode=mode;
+  vids.forEach((v,k)=>['out','in'].forEach(m=>{
+    const x=v[m]; if(!x) return;
+    if(k===i&&m===mode){ if(x.preload!=='auto') vids.forEach(y=>y[m]&&(y[m].preload='auto')); x.currentTime=0; x.play().catch(()=>{}); }
+    else if(!x.paused) x.pause();
+  }));
+}
+const io=$('io'), ioBtns=[...io.querySelectorAll('button')], ioThumb=io.querySelector('.io-thumb');
+function ioPlace(){ const b=ioBtns.find(x=>x.dataset.m===mode); ioThumb.style.width=b.offsetWidth+'px'; ioThumb.style.transform='translateX('+b.offsetLeft+'px)'; }
+ioBtns.forEach(b=>b.addEventListener('click',()=>{
+  if(b.dataset.m===mode) return; mode=b.dataset.m;
+  screen.classList.toggle('mode-in',mode==='in');
+  ioBtns.forEach(x=>{ x.classList.toggle('on',x===b); x.setAttribute('aria-pressed',x===b); });
+  ioPlace(); playSlide(vOn);
+}));
+addEventListener('resize',ioPlace); requestAnimationFrame(ioPlace); document.fonts&&document.fonts.ready.then(ioPlace);
 function setJourney(R){
   lastP=R;
   prog.style.width=(R*100)+'%';
@@ -639,19 +864,26 @@ function setJourney(R){
   const K=.88, p=Math.min(1,P/K), inPhone=P>=SEQ4.a;
   /* מהדלת ועד המסך רואים רק פריימים מהסרטונים — בלי תמונות ביניים ובלי זום.
      אם פריימים עוד לא נטענו, מוצגת התמונה של אותו שלב: דלת / משרד מבולגן / אפרים ליד השולחן / המסך. */
-  let cur, fi, mix=null;
-  if(inPhone){ cur=SEQ4; fi=Math.round(Math.min(1,Math.max(0,(P-SEQ4.a)/(SEQ4.b-SEQ4.a)))*(SEQ4.n-1)); }
-  else{
-    cur=p<(SEQ1.b+SEQ2.a)/2?SEQ1:(p<(SEQ2.b+SEQ3.a)/2?SEQ2:SEQ3);
-    fi=Math.round(Math.min(1,Math.max(0,(p-cur.a)/(cur.b-cur.a)))*(cur.n-1));
-    mix=cur===SEQ3?{s:SEQ2,t:ss(p,SEQ3.a,SEQ3.a+.01)}:null;
-  }
-  const shown=!reduce&&drawSeq(cur,fi,mix);
-  seqEl.style.opacity=shown?(inPhone?1-ss(P,SEQ4.b,SEQ4.b+.01):1-ss(p,SEQ3.b,SEQ3.b+.01)):0;
+  const {s:cur, x:fx0}=frameAt(R);
+  const mix=null;
+  const shown=!reduce&&drawSeq(cur,fx0,mix);
+  /* אחרי שהכול עף הקנבס נשאר מתחת (על הפריים האחרון: אפרים בכיסא), עד שהמחשב בלילה מכסה אותו. כך אף פעם אין רגע ריק */
+  seqEl.style.opacity=shown?(inPhone?1-ss(P,SEQ4.b,SEQ4.b+.01):1-ss(p,SEQS.b+.0008,SYS)):0;   /* נעלם רק אחרי שהתמונה החדה של המסך כבר מכסה */
   ims.door.classList.toggle('on', p<SEQ1.b);
-  ims.messy.classList.toggle('on', p>=SEQ1.b&&p<SEQ2.b);
-  ims.me.classList.toggle('on', p>=SEQ2.b&&p<SEQ3.b);
-  ims.scr.classList.toggle('on', p>=SEQ3.b&&P<SEQ4.b);
+  ims.messy.classList.toggle('on', p>=SEQ1.b&&p<SEQF.a);
+  ims.me.classList.toggle('on', false);
+  ims.scr.classList.toggle('on', p>=WHO&&P<SEQ4.b);
+  /* לילה: רק האור משתנה, המצלמה עומדת. הכול עף: חיתוך אל המבט מול השולחן, והקליפ מתנגן על הקנבס.
+     בסוף שלו התמונה החדה של אפרים בכיסא (אותו פריים כמו סוף הקליפ) נשארת ל"נעים מאוד" */
+  $('im-night').style.opacity=(ss(p,SEQ1.b,NIGHT)*(1-ss(p,NIGHT+.001,NIGHT+.005))).toFixed(3);
+  $('im-who').style.opacity=(ss(p,WHO-.008,WHO-.002)*(1-ss(p,SEQS.a,SEQS.a+.003))).toFixed(3);   /* הפריים הראשון של התנועה אל המסך = אותה תמונה */
+  seqEl.style.transform='';
+  const sysIn=ss(p,SEQS.b,SEQS.b+.0006);   /* בסוף התנועה: התמונה החדה של המסך, עם האתר האמיתי */
+  $('im-sys').style.opacity=(sysIn*(1-ss(P,SEQ4.a-.008,SEQ4.a))).toFixed(3);   /* המחשב נשאר: עליו עוברים הפרויקטים, עד הטלפון */
+  $('scrim').style.opacity=(1-ss(p,.55,.58)).toFixed(3);
+  /* והמצלמה ממשיכה: נסוגה קצת והמסך זז שמאלה, עד שהוא בצד שמאל והמלל נכנס מימין (הציור של אפרים).
+     screen-left = הפריים הישר, מוקטן פי 0.82 וזז שמאלה, עם שיש מסביב. בהתחלה הוא מוגדל כך שנראה בדיוק כמו הפריים הישר */
+  $('im-sys').style.transform='';
   ims.phone.classList.toggle('on', P>=SEQ4.b&&!(slide&&A>=.05));
   /* כשהטלפון מתחיל לזוז: הרקע הנקי + שכבת הטלפון החתוכה. במקום ההתחלתי הם נראים בדיוק כמו התמונה המקורית */
   $('im-plate').classList.toggle('on', slide); $('im-plate').style.opacity=slide?ss(A,0,.05).toFixed(3):'';
@@ -660,17 +892,19 @@ function setJourney(R){
   $('plate').style.opacity=1-ss(p,SEQ1.a,SEQ1.a+.02);
 
   /* על המסך: האדים עולים מהקפה בלולאה. הסרטון מתנגן רק כשרואים אותו */
-  const steamOn=!reduce&&p>=SEQ3.b-.02&&P<SEQ4.a+.004;
-  steam.style.opacity=ss(p,SEQ3.b-.02,SEQ3.b)*(1-ss(P,SEQ4.a-.002,SEQ4.a+.004));
+  const steamOn=false;   /* האדים היו מעל הקפה של השולחן הישן, שכבר לא רואים */
+  steam.style.opacity=0;
   if(steamOn&&steam.paused) steam.play().catch(()=>{}); else if(!steamOn&&!steam.paused) steam.pause();
 
   /* המצלמה לא זזה — הפרויקטים נגללים בתוך מסך המחשב */
+  /* בטלפון רואים רק רצועה צרה מהחדר: היא זזה לאט אל מה שחשוב, כמו אפרים ליד השולחן. במחשב רחב אין לאן לזוז */
+  const fx=.5, slack=Math.max(0,(RW-VW)/2);   /* המצלמה עומדת: גם בטלפון לא מזיזים את החדר */
   room.style.transformOrigin='50% 50%';
-  room.style.transform='translate(-50%,-50%)';
+  room.style.transform='translate(calc(-50% + '+Math.max(-slack,Math.min(slack,(.5-fx)*RW)).toFixed(1)+'px),-50%)';
 
-  screen.style.opacity=ss(p,SEQ3.b,SEQ3.b+.02)*(1-ss(P,SEQ4.a-.008,SEQ4.a));
-  /* 3 הפרויקטים ברצועה אחת ארוכה שנגללת בתוך המסך, כמו אתר אחד ארוך: הגלילה לא נעצרת ולא נעלמת, רק מאטה קצת על כל פרויקט */
-  const S0=.63, S1=.86, H=screen.clientWidth*10/16, SH=screen.clientHeight, n=slides.length-1;
+  screen.style.opacity=ss(p,SYS-.0015,SYS)*(1-ss(P,SEQ4.a-.008,SEQ4.a));   /* הפרויקטים על המסך של המחשב האמיתי, מהרגע שמגיעים אליו */
+  /* 3 הפרויקטים ברצועה אחת שנגללת בתוך המסך. כל פרויקט = מסך אחד ועצירה אחת (STOPS): .56 פטיסייר, .71 קריספרי, .86 מנטורי */
+  const S0=SYS, S1=.86, SH=screen.clientHeight, H=SH, n=slides.length-1;
   const travel=Math.max(0,slides.length*H-SH), stops=slides.map((_,k)=>k===n?travel:Math.min(k*H,travel));
   const u=Math.min(1,Math.max(0,(p-S0)/(S1-S0))), q=u*n, seg=Math.min(n-1,Math.floor(q)), fq=q-seg;
   const pos=lerp(stops[seg],stops[seg+1],.35*fq+.65*ss(fq,.2,.8));
@@ -682,14 +916,24 @@ function setJourney(R){
   /* בצד ימין: שם הפרויקט בגדול, התחום והתיאור. הטקסט נעלם ומופיע רך בדיוק כשהגבול בין שני פרויקטים עובר באמצע המסך */
   const edge=(active===0&&fc<.5)||(active===n&&fc>.5)?0:Math.abs(fc-.5);
   const swap=1-ss(edge,.3,.48);
-  side.style.opacity=ss(p,SEQ3.b,SEQ3.b+.03)*(1-ss(p,.86,.89));
+  side.style.opacity=ss(p,SYS-.003,SYS)*(1-ss(p,.86,.89));   /* הכותרת והמלל נכנסים מימין כשהמסך מגיע לשמאל */
+  side.classList.toggle('live',+side.style.opacity>.5&&swap>.5);   /* הכפתור של הפרויקט לחיץ רק כשרואים אותו */
   $('side-biz').style.opacity=swap;
   if($('side-h').textContent!==sl0.dataset.t){
     $('side-k').textContent=sl0.dataset.k;
     $('side-h').textContent=sl0.dataset.t;
     $('side-p').textContent=sl0.dataset.p;
+    $('side-cta').href='https://wa.me/'+WA+'?text='+encodeURIComponent('היי אפרים, ראיתי באתר שלך את '+sl0.dataset.t+'. אני רוצה משהו כזה לעסק שלי.');
   }
   side.querySelectorAll('.dots i').forEach((d,k)=>d.classList.toggle('on',k===active));
+  const ioOp=ss(p,SYS-.003,SYS)*(1-ss(p,.86,.89));   /* המתג מעל המחשב נכנס ויוצא יחד עם המלל שבצד */
+  io.style.opacity=ioOp.toFixed(3); io.classList.toggle('live',ioOp>.5);
+  if(ioOp>0){   /* מעל מרכז המסך. בטלפון רואים רק חלק מהמחשב, אז המתג נשאר בתוך המסך של הטלפון */
+    const rl=room.getBoundingClientRect().left, half=io.offsetWidth/2+16, sc=screen.offsetLeft+screen.offsetWidth/2;
+    io.style.left=Math.max(half-rl,Math.min(VW-half-rl,sc)).toFixed(1)+'px';
+  }
+  playSlide(+screen.style.opacity>.02?active:-1);
+  if(p>.5&&vids[0].out&&vids[0].out.preload==='none') vids[0].out.preload='auto';   /* בזמן הסיפור כבר מורידים את הסרטון הראשון, שיהיה מוכן כשמגיעים למחשב */
 
   /* הטלפון: וואטסאפ עם הודעות תודה שנכנסות אחת-אחת, ואחר כך סרטונים בגלילה. הכול לדוגמה, עד שיהיו אמיתיים */
   pscreen.style.opacity=ss(P,SEQ4.b,SEQ4.b+.01);
@@ -708,26 +952,214 @@ function setJourney(R){
   ajKids.forEach((el,k)=>{ const t=ss(A,.28+k*.05,.42+k*.05); el.style.opacity=t.toFixed(3); el.style.transform='translateY('+((1-t)*22).toFixed(1)+'px)'; });
   aj.classList.toggle('live',A>.5);
 
-  /* הוא מדבר: הבועה יושבת ליד הראש שלו (69% מרוחב החדר), קודם שלוש נקודות ואז המשפט */
-  if(wide){ say.style.left=((VW-RW)/2+RW*.30).toFixed(0)+'px'; say.style.width=(RW*.30).toFixed(0)+'px';
-    say.style.top=((innerHeight-RH)/2+RH*.125).toFixed(0)+'px'; say.style.fontSize=Math.max(13,Math.min(22,RW/100*1.08)).toFixed(1)+'px'; }
-  else { say.style.left=say.style.width=say.style.top=say.style.fontSize=''; }
-  say.style.opacity=(ss(p,SEQ2.b-.006,SEQ2.b+.018)*(1-ss(p,SEQ3.a-.014,SEQ3.a-.002))).toFixed(3);
-  const typed=p>=SEQ2.b+.013;
-  sayDots.style.display=typed?'none':'flex';
-  sayTxt.style.display=typed?'block':'none';
 
-  let idx=-1;
-  if(p<.10) idx=0; else if(p>=SEQ1.b&&p<SEQ2.a) idx=1;
-  acts.forEach((a,i)=>a.classList.toggle('on',i===idx));
+  renderText(p);
   $('hdr').classList.toggle('solid', p>.06);
 }
 window.setJourney=setJourney;
-setJourney(0);
+
+/* ===================== מנוע השלבים =====================
+   תנועה אחת = שלב שלם: נקישה אחת בגלגלת, החלקה אחת בטלפון או חץ אחד במקלדת.
+   המעבר מתנגן לבד, רך ובקצב קבוע, ואפשר להפוך אותו באמצע. אחרי השלב האחרון הגלילה חוזרת להיות רגילה */
+const JR=$('journey'), KR=.88*.88;   /* KR: מהסקאלה של p (המסע עד המחשב) לסקאלה של כל הגלילה */
+const STOPS=[                         /* r = איפה עוצרים. t = כמה זמן (מ"ש) לוקח להגיע לכאן מהשלב הקודם */
+  {r:0,       t:0},     /* הדלת והכותרת */
+  {r:.252*KR, t:1200},  /* נכנסים דרך הדלת עד המשרד המבולגן. המשתמש ביקש שזה יקרה מהר, בנקישה אחת */
+  {r:.33*KR,  t:900},   /* לילה: בחוץ מחשיך, בפנים נדלק אור. רק האור זז */
+  {r:.40*KR,  t:1300},  /* הכול עף, ואפרים מתגלה יושב בכיסא: "בוא, אני אעשה לכם סדר." */
+  {r:.52*KR,  t:900},   /* אותו מסך: כל הסיפור בכותרת ומלל אחד, "נעים מאוד, אני אפרים..." עד "בוא, תראה איך זה נראה." */
+  {r:.56*KR,  t:3000},  /* ורק עכשיו עוברים למסך, לאט ובעדינות: מתקרבים אל המחשב שעל השולחן, ונכנסים למערכת. על המסך: פטיסייר */
+  {r:.71*KR,  t:1100},  /* גלילה אחת = הפרויקט הבא על המסך (אפרים, 3.11): קריספרי */
+  {r:.86*KR,  t:1100},  /* ועוד אחת: מנטורי. מכאן הגלילה חוזרת להיות רגילה, אל הטלפון */
+];
+const LAST=STOPS[STOPS.length-1].r, EPS=.00025;
+/* עקומת התנועה: נכנסת רך ונוחתת רך, סימטרית. יחד עם המהירות האחידה בתוך הסרטון (even) אין רגע של דחיפה חזקה */
+function bez(x1,y1,x2,y2){
+  const cx=3*x1, bx=3*(x2-x1)-cx, ax=1-cx-bx, cy=3*y1, by=3*(y2-y1)-cy, ay=1-cy-by;
+  return x=>{
+    if(x<=0) return 0; if(x>=1) return 1;
+    let t=x;
+    for(let i=0;i<8;i++){ const e=((ax*t+bx)*t+cx)*t-x, d=(3*ax*t+2*bx)*t+cx; if(Math.abs(e)<1e-5||!d) break; t=clamp01(t-e/d); }
+    return ((ay*t+by)*t+cy)*t;
+  };
+}
+const EASE=bez(.37,0,.63,1);
+const span=()=>Math.max(1,JR.offsetHeight-innerHeight);
+const yOf=r=>JR.offsetTop+r*span();
+const rOf=y=>(y-JR.offsetTop)/span();   /* בלי חיתוך: מעל 1 = כבר מתחת למסע */
+let jr=clamp01(rOf(scrollY)), gl=null, pend=0, raf=0, tPrev=0, drawn=-1;
+
+const rail=$('rail'), railN=$('rail-n');
+const railBtns=STOPS.map((s,i)=>{
+  const b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','שלב '+(i+1)); b.innerHTML='<i></i>';
+  b.addEventListener('click',()=>{ pend=0; glideTo(i); });
+  $('rail-t').appendChild(b); return b;
+});
+let railOn=-1;
+function railSet(i){
+  if(i===railOn) return;
+  const up=i>railOn; railOn=i;
+  railBtns.forEach((b,k)=>{ b.classList.toggle('on',k===i); if(k===i) b.setAttribute('aria-current','step'); else b.removeAttribute('aria-current'); });
+  const old=railN.querySelector('b:not(.gone)'), nb=document.createElement('b');
+  nb.textContent=String(i+1).padStart(2,'0');
+  if(!old||!old.parentNode){ railN.appendChild(nb); return; }
+  nb.className=up?'dn':'up'; railN.appendChild(nb);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{ nb.className=''; }));
+  old.classList.add('gone',up?'up':'dn'); setTimeout(()=>old.remove(),700);
+}
+railN.innerHTML=''; railSet(0);
+const nearStop=r=>STOPS.reduce((best,s,i)=>Math.abs(s.r-r)<Math.abs(STOPS[best].r-r)?i:best,0);
+
+function wake(){ if(!raf) raf=requestAnimationFrame(loop); }
+function loop(now){
+  raf=0;
+  const dt=tPrev?Math.min(64,now-tPrev):16.7; tPrev=now;
+  let busy=false;
+  if(gl){
+    gliding=true;
+    const k=Math.min(1,(now-gl.t0)/gl.T), y=gl.y0+(gl.y1-gl.y0)*EASE(k);
+    scrollTo({top:y,behavior:'instant'});
+    jr=clamp01(rOf(y)); busy=true;
+    if(k>=1){ gl=null; gliding=false; jr=clamp01(rOf(scrollY)); if(pend){ const d=pend; pend=0; step(d); } }
+  }else{
+    /* גלילה רגילה (פס הגלילה, קישור, אחרי השלב האחרון): עוקבים אחריה ברכות */
+    const t=clamp01(rOf(scrollY)), d=t-jr;
+    if(Math.abs(d)>2e-5){ jr+=d*(1-Math.pow(.78,dt/16.7)); busy=true; } else jr=t;
+    railSet(nearStop(jr));
+  }
+  if(jr!==drawn){ drawn=jr; setJourney(jr); }
+  const intro=introT0&&now-introT0<INTRO+80;
+  if(intro){ renderText(lastSp); busy=true; }
+  rail.classList.toggle('off', jr>LAST+.012);
+  if(busy) wake();
+  else{ tPrev=0; const i=nearStop(jr); if(Math.abs(STOPS[i].r-jr)<EPS*4) warmPlan(i); }
+}
+function nextStop(r,dir){
+  if(dir>0){ for(let i=0;i<STOPS.length;i++) if(STOPS[i].r>r+EPS) return i; }
+  else for(let i=STOPS.length-1;i>=0;i--) if(STOPS[i].r<r-EPS) return i;
+  return -1;
+}
+/* האם התנועה הזו שייכת למנוע (או שהגלילה הרגילה ממשיכה) */
+function owns(dir){
+  const r=rOf(scrollY);
+  if(dir>0) return r>-EPS&&r<LAST-EPS;
+  return r>EPS&&r<=LAST+.6*innerHeight/span();   /* גם כשחוזרים מלמטה ונכנסים קצת: נצמדים לשלב האחרון */
+}
+function glideTo(i){
+  const y0=scrollY, r0=rOf(y0), r1=STOPS[i].r, y1=yOf(r1);
+  railSet(i);
+  if(Math.abs(y1-y0)<1){ gl=null; return; }
+  let T=0, segs=0;
+  for(let k=1;k<STOPS.length;k++){
+    const a=STOPS[k-1].r, b=STOPS[k].r, lo=Math.max(Math.min(r0,r1),a), hi=Math.min(Math.max(r0,r1),b);
+    if(hi>lo){ T+=STOPS[k].t*(hi-lo)/(b-a); segs++; }
+  }
+  if(r0>LAST) T+=650*clamp01((r0-LAST)*span()/(.6*innerHeight));
+  if(segs>1) T*=.72;      /* קפיצה של כמה שלבים (מהמסילה): קצת יותר מהר מסכום המעברים */
+  if(r1<r0) T*=.9;        /* אחורה טיפה יותר מהר */
+  gl={y0,y1,t0:performance.now(),T:Math.max(420,Math.min(2200,T)),dir:Math.sign(r1-r0)};
+  wake();
+}
+function step(dir){
+  if(gl){
+    if(dir!==gl.dir){ pend=0; const i=nextStop(rOf(scrollY),dir); if(i>=0) glideTo(i); }   /* התחרט באמצע: חוזרים */
+    else if((performance.now()-gl.t0)/gl.T>.4) pend=dir;                                    /* עוד נקישה לקראת הסוף: השלב הבא מחכה בתור */
+    return;
+  }
+  const i=nextStop(rOf(scrollY),dir); if(i>=0) glideTo(i);
+}
+
+/* חימום: כשעומדים בשלב, מציירים ברקע, פריים אחד בכל רגע פנוי, את הפריימים של המעברים לשני הכיוונים (בקנבס נסתר).
+   ככה כרטיס המסך כבר מכיר אותם, וגם המעבר הראשון חלק. רק במחשב: בטלפון חוסכים זיכרון וסוללה */
+const canWarm=!reduce&&matchMedia('(pointer:fine)').matches&&innerWidth>960;
+let warmQ=[], warmAt=0, warmFor=-1, warmRaf=0, wctx=null;
+function warmPlan(i){
+  if(!canWarm) return;
+  if(i===warmFor){ if(!warmRaf&&warmAt<warmQ.length) warmRaf=requestAnimationFrame(warmTick); return; }
+  warmFor=i; warmQ=[]; warmAt=0;
+  const seen=new Set(), add=(a,b)=>{ for(let k=0;k<=240;k++){ const {s,x}=frameAt(a+(b-a)*k/240); for(const fi of [Math.floor(x),Math.min(s.n-1,Math.floor(x)+1)]){ const key=s.dir+fi; if(!seen.has(key)){ seen.add(key); warmQ.push([s,fi]); } } } };
+  if(i>0) add(STOPS[i].r,STOPS[i-1].r);                 /* אחורה קודם, */
+  if(i<STOPS.length-1) add(STOPS[i].r,STOPS[i+1].r);    /* קדימה אחרון: הכי טרי בזיכרון של כרטיס המסך */
+  if(!wctx){
+    const c=document.createElement('canvas'); c.width=seqEl.width; c.height=seqEl.height; c.setAttribute('aria-hidden','true');
+    c.style.cssText='position:fixed;left:0;top:0;width:2px;height:2px;opacity:.01;pointer-events:none;z-index:-1';
+    document.body.appendChild(c); wctx=c.getContext('2d');
+  }
+  if(!warmRaf) warmRaf=requestAnimationFrame(warmTick);
+}
+function warmTick(){
+  warmRaf=0;
+  if(gl) return;                                         /* בזמן מעבר לא מחממים. ממשיכים כשנעצרים */
+  if(warmAt>=warmQ.length){ if(warmQ.some(([s,fi])=>!s.frames[fi].ok)){ const f=warmFor; warmFor=-1; setTimeout(()=>{ if(warmFor===-1&&!gl) warmPlan(f); },1200); } return; }
+  const [s,fi]=warmQ[warmAt++], f=s.frames[fi];
+  if(f.ok) wctx.drawImage(f.img,0,0,wctx.canvas.width,wctx.canvas.height);
+  warmRaf=requestAnimationFrame(warmTick);
+}
+
+if(!reduce){
+  /* גלגלת ומשטח מגע. מחווה = רצף אירועים צמוד. מחווה אחת מקדמת שלב אחד, והתנופה שלה נבלעת (שלא תדלג הלאה) */
+  const G={t:0,abs:0,peak:0,dir:0,acc:0,used:false};
+  addEventListener('wheel',e=>{
+    if(e.ctrlKey) return;
+    const dy=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1);
+    if(Math.abs(dy)<Math.abs(e.deltaX)) return;
+    const now=performance.now(), abs=Math.abs(dy), dir=Math.sign(dy);
+    if(!dir) return;
+    const gap=now-G.t;
+    const fresh=gap>150||dir!==G.dir
+      ||(G.peak>0&&G.abs<G.peak*.55&&abs>G.abs*1.6+4)        /* התנופה דעכה ופתאום עולה: תנועה חדשה */
+      ||(abs>=50&&Number.isInteger(abs)&&gap>75&&abs>=G.abs);  /* נקישות נפרדות של גלגלת עכבר */
+    if(fresh){ G.acc=0; G.used=false; G.peak=abs; } else G.peak=Math.max(G.peak,abs);
+    G.t=now; G.abs=abs; G.dir=dir;
+    if(G.used){ e.preventDefault(); return; }
+    if(!owns(dir)) return;
+    e.preventDefault();
+    G.acc+=dy;
+    if(Math.abs(G.acc)<6) return;
+    G.used=true; step(dir);
+  },{passive:false});
+
+  /* טלפון: החלקה אחת = שלב אחד */
+  let ty=null, tUsed=false;
+  addEventListener('touchstart',e=>{ ty=e.touches.length===1?e.touches[0].clientY:null; tUsed=false; },{passive:true});
+  addEventListener('touchmove',e=>{
+    if(ty==null) return;
+    if(tUsed){ if(e.cancelable) e.preventDefault(); return; }
+    const dy=ty-e.touches[0].clientY, dir=Math.sign(dy);
+    if(!dir||!owns(dir)) return;
+    if(e.cancelable) e.preventDefault();
+    if(Math.abs(dy)<10) return;
+    tUsed=true; step(dir);
+  },{passive:false});
+
+  /* מקלדת: חץ, עמוד או רווח = שלב */
+  addEventListener('keydown',e=>{
+    if(e.altKey||e.ctrlKey||e.metaKey) return;
+    const tg=e.target;
+    if(tg.closest&&tg.closest('input,textarea,select,[contenteditable]')) return;
+    let d={ArrowDown:1,PageDown:1,' ':1,ArrowUp:-1,PageUp:-1}[e.key]; if(!d) return;
+    if(e.key===' '){ if(tg.closest&&tg.closest('button,a')) return; if(e.shiftKey) d=-1; }
+    if(!owns(d)) return;
+    e.preventDefault();
+    if(!e.repeat||!gl) step(d);
+  });
+
+  /* הלוגו בהדר: מתוך המסע חוזרים לדלת באותה תנועה רכה */
+  document.querySelectorAll('a[href="#top"]').forEach(a=>a.addEventListener('click',e=>{ if(rOf(scrollY)<=1){ e.preventDefault(); pend=0; glideTo(0); } }));
+  addEventListener('scroll',()=>{ if(!gl) wake(); },{passive:true});
+  addEventListener('resize',()=>{ if(!gl&&rOf(scrollY)<=LAST+EPS){ const i=nearStop(rOf(scrollY)); scrollTo({top:yOf(STOPS[i].r),behavior:'instant'}); } wake(); });
+
+  const startIntro=()=>{ if(introT0) return; introT0=performance.now(); document.documentElement.classList.add('kin-ready'); wake();
+    /* התמונות של הלילה, של אפרים בכיסא ושל המחשב מפוענחות מראש, כדי שיופיעו מיד כשמגיעים אליהן */
+    setTimeout(()=>['im-night','im-who','im-sys'].map($).concat([...document.querySelectorAll('.slide img')]).forEach(im=>{ if(im&&im.decode) im.decode().catch(()=>{}); }),1200); };
+  renderText(jr/KR);
+  (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(()=>setTimeout(startIntro,120));
+  setTimeout(startIntro,900);
+}
+setJourney(jr);
 
 if(window.gsap && !reduce){
   gsap.registerPlugin(ScrollTrigger);
-  ScrollTrigger.create({trigger:'#journey',start:'top top',end:'bottom bottom',scrub:.5,onUpdate:s=>setJourney(s.progress)});
   gsap.utils.toArray('.rv').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
   const steps=gsap.utils.toArray('.step');
   ScrollTrigger.create({trigger:'#steps',start:'top 72%',end:'bottom 60%',scrub:.6,onUpdate:s=>{
@@ -745,12 +1177,12 @@ form.addEventListener('submit',async e=>{
   if(FORM_ENDPOINT){
     msg.textContent='שולח…';
     try{const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
-      msg.textContent=r.ok?'תודה! חוזר אליכם בהקדם.':'משהו נתקע — אפשר גם בוואטסאפ.'; if(r.ok)form.reset();}
-    catch(_){msg.textContent='משהו נתקע — אפשר גם בוואטסאפ.';}
+      msg.textContent=r.ok?'תודה! חוזר אליכם בהקדם.':'משהו נתקע. אפשר גם בוואטסאפ.'; if(r.ok)form.reset();}
+    catch(_){msg.textContent='משהו נתקע. אפשר גם בוואטסאפ.';}
   }else{
     const body='היי אפרים, אני '+name+' ('+ph+').'+(text?'\n'+text:'');
     window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(body),'_blank','noopener');
-    msg.textContent='נפתח וואטסאפ עם הפרטים — רק ללחוץ שליחה.';
+    msg.textContent='נפתח וואטסאפ עם הפרטים. רק ללחוץ שליחה.';
   }
 });
 })();
