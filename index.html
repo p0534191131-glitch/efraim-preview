@@ -103,7 +103,7 @@ button{font:inherit;color:inherit}
 .ly h3{font-size:var(--fs-b);font-weight:700;margin-bottom:var(--sp1)}
 .ly h3 span{background:linear-gradient(transparent 58%,var(--m) 58% 92%,transparent 92%) no-repeat right/var(--mk,100%) 100%;padding:0 4px}
 .ly p{font-size:var(--fs-c);line-height:1.55;max-width:340px;margin:0 auto;opacity:.85}
-.sdot{position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--m);box-shadow:0 0 0 12px rgba(61,219,176,.22);opacity:0;pointer-events:none;z-index:2}
+.sdot{position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--m);box-shadow:0 0 0 5px var(--c),0 0 0 14px rgba(61,219,176,.3);opacity:0;pointer-events:none;z-index:2}
 .nb{position:absolute;top:-8px;right:-8px;width:30px;height:30px;border-radius:50%;background:var(--n);color:var(--c);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
 
 /* בטלפון ובלי אנימציות: חלקים רגילים אחד אחרי השני */
@@ -579,7 +579,7 @@ function renderPortal(){
  scene.style.webkitMaskImage=mk;scene.style.maskImage=mk;
  fxc.setAttribute('cx',cx);fxc.setAttribute('cy',cy);fxc.setAttribute('r',Math.max(40,r-fe*.55).toFixed(1));fxc.setAttribute('stroke-width',(18*(1-.6*e)).toFixed(1));
  fx.style.opacity=(e>0&&e<1)?(.85*Math.pow(1-e,1.6)).toFixed(3):0;
- bgl.style.opacity=ss(seg(q,.74,.95)).toFixed(3);
+ bgl.style.opacity='1'; /* 9.11: פסי הלוגו כבר שם ברגע שהעיגול נפתח */
  if(!DOT){const kr=kick.getBoundingClientRect();DOT=[kr.left+kr.width/2,kr.top-26];}
  const dm=ss(seg(q,.3,.46)),dx=cx+(DOT[0]-cx)*dm,dy=cy+(DOT[1]-cy)*dm;
  sdot.style.opacity=(seg(p,.1,.18)*(1-seg(q,.46,.52))).toFixed(3);sdot.style.transform=`translate(${dx.toFixed(1)}px,${dy.toFixed(1)}px) scale(${(1-.45*dm).toFixed(3)})`;
